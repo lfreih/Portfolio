@@ -1,0 +1,214 @@
+#sectionProjects {
+    background-color: $dark-blue;
+    color: $neutral-light;
+    padding-inline: $padding-content-sm;
+    padding-block: 13vw 14vw ;
+    position: relative;
+    
+    &__title {
+        text-align: center;
+        margin-bottom: 10vw;
+        font-family: $title-font;
+    }
+
+    &__background {
+        display: flex;
+        justify-content: center;
+        // width: 100%;
+        // height: 100%;
+        // margin-block: 20px 40px;
+
+        #flower, #leaves {
+            width: 130px;
+            position: absolute;
+        }
+        #rod {
+            content: '';
+            width: 5px;
+            height: 85%;
+            background-color: $accentuation;
+            position: absolute;
+            top: 159px;
+        }
+        #leaves {
+            bottom: 50px;
+        }
+    }
+
+    &__listProjects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+
+        margin-block: 90px 140px;
+
+        &:has(a:hover) a:not(:hover) {
+            filter: blur(2px);
+            transform: scale(.95);
+        }
+
+        a {
+            position: relative;
+            transition: 0.3s;
+
+            span {
+                content: '';
+                width: 250px;
+                height: 250px;
+                background-color: $neutral-light;
+                display: flex;
+                opacity: 0.75;
+                transition: 0.3s;
+            }
+            p {
+                position: absolute;
+                color: $dark-blue;
+                bottom: 33px;
+                left: 22px;
+                font-size: 20px;
+                font-weight: 500;
+            }
+            svg {
+                position: absolute;
+                color: $dark-blue;
+                bottom: 13px;
+                right: 22px;
+                width: 46px;
+                opacity: 0;
+                transition: 0.2s;
+            }
+            
+            &:hover span {
+                opacity: 0.95;
+                box-shadow: 1px 3px 12px 0px $accentuation;
+            }
+            &:hover svg {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+
+// TABLET
+@media (min-width: 768px) {
+    #sectionProjects {
+        padding-inline: 13vw;
+        padding-block: 7vw 7vw;
+        
+        &__title {
+            margin-bottom: 0;
+        }
+
+        &__content {
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        &__background {
+            width: 28%;
+    
+            #flower, #leaves {
+                width: 150px;
+            }
+            #rod {
+                content: '';
+                width: 5px;
+                height: 82%;
+                top: 159px;
+            }
+            #leaves {
+                bottom: 86px;
+            }
+        }
+    
+        &__listProjects {
+            margin-block: 70px 80px;
+            // margin-left: 30px;
+        }
+    }
+
+}
+
+
+
+// PC
+@media (min-width: 1024px) {
+    #sectionProjects {
+        padding-inline: 7vw;
+        
+        &__title {
+            font-size: 32px;
+            letter-spacing: 1px;
+        }
+
+        &__background {
+            width: 35%;
+    
+            #flower, #leaves {
+                width: 170px;
+            }
+            #rod {
+                height: 71%;
+            }
+        }
+    
+        &__listProjects {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 44px;
+        }
+    }
+}
+
+
+
+@media (min-width: 1440px) {
+    #sectionProjects {        
+        &__title {
+            font-size: 36px;
+        }
+
+        &__background {
+            width: 35%;
+    
+            #flower, #leaves {
+                width: 190px;
+            }
+            #rod {
+                top: 241px;
+                height: 68%;
+                width: 6px;
+            }
+            #leaves {
+                bottom: 124px;
+            }
+        }
+    
+        &__listProjects {
+            gap: 50px;
+    
+            a {
+                span {
+                    width: 350px;
+                    height: 350px;
+                }
+                p {
+                    bottom: 40px;
+                    left: 34px;
+                    font-size: 22px;
+                    // font-weight: 600;
+                }
+                svg {
+                    bottom: 18px;
+                    right: 26px;
+                }
+                
+            }
+            
+        }
+    }
+
+}

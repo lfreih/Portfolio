@@ -1,0 +1,633 @@
+// WEBTV = PROJECT1
+#sectionProject1 {
+    position: relative;
+    padding-inline: $padding-content-sm;
+    margin-bottom: 82px;
+
+    > p {
+        margin-block: 20px;
+    }
+
+    &__btnGoBack {
+        position: absolute;
+        top: -22px;
+        right: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        color: $dark-blue;
+    
+        img {
+            width: 40px;
+            height: 40px;
+        }
+        p {
+            font-size: 13px;
+        }
+    }
+
+    &__title {
+        font-family: $title-font;
+        text-align: center;
+        margin-block: 40px 30px;
+    }
+
+    &__logo, &__synthe {
+        width: 100%;
+    }
+
+    // &__links {
+    //     margin: 20px auto 0;
+
+    //     a {
+    //         padding: 0 20px;
+    //         margin: 0 auto;
+    //         display: flex;
+    //         justify-content: center;
+    //         align-items: center;
+    //         text-decoration: none;
+    //         color: $dark-blue;
+    
+    //         svg {
+    //             color: $dark-blue;
+    //             width: 34px;
+    //             position: relative;
+    //             left: 3px;
+    //             transition: 0.3s;
+    //         }
+                
+    //         &:hover svg {
+    //             left: 10px;
+    //         }
+    //     }
+    // }
+    &__lastText {
+        padding-bottom: 50px;
+    }
+}
+
+
+
+
+
+
+
+
+
+// PIGATHLON = PROJECT2
+#sectionProject2 {
+    position: relative;
+    margin-bottom: 92px;
+
+    &__btnGoBack {
+        position: absolute;
+        top: -22px;
+        right: -6px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        color: $dark-blue;
+    
+        img {
+            width: 40px;
+            height: 40px;
+        }
+        p {
+            font-size: 13px;
+        }
+    }
+    
+    &__title {
+        font-family: $title-font;
+        text-align: center;
+        margin-block: 40px 30px;
+    }
+
+    > p {
+        padding-inline: $padding-content-sm;
+    }
+
+    // &__firstImage {
+    //     width: 140px;
+    //     display: flex;
+    //     margin: 0 auto;
+    //     position: relative;
+    //     top: 34px;
+    //     margin-bottom: 60px;
+    // }
+    &__imagesGroup {
+        position: relative;
+        width: 100%;
+        height: 346px;
+        margin: 0 auto 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+
+        #imgage1, #imgage2, #imgage3 {
+            width: 170px;
+            // filter: grayscale(94%);
+            transition: 0.2s;
+        }
+        // #imgage1:hover, #imgage2:hover, #imgage3:hover {
+            // filter: grayscale(0%);
+        // }
+        #imgage1 {
+            position: relative;
+            z-index: 8;
+            left: 10px;
+        }
+        #imgage2 {
+            position: absolute;
+            top: 60px;
+            left: -20px;
+            z-index: 6;
+            transform: rotate(-20deg);
+        }
+        #imgage3 {
+            position: absolute;
+            top: 84px;
+            right: -50px;
+            z-index: 10;
+            transform: rotate(20deg);
+        }
+    }
+
+    // &__firstText {
+
+    // }
+    // &__secondText {
+        
+    // }
+}
+
+
+
+
+// GROWEAT = PROJECT3
+#sectionProject3 {
+    position: relative;
+    padding-inline: $padding-content-sm;
+    margin-bottom: 82px;
+
+    &__btnGoBack {
+        position: absolute;
+        top: -22px;
+        right: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        color: $dark-blue;
+    
+        img {
+            width: 40px;
+            height: 40px;
+        }
+        p {
+            font-size: 13px;
+        }
+    }
+
+    &__title {
+        font-family: $title-font;
+        text-align: center;
+        margin-block: 40px 30px;
+    }
+
+    &__logo, &__login, &__map {
+        width: 100%;
+    }
+    &__login {
+        margin-block: 30px;
+    }
+    &__map {
+        margin-top: 30px;
+    }
+
+    &__links {
+        margin: 20px auto 0;
+
+        a {
+            padding: 0 20px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: $dark-blue;
+    
+            svg {
+                color: $dark-blue;
+                width: 34px;
+                position: relative;
+                left: 3px;
+                transition: 0.3s;
+                // box-shadow: 1px 3px 12px 0px $accentuation;
+            }
+                
+            &:hover svg {
+                left: 10px;
+            }
+        }
+    }
+}
+
+
+
+
+// MEGAZONE D'AUXERRE = PROJECT4
+#sectionProject4 {
+    position: relative;
+    padding-inline: $padding-content-sm;
+    margin-bottom: 82px;
+
+    > p {
+        margin-block: 20px;
+    }
+
+    &__btnGoBack {
+        position: absolute;
+        top: -22px;
+        right: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        color: $dark-blue;
+    
+        img {
+            width: 40px;
+            height: 40px;
+        }
+        p {
+            font-size: 13px;
+        }
+    }
+
+    &__title {
+        font-family: $title-font;
+        text-align: center;
+        margin-block: 40px 30px;
+    }
+
+    &__logo {
+        width: 220px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto 30px;
+        position: relative;
+
+        span {
+            content: '';
+            display: flex;
+            margin: 0 auto;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+        }
+
+        img {
+            width: 200px;
+            position: absolute;
+            margin: 0 auto;
+        }
+    }
+
+    &__contactform {
+        width: 100%;
+        margin-block: 10px;
+    }
+
+    &__links {
+        margin: 20px auto 0;
+
+        a {
+            padding: 0 20px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: $dark-blue;
+    
+            svg {
+                color: $dark-blue;
+                width: 34px;
+                position: relative;
+                left: 3px;
+                transition: 0.3s;
+                // box-shadow: 1px 3px 12px 0px $accentuation;
+            }
+                
+            &:hover svg {
+                left: 10px;
+            }
+        }
+    }
+}
+
+
+
+
+// TABLET
+@media (min-width: 768px) {
+
+    // WEBTV = PROJECT1
+    #sectionProject1 {
+
+        &__logo, &__synthe {
+            max-width: 320px;
+            margin: 20px auto;
+            display: flex;
+        }
+
+        &__links {
+            margin: 20px auto 0;
+
+            a {
+                padding: 0 20px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                color: $dark-blue;
+        
+                svg {
+                    color: $dark-blue;
+                    width: 34px;
+                    position: relative;
+                    left: 3px;
+                    transition: 0.3s;
+                    // box-shadow: 1px 3px 12px 0px $accentuation;
+                }
+                    
+                &:hover svg {
+                    left: 10px;
+                }
+            }
+        }
+    }
+
+
+    // PIGATHLON = PROJECT2
+    #sectionProject2 {
+
+        &__btnGoBack {
+            top: -22px;
+            right: 20px;
+        }
+        
+        &__imagesGroup {
+            height: 430px;
+
+            #imgage1, #imgage2, #imgage3 {
+                width: 200px;
+            }
+            #imgage2 {
+                top: 80px;
+                left: 140px;
+                transform: rotate(-17deg);
+            }
+            #imgage3 {
+                top: 105px;
+                right: 127px;
+                transform: rotate(17deg);
+            }
+        }
+    }
+}
+
+
+
+
+// PC
+@media (min-width: 1024px) {
+    // WEBTV = PROJECT1
+    #sectionProject1 {
+
+        &__title {
+            font-size: 32px;
+            letter-spacing: 1px;
+        }
+    }
+
+
+
+    // PIGATHLON = PROJECT2
+    #sectionProject2 {
+        &__title {
+            font-size: 32px;
+            letter-spacing: 1px;
+        }
+
+        &__imagesGroup {
+            height: 430px;
+
+            #imgage1, #imgage2, #imgage3 {
+                width: 200px;
+            }
+            #imgage2 {
+                top: 80px;
+                left: 240px;
+                // transform: rotate(-17deg);
+            }
+            #imgage3 {
+                top: 105px;
+                right: 221px;
+                // transform: rotate(17deg);
+            }
+        }
+    }
+
+
+
+    // GROWEAT = PROJECT3
+    #sectionProject3 {
+        &__title {
+            font-size: 32px;
+            letter-spacing: 1px;
+        }
+
+        &__logo, &__login, &__map {
+            max-width: 80%;
+            display: flex;
+            margin: 0 auto;
+        }
+        &__login {
+            margin-block: 30px;
+        }
+        &__map {
+            margin-top: 30px;
+        }
+    }
+
+
+
+    // MEGAZONE D'AUXERRE = PROJECT4
+    #sectionProject4 {
+        > p {
+            margin-block: 30px;
+        }
+
+        &__title {
+            font-size: 32px;
+            letter-spacing: 1px;
+        }
+
+        &__logo {
+            width: 360px;
+            height: 100px;
+
+            img {
+                width: 300px;
+            }
+        }
+
+        &__contactform {
+            max-width: 80%;
+            display: flex;
+            margin: 0 auto;
+        }
+    }
+
+}
+
+
+@media (min-width: 1440px) {
+    // WEBTV = PROJECT1
+    #sectionProject1 {
+        &__title {
+            font-size: 36px;
+        }
+
+        &__btnGoBack {
+            top: -14px;
+            right: 34px;
+        
+            img {
+                width: 62px;
+                height: auto;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+
+        &__synthe {
+            max-width: 40%;
+        }
+    }
+
+
+
+
+    // PIGATHLON = PROJECT2
+    #sectionProject2 {
+        &__title {
+            font-size: 36px;
+        }
+
+        &__imagesGroup {
+            height: 530px;
+            margin-bottom: 60px;
+
+            #imgage1, #imgage2, #imgage3 {
+                width: 280px;
+            }
+            #imgage2 {
+                top: 80px;
+                left: 348px;
+                transform: rotate(-13deg);
+            }
+            #imgage3 {
+                top: 105px;
+                right: 334px;
+                transform: rotate(13deg);
+            }
+        }
+
+        &__btnGoBack {
+            top: -14px;
+            right: 34px;
+        
+            img {
+                width: 62px;
+                height: auto;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+
+
+    // GROWEAT = PROJECT3
+    #sectionProject3 {
+        &__title {
+            font-size: 36px;
+        }
+
+        &__btnGoBack {
+            top: -14px;
+            right: 34px;
+        
+            img {
+                width: 62px;
+                height: auto;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+
+        &__logo, &__login, &__map {
+            max-width: 70%;
+            display: flex;
+            margin: 0 auto;
+        }
+        &__login {
+            margin-block: 50px;
+        }
+        &__map {
+            margin-top: 30px;
+        }
+    }
+
+
+
+    // MEGAZONE D'AUXERRE = PROJECT4
+    #sectionProject4 {
+        > p {
+            margin-block: 50px;
+        }
+        
+        &__title {
+            font-size: 36px;
+        }
+
+        &__contactform {
+            max-width: 70%;
+        }
+
+        &__btnGoBack {
+            top: -14px;
+            right: 34px;
+        
+            img {
+                width: 62px;
+                height: auto;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}

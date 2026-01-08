@@ -3,51 +3,201 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucie Freihaut - Site de dépôts</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Polices -->
+    <title>Lucie Freihaut - Développeuse fullstack Junior</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Jersey+10&family=Jersey+15&family=Silkscreen&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">    <meta name="description" content="Site de dépôt de Lucie Freihaut, développeuse full stack junior en Bachelor Universitaire de Technologie en Métiers du Multimédia et des l'Internet à l'IUT de Troyes">
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="images/favicon.svg" />
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/css">
+        /* On définit la police globale pour éviter de répéter la classe partout */
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        }
+        .font-unbounded { font-family: 'Unbounded', sans-serif; }
+    </style>
 </head>
 
-<body>
-<header>
-    <div id="entete">
-        <a href="#">
-            <img id="img-logo" src="images/favicon.svg" alt="logo">
-            <p>Lucie Freihaut</p>
-        </a>
-    </div>
+<body class="bg-white text-black">
 
-    <!-- navigation -->
-    <nav role="navigation" class="menu">
-        <ul>
-            <li><a href="#">A propos</a></li>
-            <li><a href="#">Mes projets</a></li>
-            <li><a href="#">CV</a></li>
-            <li><a href="#">IN</a></li>
-            <li><a href="#">GITHUB</a></li>
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-24 py-3 bg-[#98ABEE]/80 backdrop-blur-md font-unbounded">
+    <a href="#" class="flex items-center gap-3">
+        <img src="images/favicon.svg" alt="logo" class="w-8">
+        <span class="font-bold tracking-tight">Lucie Freihaut</span>
+    </a>
+
+    <nav>
+        <ul class="hidden md:flex gap-8 text-[14px] uppercase tracking-wider font-medium">
+            <li><a href="#" class="relative group py-1">
+                CV
+                <span class="absolute left-0 bottom-0 w-0 h-0.75 bg-[#1D24CA] transition-all duration-300 group-hover:w-full"></span>
+            </a></li>
+            <li><a href="https://www.linkedin.com/in/lucie-freihaut" class="relative group py-1">
+                LINKEDIN
+                <span class="absolute left-0 bottom-0 w-0 h-0.75 bg-[#1D24CA] transition-all duration-300 group-hover:w-full"></span>
+            </a></li>
+            <li><a href="https://github.com/lfreih" class="relative group py-1">
+                GitHub
+                <span class="absolute left-0 bottom-0 w-0 h-0.75 bg-[#1D24CA] transition-all duration-300 group-hover:w-full"></span>
+            </a></li>
         </ul>
     </nav>
 </header>
 
-<main role="main">
-    <div class="hero">
-        <div class="text-hero">
-            <h1>Lucie Freihaut</h1>
-            <span></span>
-            <h2>Développeuse Full Stack Junior</h2>
-            <p>BUT Métiers du Multimédia et de l'Internet à l'IUT de Troyes</p>
+<main class="pt-24 flex flex-col justify-center items-center">
+    <section class="min-h-[85vh] flex items-center">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col-reverse md:flex-row items-center justify-between gap-12">
+            
+            <div class="flex flex-col text-center md:text-left">
+                <!-- <div class="relative inline-block self-center md:self-start">
+                    <h1 class="font-unbounded text-4xl md:text-6xl font-bold relative z-10 leading-tight">
+                        Lucie Freihaut
+                    </h1>
+                    <span class="absolute bottom-2 left-0 w-full h-4 md:h-6 bg-[#98ABEE]/60 -z-10"></span>
+                </div> 
+                
+                <h2 class="font-unbounded text-xl md:text-3xl font-medium mt-6 text-gray-800">
+                    Développeuse fullstack Junior
+                </h2> -->
+                
+                <h1 class="font-unbounded text-4xl md:text-6xl font-bold relative z-10 leading-tight">
+                    Lucie Freihaut
+                </h1>
+                <div class="relative inline-block self-center md:self-start">
+                    <h2 class="font-unbounded text-xl md:text-3xl font-medium mt-4 text-gray-800">
+                        Développeuse fullstack Junior
+                    </h2>
+                    <span class="absolute bottom-0 left-0 w-full h-4 md:h-6 bg-[#ED7464]/60 -z-10"></span>
+                </div>
+                
+                <div class="relative gap-4 text-gray-700 mt-4 ">
+                    <p class="flex-1 max-w-md leading-relaxed">
+                        <strong>Apprentie</strong> chez Piscines Magiline à Troyes.
+                    </p>
+                    <p class="flex-1 max-w-md leading-relaxed">
+                        Étudiante en <strong>BUT Métiers du Multimédia et de l'Internet</strong> à l'IUT de Troyes. 
+                    </p>
+                    <!-- <span class="h-10 w-[2px] bg-[#1D24CA] rounded-full shadow-[0_0_10px_rgba(29,36,202,0.3)]"></span> -->
+                    
+                </div>
+    
+                <div class="font-unbounded mt-10 flex gap-4 justify-center">
+                    <a href="#projects" class="bg-[#1D24CA] text-white px-8 py-3 rounded-full hover:bg-blue-800 transition-colors">
+                        Voir mes projets
+                    </a>
+                    <a href="#" class="border-2 border-[#1D24CA] text-[#1D24CA] px-8 py-3 rounded-full hover:bg-gray-50 transition-colors">
+                        Mon CV
+                    </a>
+                </div>
+            </div>
+    
+            <!-- <div class="relative">
+                <div class="absolute -top-4 -right-4 w-full h-full border-2 border-[#98ABEE] rounded-2xl -z-10"></div>
+                <img src="images/photo_lucie.jpg" alt="Lucie Freihaut" 
+                     class="w-64 h-64 md:w-80 md:h-80 object-cover object-[50%_20%] rounded-2xl shadow-xl">
+            </div> -->
         </div>
-        <img src="images/photo_lucie.jpg" alt="Photo de Lucie Freihaut">
-    </div>
+    </section>
+    
+    <section class="mb-24">
+        <div class="flex flex-col text-center md:text-left mb-12">
+            <div class="relative inline-block self-center">
+                <h2 class="font-unbounded text-2xl md:text-6xl font-bold relative z-10 leading-tight">
+                    A propos
+                </h2>
+                <span class="absolute bottom-0 left-0 w-full h-4 md:h-6 bg-[#ED7464]/60 -z-10"></span>
+            </div>
+        </div>
 
+        <div class="flex gap-20">
+            <div class="relative">
+                <div class="absolute -top-4 -right-4 w-full h-full border-2 border-[#98ABEE] rounded-2xl -z-10"></div>
+                <img src="images/photo_lucie.jpg" alt="Lucie Freihaut" 
+                    class="w-64 h-64 md:w-80 md:h-80 object-cover object-[50%_20%] rounded-2xl shadow-xl">
+            </div>
+
+            
+            <div class="">
+                Côté associatif : NC3 2025 et 2026, BDE IUT de Troyes en 2025
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="">
+        <div class="flex flex-col text-center md:text-left mb-12">
+            <div class="relative inline-block self-center">
+                <h2 id="projects" class="font-unbounded text-2xl md:text-6xl font-bold relative z-10 leading-tight">
+                    Mes projets
+                </h2>
+                <span class="absolute bottom-0 left-0 w-full h-4 md:h-6 bg-[#ED7464]/60 -z-10"></span>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-3 gap-4">
+            <div class="">
+                Megazone d'Auxerre
+            </div>
+            <div class="">
+                Site météo
+            </div>
+            <div class="">
+                Sae501 : Jeu arcade
+            </div>
+            <div class="">
+                Design concours pull du BDE
+            </div>
+            <div class="">
+                Jeu VR : shooter
+            </div>
+            <div class="">
+                SAE402 : BD numérique (à remettre en ligne)
+            </div>
+        </div>
+
+        <!-- Card -->
+        <div class="group relative w-full max-w-sm overflow-hidden rounded-3xl bg-gray-100 p-1 transition-all hover:bg-gradient-to-br hover:from-[#98ABEE] hover:to-[#1D24CA]">
+            <div class="rounded-[calc(1.5rem-1px)] bg-white p-6">
+                <span class="mb-4 inline-block rounded-full bg-[#98ABEE]/20 px-3 py-1 text-xs font-semibold text-[#1D24CA]">
+                    Full Stack - PHP
+                </span>
+                
+                <h3 class="mb-2 text-xl font-bold">Nom du Projet</h3>
+                <p class="mb-6 text-sm text-gray-600">Une brève description de ce que tu as appris ou réalisé techniquement.</p>
+                
+                <div class="overflow-hidden rounded-xl bg-gray-200">
+                    <img src="" class="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                </div>
+                
+                <div class="mt-6 flex justify-between items-center">
+                    <a href="#" class="font-bold text-[#1D24CA] hover:underline">Voir le site →</a>
+                    <div class="flex gap-2">
+                        <span class="w-2 h-2 rounded-full bg-green-500"></span>
+                        <span class="text-xs text-gray-400">En ligne</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
 </main>
-<footer>
-    <img src="images/footer.jpg" alt="canard">
-    <p>&copy; 2024 Lucie Freihaut</p>
+
+<footer class="font-unbounded pb-6 mt-6 flex flex-col items-center justify-center gap-3">
+    <div class="h-px w-20 bg-gray-200 mb-4"></div>
+    <div class="flex items-center gap-4">
+        <!-- <img src="images/footer.jpg" alt="canard" class="rounded-full w-10 h-10 object-cover"> -->
+        <p class="text-sm">
+            <span class="text-[#1D24CA] ">
+                <!-- &copy;  -->
+                Dev by Lucie Freihaut in Jan. 2026. </span>
+            <span class="text-gray-500">Tous droits réservés.</span>
+        </p>
+    </div>
 </footer>
-</body></html>
+
+</body>
+</html>

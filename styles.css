@@ -1,7 +1,11 @@
+/* html {
+    scrollbar-color: blue white;
+} */
+
 body { 
-    font-family: 'Segoe UI', sans-serif; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
-.font-unbounded { 
+.font { 
     font-family: 'Unbounded', sans-serif; 
 }
 

@@ -52,8 +52,8 @@
                     Front 
                     <span class="mx-2 text-[#1D24CA]">•</span>
                     Back 
-                    <span class="mx-2 text-[#1D24CA]">•</span>
-                    API
+                    <!-- <span class="mx-2 text-[#1D24CA]">•</span>
+                    API -->
                 </span>
                 
                 <h1 class="font text-5xl md:text-8xl font-bold leading-[1.1] mb-4 tracking-tighter text-gray-900">
@@ -90,117 +90,129 @@
             </h2>
 
             <div class="flex flex-col md:flex-row items-center gap-24">
+                <!-- Image + RS -->
                 <div class="shrink-0">
-                    <div class="relative mb-8">
+                    <div class="relative mb-8 mt-10">
                         <div class="absolute -top-5 -left-6 w-full h-full bg-[#ED7464]/60 rounded-2xl z-10"></div>
                         <div class="absolute -top-9 -right-9 w-full h-full border-2 border-[#98ABEE] rounded-2xl -z-10"></div>
+
                         <img src="images/photo_lucie.jpg" alt="Lucie Freihaut" 
                             class="relative w-64 h-64 md:w-80 md:h-80 object-cover object-[50%_20%] rounded-2xl shadow-xl z-20">
                     </div>
+
                     <div class="flex justify-center items-center gap-10">
-                        <a href="" alt="CV"
-                            class="p-3 bg-gray-300 rounded-full">
-                            <p class="font font-medium">CV</p>
+                        <a href="pdf/CV_Lucie_Freihaut.pdf" title="Mon CV en pdf"
+                            class="p-3 bg-[#1D24CA]/90 text-white rounded-full hover:scale-110 transition-all duration-200">
+                            <p class="font"> CV</p>
                         </a>
-                        <a href="" alt="Linkedin"
-                            class="p-3 bg-gray-300 rounded-full">
+
+                        <a href="https://linkedin.com/in/lucie-freihaut" title="Mon compte Linkedin"
+                            class="p-3 bg-[#1D24CA]/90 text-white rounded-full hover:scale-110 transition-all duration-200">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
                         </a>
-                        <a href="" alt="GitHub"
-                            class="p-3 bg-gray-300 rounded-full">
+
+                        <a href="https://github.com/lfreih" title="Mon compte GitHub"
+                            class="p-3 bg-[#1D24CA]/90 text-white rounded-full hover:scale-110 transition-all duration-200">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
                         </a>
                     </div>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="bg-gray-100 p-6 flex gap-4">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1D24CA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
-
-                        <p>Étudiante en 3e année de BUT MMI à l'IUT de Troyes (Aube)</p>
+                    <!-- Study -->
+                    <div class="p-4 flex gap-4">
+                        <div>
+                            <div class="flex justify-center items-center text-[#1D24CA] rounded-xl p-2">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Étudiante en 3e année de 
+                                <a href="https://www.univ-reims.fr/iut-troyes/formations/b.u.t./metiers-du-multimedia-et-de-l-internet/b.u.t.-mmi,27547,45068.html" class="relative group font-bold uppercase hover:text-[#1D24CA] transition-all duration-200" title="Site internet de la formation" target="_blank">
+                                    BUT MMI
+                                </a>
+                                à l'IUT de Troyes (Aube)
+                            </p>
+                        </div>
                     </div>
 
-                    <div class="bg-gray-100 p-6 flex gap-4">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1D24CA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 12h4"/><path d="M10 8h4"/><path d="M14 21v-3a2 2 0 0 0-4 0v3"/><path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2"/><path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"/></svg>
-                        <!-- <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M12 6h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M16 6h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/><path d="M8 6h.01"/><path d="M9 22v-3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3"/><rect x="4" y="2" width="16" height="20" rx="2"/></svg> -->
-
-                        <p>Aprpentie développeuse web chez Piscines Magiline, Troyes</p>
+                    <!-- Work -->
+                    <div class="p-4 flex gap-4">
+                        <div>
+                            <div class=" flex justify-center items-center rounded-xl p-2">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1D24CA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12h.01"/><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M22 13a18.15 18.15 0 0 1-20 0"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
+                            </div>
+                        </div>
+                        <p>Apprentie développeuse web chez 
+                            <a href="https://www.piscines-magiline.fr/" class="font-bold hover:text-[#1D24CA] transition-all duration-200" title="Site internet" target="_blank">
+                                Piscines Magiline
+                            </a>
+                            , à Troyes
+                        </p>
                     </div>
 
-                    <div class="bg-gray-100 p-6 flex gap-4">
-                        <!-- <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 21a8 8 0 0 0-16 0"/><circle cx="10" cy="8" r="5"/><path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"/></svg> -->
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1D24CA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/><path d="m21 3 1 11h-2"/><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/><path d="M3 4h8"/></svg>
+                    <!-- Asso -->
+                    <div class="px-6 py-4 flex gap-4">
+                        <!-- <div >
+                            <div class="flex justify-center items-center rounded-xl p-2">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1D24CA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/><path d="m21 3 1 11h-2"/><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/><path d="M3 4h8"/></svg>
+
+                            </div>
+                        </div> -->
 
                         <div class="space-y-2">
                             <p>Engagée dans des projets associatifs : </p>
-                            <ul class="list-none space-y-2">
-                                <li class="relative pl-6 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:rounded-full before:bg-[#1D24CA]">
-                                    <p>BDE MMI en 2024-2025</p>
-                                    <small class="text-gray-600">Responsable prévention</small>
+                            <ul class="list-none space-y-3">
+                                <li class="relative group leading-5 pl-5 before:absolute before:left-0.5 before:top-2.5 before:h-2 before:w-2 before:rounded-full before:bg-[#1D24CA]/90">
+                                    <a href="https://www.instagram.com/bde.mmi.troyes" title="Compte instagram du BDE" target="_blank">
+                                        <p><span class="font-bold group-hover:text-[#1D24CA] transition-all duration-200">BDE MMI</span> en 2025</p>
+                                        <small class="text-gray-600">Responsable prévention</small>
+                                    </a>
                                 </li>
-                                <li class="relative pl-6 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:rounded-full before:bg-[#1D24CA]">
-                                    <p>Nuit campus 3, édition 2024 et 2025</p>
-                                    <small class="text-gray-600">Responsable stands asso, VIP et décoration</small>
+                                <li class="relative group leading-5 pl-5 before:absolute before:left-0.5 before:top-2.5 before:h-2 before:w-2 before:rounded-full before:bg-[#1D24CA]/90">
+                                    <a href="https://nc3.campus3.fr/" title="Site web de Nuit Campus 3" target="_blank">
+                                        <p><span class="font-bold group-hover:text-[#1D24CA] transition-all duration-200">Nuit Campus 3</span>, édition 2024 et 2025</p>
+                                        <small class="text-gray-600 leading-4">Responsable stands asso, VIP et décoration</small>
+                                    </a>
                                 </li>
-                                <li class="relative pl-6 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:rounded-full before:bg-[#1D24CA]">
-                                    <p>Festival MMI 2026</p>
-                                    <small class="text-gray-600">Pôle graphisme et web</small>
+                                <li class="relative leading-5 pl-5 before:absolute before:left-0.5 before:top-2.5 before:h-2 before:w-2 before:rounded-full before:bg-[#1D24CA]/90">
+                                    <p><span class="font-bold ">Festival MMI 2026</span></p>
+                                    <small class="text-gray-600">Pôle web et graphisme</small>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="bg-gray-100 p-6 flex gap-4">
 
-                        <p>Curieuse et dynamique</p>
+                    <div class="bg-[#1D24CA]/5 p-6 m-4 flex text-center items-center gap-4 rounded-3xl">
+                        <p>Curieuse et dynamique, j'aime 
+                            <span class="font-medium text-black font">explorer</span>, 
+                            <span class="font-medium text-black font">apprendre</span> et  
+                            <span class="font-medium text-black font">tester</span>
+                            afin de créer des solutions 
+                            <span class="font-medium text-black underline underline-offset-4 decoration-[#ED7464]/80 decoration-2">utiles et bien pensées</span>.
+                        </p>
                     </div>
-                    <div class="md:col-span-2">
-                        <!-- <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H7a2 2 0 0 0-2 2v5a2 2 0 0 1-2 2 2 2 0 0 1 2 2v5c0 1.1.9 2 2 2h1"/><path d="M16 21h1a2 2 0 0 0 2-2v-5c0-1.1.9-2 2-2a2 2 0 0 1-2-2V5a2 2 0 0 0-2-2h-1"/></svg> -->
 
-                        <div class="flex flex-wrap gap-3">
-                            <span class="px-4 py-2 bg-gray-100 border border-gray-100 rounded-xl text-xs font-bold font-unbounded text-gray-600 uppercase">PHP / Symfony</span>
-                            <span class="px-4 py-2 bg-gray-100 border border-gray-100 rounded-xl text-xs font-bold font-unbounded text-gray-600 uppercase">JavaScript</span>
-                            <span class="px-4 py-2 bg-gray-100 border border-gray-100 rounded-xl text-xs font-bold font-unbounded text-gray-600 uppercase">Unity 3D</span>
-                            <span class="px-4 py-2 bg-gray-100 border border-gray-100 rounded-xl text-xs font-bold font-unbounded text-gray-600 uppercase">Tailwind CSS</span>
+                    <div class="md:col-span-2 mt-6">
+                        <!-- <p class="text-[10px] font-bold text-gray-600 uppercase font mb-4">Stack Technique</p> -->
+
+                        <div class="flex flex-wrap justify-center gap-4 uppercase mb-4">
+                            <span class="px-3 py-1 bg-[#98ABEE]/20 border border-gray-100 rounded-lg text-xs font-bold font text-[#1D24CA]">Laravel</span>
+                            <span class="px-3 py-1 bg-[#ED7464]/10 border border-gray-100 rounded-lg text-xs font-bold font text-[#ED7464]">Nuxt</span>
+                            <span class="px-3 py-1 bg-[#ED7464]/10 border border-gray-100 rounded-lg text-xs font-bold font text-[#ED7464]">Tailwind</span>
+                            <span class="px-3 py-1 bg-gray-100 border border-gray-100 rounded-lg text-xs font-bold font text-gray-900">Symfony</span>
+                            <span class="px-3 py-1 bg-gray-100 border border-gray-100 rounded-lg text-xs font-bold font text-gray-900">Vue.js</span>
+                            <span class="px-3 py-1 bg-gray-100 border border-gray-100 rounded-lg text-xs font-bold font text-gray-900">Unity</span>
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-20">
-                <div class="relative group h-[340px] md:h-auto overflow-hidden rounded-3xl">
-                    <div class="absolute inset-0 bg-[#ED7464]/20 z-10 group-hover:opacity-0 transition-opacity duration-500"></div>
-                    <img src="images/photo_lucie.jpg" alt="Lucie Freihaut" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
-                </div>
-
-                <div class="md:col-span-2 bg-gray-50 rounded-3xl p-8 flex flex-col justify-center border border-gray-100">
-                    <p class="text-xl text-gray-800 leading-relaxed font-medium mb-4 italic">
-                        "Je ne me contente pas de coder des lignes, je construis des solutions."
-                    </p>
-                    <p class="text-gray-600 leading-relaxed">
-                        Mon parcours en <span class="text-black font-semibold uppercase text-xs">BUT MMI</span> m'a appris à voir un projet dans sa globalité. 
-                        Alternante chez <span class="text-[#1D24CA] font-bold">Piscines Magiline</span>, j'aime transformer des besoins complexes en interfaces fluides.
-                    </p>
-                </div>
-
-                <div class="bg-white border border-gray-200 rounded-3xl p-8 flex flex-col justify-between">
-                    <span class="text-[10px] font-bold text-gray-400 uppercase font mb-4">Stack Technique</span>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-gray-50 rounded-lg text-xs font-bold font">PHP</span>
-                        <span class="px-3 py-1 bg-[#98ABEE]/20 rounded-lg text-[#1D24CA] text-xs font-bold font">SYMFONY</span>
-                        <span class="px-3 py-1 bg-gray-50 rounded-lg text-xs font-bold font">UNITY</span>
-                        <span class="px-3 py-1 bg-[#ED7464]/10 rounded-lg text-[#ED7464] text-xs font-bold font">TAILWIND</span>
-                    </div>
-                </div>
-
-                <div class="md:col-span-2 bg-[#1D24CA] rounded-3xl p-8 text-white flex items-center justify-between overflow-hidden">
-                    <div class="max-w-md">
-                        <h3 class="font font-bold text-xl mb-2 italic">Exploration Multimédia</h3>
-                        <p class="text-sm opacity-70">Passionnée par la Réalité Virtuelle, la photographie et tout ce qui permet de raconter une histoire par le numérique.</p>
-                    </div>
-                    <span class="text-6xl opacity-20">🎮</span>
+                    <!-- <small class="text-gray-400 italic">*Métiers du Multimédia et de l'Internet</small> -->
                 </div>
             </div>
         </section>
+
+        <!-- Projects -->
+
 
     </main>
 

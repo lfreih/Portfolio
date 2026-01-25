@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr" class="scroll-smooth">
-<head>
+<!-- <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucie Freihaut | Développeuse web</title>
@@ -11,9 +11,12 @@
     <link rel="icon" type="image/x-icon" href="images/code-xml.png">
 
     <link rel="stylesheet" href="styles.css">
-</head>
+</head> -->
+<?php $title="Lucie Freihaut | Développeuse web"; include 'head.php'; ?>
+
+
 <body class="">
-    <?php include 'header.php'; ?>
+    <?php $base_path = ""; include 'header.php'; ?>
 
     <!-- <main class="mt-[20px]"> -->
     <main>
@@ -205,7 +208,7 @@
                     </span> -->
 
                     <div class="w-full h-full">
-                        <img src="images/projets/mix-mess_menu.png" 
+                        <img src="images/projets/mix_mess_inc/menu.png" 
                             class="grayscale-50 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 group-hover:grayscale-25" alt="Projet Mix Mess Inc.">
                     </div>
                     
@@ -249,7 +252,7 @@
                             <!-- <svg class="w-6 h-6 opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg> -->
                         </div>
 
-                        <h3 class="text-3xl font-bold mt-2 mb-4 font uppercase italic">Shooter VR</h3>
+                        <h3 class="text-3xl font-bold mt-2 mb-4 font italic">SheepSheep</h3>
 
                         <p class="mt-4 opacity-80 max-w-sm">Création d'un jeu de tir en réalité virtuelle sous Unity pour Oculus Quest 2.</p>
                     </div>

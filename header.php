@@ -1,6 +1,14 @@
+<?php
+    if ($_SERVER['HTTP_HOST'] == 'mmi23a08.mmi-troyes.fr') {
+        $root = "/portfolio/";
+    } else {
+        $root = "/portfolio/";
+    }
+?>
+
 <header class="fixed top-0 w-full z-50 flex justify-between items-center px-6 lg:px-24 py-3 bg-[#98ABEE]/20 backdrop-blur-md ">
-    <a href="/" class="flex items-center gap-3">
-        <img src="images/code-xml.svg" alt="logo" class="w-8">
+    <a href="<?php echo $root; ?>" class="flex items-center gap-3">
+        <img src="<?php echo $root; ?>images/code-xml.svg" alt="logo" class="w-8">
         <span class="font font-semibold tracking-tight">Lucie Freihaut</span>
     </a>
 

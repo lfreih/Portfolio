@@ -28,11 +28,11 @@
     
             <div class="relative z-10 max-w-5xl">
                 <span class="font flex justify-center text-xs uppercase tracking-[0.4em] text-gray-400 mb-10">
-                    Illustration 
-                    <span class="mx-2 text-[#1D24CA]">•</span>
                     Front 
                     <span class="mx-2 text-[#1D24CA]">•</span>
-                    Back 
+                     Back
+                    <span class="mx-2 text-[#1D24CA]">•</span>
+                     Design
                     <!-- <span class="mx-2 text-[#1D24CA]">•</span>
                     API -->
                 </span>
@@ -45,7 +45,7 @@
                 </h2>
 
                 <p class="text-lg md:text-xl text-gray-800 max-w-2xl mx-auto mb-12 text-center">
-                    <span class="relative text-black font-bold">L'expérience utilisateur</span>, au coeur des réflexions que je mène pour 
+                    <span class="relative text-black font-bold">L'expérience utilisateur</span>, au centre des réflexions que je mène pour 
                     <span class="font-medium text-black underline underline-offset-4 decoration-[#ED7464]/80 decoration-2">concevoir</span> 
                     et 
                     <span class="font-medium text-black underline underline-offset-4 decoration-[#ED7464]/80 decoration-2">créer</span> 
@@ -67,7 +67,7 @@
         <!-- About me -->
         <section id="propos" class="max-w-6xl mx-auto px-6 py-24 border-t border-gray-100">
             <h2 class="font text-3xl font-bold mb-12 flex items-center gap-4">
-                <span class="text-[#1D24CA]">01.</span> À propos de moi
+                <span class="text-[#1D24CA]">01.</span> Mon profil
             </h2>
 
             <div class="flex flex-col md:flex-row items-center gap-24">
@@ -195,7 +195,7 @@
         <!-- Projects -->
         <section id="projets" class="max-w-6xl mx-auto px-6 py-24 border-t border-gray-100">
             <h2 class="font text-3xl font-bold mb-12 flex items-center gap-4 text-right justify-end">
-                Mes projets sélectionnés <span class="text-[#ED7464]">.02</span>
+                Mes projets <span class="text-[#ED7464]">.02</span>
             </h2>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[250px]">
@@ -277,7 +277,7 @@
 
                     <div>
                         <div class="flex justify-between mb-2">
-                            <h3 class="text-2xl font-bold font text-[#1D24CA] uppercase">Clairtemps</h3>
+                            <h3 class="text-xl font-bold font text-[#1D24CA]">Clairtemps</h3>
                             <svg class="w-6 h-6 opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
                         </div>
     
@@ -429,7 +429,7 @@
                 </a>
                 
                 <!-- Réseau social -->
-                <!-- <a href="reseau-social" 
+                <a href="synk" 
                     class="relative group overflow-hidden rounded-3xl bg-[#98ABEE]/20 p-6 border border-[#98ABEE]/30">
                     <h3 class="text-lg font-bold font text-[#1D24CA]">Réseau social</h3>
                     <p class="text-xs text-gray-600 mt-1">Création d'un site front</p>
@@ -445,10 +445,10 @@
                             Nuxt
                         </span>
                     </div>
-                </a> -->
+                </a>
 
                 <!-- Psychiméria  -->
-                <!-- <a href="psychimeria" 
+                <a href="psychimeria" 
                     class="relative group overflow-hidden rounded-3xl bg-[#98ABEE]/20 p-6 border border-[#98ABEE]/30">
                     <h3 class="text-xl font-bold font text-[#1D24CA]">Psychiméria</h3>
                     <p class="text-sm text-gray-600 mt-1">Conception et création d'une bande dessinée numérique interactive</p>
@@ -461,8 +461,36 @@
                             After Effects
                         </span>
                     </div>
-                </a> -->
+                </a>
 
+                <!-- Amara by Kenzo -->
+                <a href="amara-by-kenzo" 
+                    class="relative group overflow-hidden rounded-3xl bg-gray-100 p-6 flex flex-col justify-between">
+
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <h3 class="text-2xl font-bold font text-[#1D24CA]">Amara by <span class="uppercase">Kenzo</span></h3>
+                            <svg class="w-6 h-6 opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                        </div>
+    
+                        <p class="text-gray-600 mt-1">Réalisation d'un <span class="font-medium text-black underline underline-offset-4 decoration-[#ED7464]/80 decoration-2">spot publicitaire</span> en liant avec une stratégie de communication</p>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2 mt-4 uppercase">
+                        <span class="inline-block rounded-full bg-[#1D24CA]/5 px-3 py-1 text-[#1D24CA] text-xs font-bold">
+                            Blender
+                        </span>
+                        <span class="inline-block rounded-full bg-[#1D24CA]/5 px-3 py-1 text-xs font-bold text-gray-700">
+                            Stratégie de communication
+                        </span>
+                        <span class="inline-block rounded-full bg-[#1D24CA]/5 px-3 py-1 text-xs font-bold text-gray-700">
+                            Scénarisation
+                        </span>
+                        <!-- <span class="px-4 py-1 rounded-full bg-[#ED7464]/5 text-[#ED7464] text-xs font-bold">
+                            Stratégie de communication
+                        </span> -->
+                    </div>
+                </a>
 
                 <!-- Github -->
                 <a href="https://github.com/lfreih" target="_blank" title="Mon compte GitHub" 

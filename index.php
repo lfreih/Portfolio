@@ -208,7 +208,7 @@
                     </span> -->
 
                     <div class="w-full h-full">
-                        <img src="images/projets/mix_mess_inc/menu.png" 
+                        <img src="images/projects/mix-mess-inc/menu.png" 
                             class="grayscale-50 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 group-hover:grayscale-25" alt="Projet Mix Mess Inc.">
                     </div>
                     

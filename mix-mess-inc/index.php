@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+
+<?php $title="Lucie Freihaut | Amara by Kenzo - Spot Publicitaire 3D"; include '../head.php'; ?>
+
+<body class="">
+    <!-- Header -->
+    <?php include '../header.php'; ?>
+
+    <main class="mt-20">
+        <?php include '../backProjectsBtn.php'; ?>
+
+        <!-- Intro -->
+        <section class="relative max-w-7xl mx-auto px-6 mt-20 mb-12">
+            <div class="relative z-10">
+
+                <div class="">
+                    <span class="font text-[#ED7464] font-bold text-xs uppercase tracking-[0.3em] mb-4 block">Projet Universitaire • En cours</span>
+                    <!-- <span class="font text-[#ED7464] font-bold text-xs uppercase tracking-[0.3em] mb-4 block">Projet Universitaire • Sept 2025 - mars 2026</span> -->
+                    <h1 class="font text-5xl md:text-7xl font-black mb-6 tracking-tighter leading-none">Mix Mess Inc.</h1>
+                </div>
+
+                <div class="flex flex-col md:flex-row md:text-left items-center gap-10">
+                    <p class="flex-2 text-xl md:text-lg text-gray-700 leading-relaxed mx-auto md:mx-0">
+                        Dans le cadre de ce projet, j'ai participé au développement d'un site web sous Symfony connecté à une API Platform, assurant la communication entre le site, l'API et le jeu vidéo. Le site permet de présenter l'univers du jeu, de suivre son avancement via un blog, d'afficher les meilleurs scores et d'offrir aux joueurs la possibilité de créer leurs propres cocktails utilisables directement en jeu. L'objectif principal était de garantir une interaction fiable, sécurisée et cohérente entre les différentes plateformes.
+                    </p>
+                    
+                    <div class="flex-1 w-full h-[220px]">
+                        <img src="<?php echo $root; ?>images/projects/mix-mess-inc/player.png" alt="" class="w-full h-full object-contain">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Numbers -->
+        <section class="max-w-4xl mx-auto px-6 pb-12 border-b border-gray-100">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <p class="text-4xl font-black text-[#1D24CA] font">2''</p>
+                    <p class="text-[10px] uppercase tracking-widest font-bold text-gray-400 mt-2">Durée d'une partie</p>
+                </div>
+                <div>
+                    <p class="text-4xl font-black text-[#1D24CA] font">3</p>
+                    <p class="text-[10px] uppercase tracking-widest font-bold text-gray-400 mt-2">Bars</p>
+                </div>
+                <div>
+                    <p class="text-4xl font-black text-[#ED7464] font flex gap-2 justify-center items-center">3
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg> 
+
+                    </p>
+                    <p class="text-[10px] uppercase tracking-widest font-bold text-gray-400 mt-2">Équipe</p>
+                </div>
+                <div>
+                    <p class="text-4xl font-black text-[#ED7464] font">200H</p>
+                    <p class="text-[10px] uppercase tracking-widest font-bold text-gray-400 mt-2">Développement</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="max-w-7xl mx-auto px-6 py-24">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
+                
+                <!-- Process -->
+                <div class="lg:sticky lg:top-32">
+                    <h2 class="font text-3xl font-bold mb-8">Démarche & <span class="text-[#ED7464]">Contraintes</span></h2>
+                    
+                    <div class="space-y-12">
+                        <div>
+                            <h4 class="font-bold text-lg mb-2 uppercase tracking-wide">01. Consignes site web</h4>
+                            <p class="text-gray-600">
+                                Certaines pages étaient imposées :
+                                <br>
+                                • une page de présentation du jeu (accueil),<br>
+                                • une page blog,<br>
+                                • une fonctionnalité de communication directe avec le jeu.
+                                <br>
+                                J'ai ajouté une page supplémentaire dédiée aux meilleurs scores.
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-2 uppercase tracking-wide">02. Blog</h4>
+                            <p class="text-gray-600">
+                                Pour le blog, j'ai développé une solution simple et efficace : une commande Symfony génère un fichier .yaml, ensuite lu dans une vue Twig. Une boucle permet d'afficher automatiquement les différentes avancées (jeu vidéo, site web, graphisme) sans avoir besoin de modifier la vue ou le style. Cela rend la mise à jour plus rapide et plus régulière.
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-2 uppercase tracking-wide">03. Scores</h4>
+                            <p class="text-gray-600">
+                                Pour les scores, les 10 meilleurs résultats sont récupérés depuis la base de données et affichés dans des onglets (solo/duo, semaine/global).
+                            </p>
+                            <br>
+                            <p class="text-gray-600">
+                                Je pense qu'une optimisation est possible en chargeant les données uniquement au clic sur l'onglet concerné, afin d'éviter un chargement inutile.
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-2 uppercase tracking-wide">04. Créateur de cocktails</h4>
+                            <p class="text-gray-600">
+                                🚧 Concernant la communication directe avec le jeu, nous avons choisi de mettre en place un système de création de cocktails personnalisés. J'ai conçu un formulaire avancé basé sur plusieurs carrousels (verre, couches de couleur, topping). De nombreux tests ont été nécessaires pour obtenir un rendu réellement WYSIWYG, permettant au joueur de voir le résultat final en temps réel. Cette fonctionnalité sera mise en ligne prochainement.
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-2 uppercase tracking-wide">05. Style</h4>
+                            <p class="text-gray-600">
+                                Je voulais assurer une forte cohérence entre l'identité du jeu et celle du site.
+                                <br>
+                                Après plusieurs tests de mise en page et d'organisation du contenu, j'ai eu l'idée de transformer le site en une véritable borne d'arcade, pour renforcer l'immersion.
+                                <br>
+                                🚧 Le site étant en cours de développement, les couleurs, images et effets visuels ne sont pas définitifs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Galery -->
+                <div class="space-y-8 h-[1800px] overflow-y-auto pr-4 custom-scrollbar">
+                    <div class="relative rounded-3xl overflow-hidden shadow-lg">
+                        <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Inspiration : Purble Place Jeu Windows 7</span>
+                        <img src="<?php echo $root; ?>images/projects/mix-mess-inc/purble-place.jpg" class="w-full" alt="Purble Place Jeu Windows 7">
+                    </div>
+                    <div class="relative rounded-3xl overflow-hidden shadow-lg">
+                        <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Menu du jeu à date</span>
+                        <img src="<?php echo $root; ?>images/projects/mix-mess-inc/menu.png" class="w-full" alt="Menu du jeu à date">
+                    </div>
+                    <!-- <div class="relative rounded-3xl overflow-hidden shadow-lg aspect-video bg-gray-200">
+                        <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Spot final</span>
+                        <iframe class="w-full h-full" src="" frameborder="0" allowfullscreen></iframe>
+                    </div> -->
+                    <div class="relative rounded-3xl overflow-hidden shadow-lg">
+                        <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Blog</span>
+                        <img src="<?php echo $root; ?>images/projects/mix-mess-inc/website/blog.png" class="w-full" alt="Blog du site">
+                    </div>
+                    <div class="relative rounded-3xl overflow-hidden shadow-lg">
+                        <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Jeu utilisable depuis le site</span>
+                        <img src="<?php echo $root; ?>images/projects/mix-mess-inc/website/game.png" class="w-full" alt="Jeu">
+                    </div>
+                    <div class="relative rounded-3xl overflow-hidden shadow-lg">
+                        <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Meilleurs scores</span>
+                        <img src="<?php echo $root; ?>images/projects/mix-mess-inc/website/scores.png" class="w-full" alt="Meilleurs scores">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools and skills -->
+            <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-8 border-t border-gray-100 pt-10">
+                <div>
+                    <h4 class="font text-[10px] font-bold uppercase tracking-[0.2em] text-gray-400 mb-4">Outils</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-2 rounded-full bg-[#1D24CA]/5 text-[#1D24CA] text-xs font-bold border border-[#1D24CA]/10">
+                            Symfony
+                        </span>
+                        <span class="px-4 py-2 rounded-full bg-[#1D24CA]/5 text-[#1D24CA] text-xs font-bold border border-[#1D24CA]/10">
+                            API Platform
+                        </span>
+                        <span class="px-4 py-2 rounded-full bg-[#1D24CA]/5 text-[#1D24CA] text-xs font-bold border border-[#1D24CA]/10">
+                            Unity
+                        </span>
+                        <span class="px-4 py-2 rounded-full bg-[#1D24CA]/5 text-[#1D24CA] text-xs font-bold border border-[#1D24CA]/10">
+                            C#
+                        </span>
+                        <span class="px-4 py-2 rounded-full bg-[#1D24CA]/5 text-[#1D24CA] text-xs font-bold border border-[#1D24CA]/10">
+                            Anatidae
+                        </span>
+                    </div>
+                </div>
+            
+                <div>
+                    <h4 class="font text-[10px] font-bold uppercase tracking-[0.2em] text-gray-400 mb-4">Compétences</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-2 rounded-full bg-[#ED7464]/5 text-[#ED7464] text-xs font-bold border border-[#ED7464]/10">
+                            Communication api sécurisée
+                        </span>
+                        <span class="px-4 py-2 rounded-full bg-[#ED7464]/5 text-[#ED7464] text-xs font-bold border border-[#ED7464]/10">
+                            Cohérence visuelle
+                        </span>
+                        <span class="px-4 py-2 rounded-full bg-[#ED7464]/5 text-[#ED7464] text-xs font-bold border border-[#ED7464]/10">
+                            ??
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Links -->
+            <div class="mt-16 flex flex-wrap gap-10 justify-center">
+                <a href="https://mmi23a08.mmi-troyes.fr/sae501" target="_blank" 
+                class="flex items-center gap-3 px-8 py-4 bg-[#1D24CA] text-white rounded-2xl font text-sm font-bold transition-all hover:bg-[#151a96] hover:-translate-y-1 shadow-lg shadow-[#1D24CA]/20 group">
+                    <svg class="w-5 h-5 fill-current transition-transform group-hover:scale-110" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z"/>
+                    </svg>
+                    Acccéder au site
+                </a>
+            
+                <a href="https://github.com/m4rguerite/mix-mess-inc" target="_blank" 
+                class="flex items-center gap-3 px-8 py-4 bg-white text-[#1D24CA] border-2 border-[#1D24CA] rounded-2xl font text-sm font-bold transition-all hover:bg-[#1D24CA]/5 hover:-translate-y-1 group">
+                    <!-- <svg class="w-5 h-5 transition-transform group-hover:rotate-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                        <path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                    </svg> -->
+                    <svg class="w-5 h-5 fill-white stroke-current stroke-2 transition-transform group-hover:scale-110" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z"/>
+                    </svg>
+                    Retrouver le projet sur GitHub
+                </a>
+            </div>
+        </section>
+
+        <section class="max-w-5xl mx-auto px-6 lg:px-20 py-16 bg-gray-50 rounded-[3rem]">
+            <div class="text-center mb-12">
+                <span class="font text-[#1D24CA] text-xs font-bold uppercase tracking-[0.3em] mb-4 block">Bilan</span>
+                <h2 class="font text-3xl font-bold text-gray-900">Ce que je retiens de ce projet</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 transition-transform hover:-translate-y-1">
+                    <div class="text-[#ED7464] mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-2">Architecture & Vision Projet</h3>
+                    <p class="text-sm text-gray-500 leading-relaxed">
+                        Projet web et jeu vidéo interconnectés, avec un site Symfony fonctionnel (structure, blog, scores) et une section “cocktails” en cours de finalisation. Ce travail m'a permis de gérer un projet complet, de la conception à l'interaction avec le jeu.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 transition-transform hover:-translate-y-1">
+                    <div class="text-[#1D24CA] mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-2">Fiabilité & Sécurité API</h3>
+                    <p class="text-sm text-gray-500 leading-relaxed">
+                        Mise en place d'une communication sécurisée via API Platform, avec un service C# centralisant les appels, un système de fallback JSON et une authentification par token pour garantir la stabilité et la sécurité.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 transition-transform hover:-translate-y-1">
+                    <div class="text-[#ED7464] mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.364-6.364l-.707-.707M6.364 18.364l.707-.707M18.364 18.364l-.707-.707M12 18V9"/></svg>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-2">Compétences & Évolutions</h3>
+                    <p class="text-sm text-gray-500 leading-relaxed">
+                        Renforcement de mes compétences en développement web, API et intégration jeu. À venir : conception des sons et bruitages afin d'améliorer l'ambiance, le dynamisme et l'expérience arcade.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-6xl mx-auto px-6 py-24">
+            <div class="border-t border-gray-100 pt-16 flex flex-col items-center">
+                <p class="font text-xs uppercase tracking-[0.4em] text-gray-400 mb-8 text-center">Continuer l'exploration</p>
+                
+                <a href="<?php echo $prochain_projet['url']; ?>" class="group relative block w-full max-w-4xl overflow-hidden rounded-[2.5rem] bg-gray-900 aspect-[21/9] sm:aspect-[3/1]">
+                    <img src="<?php echo $prochain_projet['img']; ?>" 
+                        alt="Vers <?php echo $prochain_projet['titre']; ?>" 
+                        class="absolute inset-0 w-full h-full object-cover opacity-40 grayscale transition-all duration-700 group-hover:scale-110 group-hover:opacity-60 group-hover:grayscale-0">
+                    
+                    <div class="absolute inset-0 flex flex-col items-center justify-center text-white p-8">
+                        <span class="font text-[10px] font-bold uppercase tracking-widest opacity-60 mb-2">Projet Suivant</span>
+                        <h3 class="font text-3xl md:text-5xl font-black uppercase tracking-tighter transition-transform duration-500 group-hover:translate-y-[-5px]">
+                            <?php echo $prochain_projet['titre']; ?>
+                        </h3>
+                        
+                        <div class="mt-6 flex items-center gap-2 opacity-0 translate-y-4 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
+                            <span class="font text-[10px] font-bold uppercase tracking-widest">Découvrir le projet</span>
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+
+
+    </main>
+
+
+    <?php include '../footer.php'; ?>
+
+</body>
+</html>

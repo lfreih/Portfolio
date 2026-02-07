@@ -258,7 +258,7 @@
                     </div>
 
                     <div>
-                        <img src="images/projets/shooter_vr/casque_vr_right.png" alt="Casque Oculus"
+                        <img src="images/projects/shooter-vr/casque_vr_right.png" alt="Casque Oculus"
                             class="group-hover:scale-105 transition-all duration-300">
                         <!-- <img src="images/projets/shooter_vr/casque_vr_face2.png" alt="Casque Oculus"> -->
                     </div>
@@ -272,35 +272,30 @@
                     -->
                 </a>
 
-                <a href="clairtemps" 
+                <!-- Réseau social -->
+                <a href="synk" 
                     class="relative group overflow-hidden rounded-3xl bg-gray-100 p-6 flex flex-col justify-between">
 
                     <div>
                         <div class="flex justify-between mb-2">
-                            <h3 class="text-xl font-bold font text-[#1D24CA]">Clairtemps</h3>
+                            <h3 class="text-2xl font-bold font text-[#1D24CA]">SYNK</span></h3>
                             <svg class="w-6 h-6 opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
                         </div>
     
-                        <p class="text-sm text-gray-600 mt-1">Création d'un site de prévisions météo avec sélection de préférences</p>
+                        <p class="text-gray-600 mt-1">
+                            Création d'un <span class="font-medium text-black">site front</span>
+                        </p>
                     </div>
 
-                    <!-- <div class="flex justify-center h-10">
-                        <img src="images/projets/clairtemps/logo_clairtemps.png" alt="Logo Clairtemps"
-                            class="invert">
-                    </div> -->
-
-                    <div class="flex flex-wrap gap-2 mt-4 font">
-                        <span class="inline-block rounded-full bg-[#98ABEE]/20 px-3 py-1 text-xs font-bold text-gray-700">
-                            OpenWeatherMap
+                    <div class="flex flex-wrap gap-2 mt-4 uppercase">
+                        <span class="inline-block rounded-full bg-[#1D24CA]/5 px-3 py-1 text-[#1D24CA] text-xs font-bold">
+                            Tailwind CSS
                         </span>
-                        <span class="inline-block rounded-full bg-[#98ABEE]/20 px-3 py-1 text-xs font-bold text-gray-700">
-                            Symfony
+                        <span class="inline-block rounded-full bg-[#1D24CA]/5 px-3 py-1 text-xs font-bold text-gray-700">
+                            API
                         </span>
-                        <span class="inline-block rounded-full bg-[#98ABEE]/20 px-3 py-1 text-xs font-bold text-gray-700">
-                            API Platform
-                        </span>
-                        <span class="inline-block rounded-full bg-[#98ABEE]/20 px-3 py-1 text-xs font-bold text-gray-700">
-                            Vue.js
+                        <span class="inline-block rounded-full bg-[#1D24CA]/5 px-3 py-1 text-xs font-bold text-gray-700">
+                            Nuxt
                         </span>
                     </div>
                 </a>
@@ -394,7 +389,7 @@
                         <!-- <img src="images/projets/design_bde_2025/design-pull-2025.svg" alt="Design sweat du BDE" 
                             class="w-full h-full object-none transition-transform duration-300 grayscale-50 group-hover:scale-110 group-hover:grayscale-25"> -->
                         
-                        <img src="images/projets/design_bde_2025/logo.svg" alt="Design sweat du BDE" 
+                        <img src="images/projects/design_bde_2025/logo.svg" alt="Design sweat du BDE" 
                             class="w-full h-full object-cover transition-transform duration-300 grayscale-50 group-hover:scale-110 group-hover:grayscale-25">
                         <!-- <span class="absolute top-4 left-4 rounded-full bg-purple-100 px-3 py-1 text-xs font-bold text-purple-700 backdrop-blur-md">
                             Projet personnel
@@ -428,27 +423,38 @@
                     </div>
                 </a>
                 
-                <!-- Réseau social -->
-                <a href="synk" 
-                    class="relative group overflow-hidden rounded-3xl bg-[#98ABEE]/20 p-6 border border-[#98ABEE]/30">
-                    <h3 class="text-lg font-bold font text-[#1D24CA]">Réseau social</h3>
-                    <p class="text-xs text-gray-600 mt-1">Création d'un site front</p>
-                    
-                    <div class="flex flex-wrap gap-2 mt-4">
-                        <span class="inline-block rounded-full  bg-[#98ABEE]/20 px-3 py-1 text-xs font-bold text-[#1D24CA]">
-                            Tailwindcss
+                <a href="clairtemps" 
+                    class="relative group overflow-hidden rounded-3xl bg-gray-100 p-6 flex flex-col justify-between">
+
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <h3 class="text-2xl font-bold font text-[#1D24CA]">Clairtemps</span></h3>
+                            <svg class="w-6 h-6 opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                        </div>
+    
+                        <p class="text-gray-600 mt-1">
+                            Création d'un <span class="font-medium text-black">site de prévisions météo</span> avec sélection de préférences
+                        </p>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2 mt-4 uppercase">
+                        <span class="inline-block rounded-full bg-[#1D24CA]/5 px-3 py-1 text-[#1D24CA] text-xs font-bold">
+                            OpenWeatherMap
                         </span>
-                        <span class="inline-block rounded-full bg-[#98ABEE]/20 px-3 py-1 text-xs font-bold text-[#1D24CA]">
-                            API
+                        <span class="inline-block rounded-full bg-[#1D24CA]/5 px-3 py-1 text-xs font-bold text-gray-700">
+                            Symfony
                         </span>
-                        <span class="inline-block rounded-full bg-[#98ABEE]/20 px-3 py-1 text-xs font-bold text-[#1D24CA]">
-                            Nuxt
+                        <span class="inline-block rounded-full bg-[#1D24CA]/5 px-3 py-1 text-xs font-bold text-gray-700">
+                            API Platform
+                        </span>
+                        <span class="inline-block rounded-full bg-[#1D24CA]/5 px-3 py-1 text-xs font-bold text-gray-700">
+                            Vue.js
                         </span>
                     </div>
                 </a>
 
                 <!-- Psychiméria  -->
-                <a href="psychimeria" 
+                <!-- <a href="psychimeria" 
                     class="relative group overflow-hidden rounded-3xl bg-[#98ABEE]/20 p-6 border border-[#98ABEE]/30">
                     <h3 class="text-xl font-bold font text-[#1D24CA]">Psychiméria</h3>
                     <p class="text-sm text-gray-600 mt-1">Conception et création d'une bande dessinée numérique interactive</p>
@@ -460,6 +466,35 @@
                         <span class="inline-block rounded-full bg-[#98ABEE]/20 px-3 py-1 text-xs font-bold text-[#1D24CA]">
                             After Effects
                         </span>
+                    </div>
+                </a> -->
+                <a href="psychimeria" 
+                    class="relative group overflow-hidden rounded-3xl bg-gray-100 p-6 flex flex-col justify-between">
+
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <h3 class="text-2xl font-bold font text-[#1D24CA]">Psychiméria</span></h3>
+                            <svg class="w-6 h-6 opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                        </div>
+    
+                        <p class="text-gray-600 mt-1">
+                            Conception et création d'une <span class="font-medium text-black">bande dessinée numérique interactive</span>
+                        </p>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2 mt-4 uppercase">
+                        <span class="inline-block rounded-full bg-[#1D24CA]/5 px-3 py-1 text-[#1D24CA] text-xs font-bold">
+                            Illustrator
+                        </span>
+                        <span class="inline-block rounded-full bg-[#1D24CA]/5 px-3 py-1 text-xs font-bold text-gray-700">
+                            After Effects
+                        </span>
+                        <span class="inline-block rounded-full bg-[#1D24CA]/5 px-3 py-1 text-xs font-bold text-gray-700">
+                            Scénarisation
+                        </span>
+                        <!-- <span class="px-4 py-1 rounded-full bg-[#ED7464]/5 text-[#ED7464] text-xs font-bold">
+                            Stratégie de communication
+                        </span> -->
                     </div>
                 </a>
 

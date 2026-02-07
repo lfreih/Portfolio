@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr" class="scroll-smooth">
 
-<?php $title="Lucie Freihaut | Mix Mess Inc. - Jeu vidéo 2D et site web"; include '../head.php'; ?>
+<?php $title="Lucie Freihaut | Clairtemps - Site des prévisions météo personnalisées"; include '../head.php'; ?>
 
 <body class="">
     <!-- Header -->
@@ -15,18 +15,18 @@
             <div class="relative z-10">
 
                 <div class="">
-                    <span class="font text-[#ED7464] font-bold text-xs uppercase tracking-[0.3em] mb-4 block">Projet Universitaire • En cours</span>
+                    <span class="font text-[#ED7464] font-bold text-xs uppercase tracking-[0.3em] mb-4 block">Projet Universitaire • Juin 2025</span>
                     <!-- <span class="font text-[#ED7464] font-bold text-xs uppercase tracking-[0.3em] mb-4 block">Projet Universitaire • Sept 2025 - mars 2026</span> -->
-                    <h1 class="font text-5xl md:text-7xl font-black mb-6 tracking-tighter leading-none">Mix Mess Inc.</h1>
+                    <h1 class="font text-5xl md:text-7xl font-black mb-6 tracking-tighter leading-none">Clairtemps</h1>
                 </div>
 
                 <div class="flex flex-col md:flex-row md:text-left items-center gap-10">
                     <p class="flex-2 text-xl md:text-lg text-gray-700 leading-relaxed mx-auto md:mx-0">
-                        Dans le cadre de ce projet, j'ai participé au développement d'un site web sous Symfony connecté à une API Platform, assurant la communication entre le site, l'API et le jeu vidéo. Le site permet de présenter l'univers du jeu, de suivre son avancement via un blog, d'afficher les meilleurs scores et d'offrir aux joueurs la possibilité de créer leurs propres cocktails utilisables directement en jeu. L'objectif principal était de garantir une interaction fiable, sécurisée et cohérente entre les différentes plateformes.
+                        Dans le cadre de ce projet universitaire, nous avons développé une application web de prévisions météorologiques affichant des données en temps réel, par heure et sur 15 jours, à partir de l'API OpenWeatherMap. L'application repose sur une architecture backend en Symfony et un frontend en Vue.js, avec une attention particulière portée à l'UI, à l'UX et à l'optimisation des performances. L'objectif était de concevoir une interface claire, moderne et agréable à utiliser, dans des conditions proches d'un projet professionnel.
                     </p>
                     
-                    <div class="flex-1 w-full h-[220px]">
-                        <img src="<?php echo $root; ?>images/projects/mix-mess-inc/player.png" alt="" class="w-full h-full object-contain">
+                    <div class="flex-1 w-full h-[70px]">
+                        <img src="<?php echo $root; ?>images/projects/clairtemps/logo.png" alt="" class="w-full h-full object-contain">
                     </div>
                 </div>
 
@@ -37,12 +37,12 @@
         <section class="max-w-4xl mx-auto px-6 pb-12 border-b border-gray-100">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                 <div>
-                    <p class="text-4xl font-black text-[#1D24CA] font">2''</p>
-                    <p class="text-[10px] uppercase tracking-widest font-bold text-gray-400 mt-2">Durée d'une partie</p>
+                    <p class="text-4xl font-black text-[#1D24CA] font">15J</p>
+                    <p class="text-[10px] uppercase tracking-widest font-bold text-gray-400 mt-2">Prévisions</p>
                 </div>
                 <div>
-                    <p class="text-4xl font-black text-[#1D24CA] font">3</p>
-                    <p class="text-[10px] uppercase tracking-widest font-bold text-gray-400 mt-2">Bars</p>
+                    <p class="text-4xl font-black text-[#1D24CA] font">1</p>
+                    <p class="text-[10px] uppercase tracking-widest font-bold text-gray-400 mt-2">API externe</p>
                 </div>
                 <div>
                     <p class="text-4xl font-black text-[#ED7464] font flex gap-2 justify-center items-center">3
@@ -52,7 +52,7 @@
                     <p class="text-[10px] uppercase tracking-widest font-bold text-gray-400 mt-2">Équipe</p>
                 </div>
                 <div>
-                    <p class="text-4xl font-black text-[#ED7464] font">200H</p>
+                    <p class="text-4xl font-black text-[#ED7464] font">30H</p>
                     <p class="text-[10px] uppercase tracking-widest font-bold text-gray-400 mt-2">Développement</p>
                 </div>
             </div>
@@ -68,78 +68,70 @@
                     
                     <div class="space-y-12">
                         <div>
-                            <h4 class="font-bold text-lg mb-2 uppercase tracking-wide">01. Consignes site web</h4>
+                            <h4 class="font-bold text-lg mb-2 uppercase tracking-wide">01. Réflexion sur le front</h4>
                             <p class="text-gray-600">
-                                Certaines pages étaient imposées :
-                                <br>
-                                • une page de présentation du jeu (accueil),<br>
-                                • une page blog,<br>
-                                • une fonctionnalité de communication directe avec le jeu.
-                                <br>
-                                J'ai ajouté une page supplémentaire dédiée aux meilleurs scores.
+                                Après plusieurs jours de travail sur le backend, nous avons envisagé d'abandonner Vue.js au profit de Twig, jugé plus simple. Cependant, l'accent du projet étant mis sur l'UI et l'UX, l'utilisation d'un framework réactif s'est imposée comme indispensable. Nous avons donc maintenu Vue.js malgré la complexité supplémentaire.
                             </p>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg mb-2 uppercase tracking-wide">02. Blog</h4>
+                            <h4 class="font-bold text-lg mb-2 uppercase tracking-wide">02. API externe</h4>
                             <p class="text-gray-600">
-                                Pour le blog, j'ai développé une solution simple et efficace : une commande Symfony génère un fichier .yaml, ensuite lu dans une vue Twig. Une boucle permet d'afficher automatiquement les différentes avancées (jeu vidéo, site web, graphisme) sans avoir besoin de modifier la vue ou le style. Cela rend la mise à jour plus rapide et plus régulière.
-                            </p>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-lg mb-2 uppercase tracking-wide">03. Scores</h4>
-                            <p class="text-gray-600">
-                                Pour les scores, les 10 meilleurs résultats sont récupérés depuis la base de données et affichés dans des onglets (solo/duo, semaine/global).
+                                Pour l'accès aux données météo, j'ai créé un compte étudiant sur OpenWeatherMap, permettant pendant six mois l'accès à davantage de données qu'un compte gratuit. Malgré cela, certaines limitations de l'API (absence d'alertes météo et de détails avancés des prévisions) ont directement influencé nos choix d'interface et de fonctionnalités.
                             </p>
                             <br>
                             <p class="text-gray-600">
-                                Je pense qu'une optimisation est possible en chargeant les données uniquement au clic sur l'onglet concerné, afin d'éviter un chargement inutile.
+                                J'ai pris en charge la mise en place d'un service côté backend Symfony, permettant d'appeler les routes de l'API OpenWeatherMap et d'exposer nos propres routes au frontend. Côté frontend, j'ai intégré les requêtes API afin de récupérer et afficher les données météo.
                             </p>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg mb-2 uppercase tracking-wide">04. Créateur de cocktails</h4>
+                            <h4 class="font-bold text-lg mb-2 uppercase tracking-wide">03. Développement Frontend</h4>
                             <p class="text-gray-600">
-                                🚧 Concernant la communication directe avec le jeu, nous avons choisi de mettre en place un système de création de cocktails personnalisés. J'ai conçu un formulaire avancé basé sur plusieurs carrousels (verre, couches de couleur, topping). De nombreux tests ont été nécessaires pour obtenir un rendu réellement WYSIWYG, permettant au joueur de voir le résultat final en temps réel. Cette fonctionnalité sera mise en ligne prochainement.
+                                Grâce à Vue.js, j'ai pu concevoir des composants réutilisables et mettre en place un store Pinia pour centraliser et partager les données météo entre les composants. Cette étape s'est révélée particulièrement exigeante, Pinia étant une technologie que j'utilisais pour la première fois dans un contexte réel, avec une volonté de rendre les méthodes génériques et réutilisables.
+                            </p>
+                            <br>
+                            <p class="text-gray-600">
+                                Par la suite, je me suis concentrée sur le **frontend**, afin d'éviter les conflits liés au travail simultané sur le backend. J'ai ainsi développé plusieurs composants permettant :
+                                <br>
+                                • l'affichage de la météo en direct pour une ville,<br>
+                                • la consultation des prévisions horaires,<br>
+                                • l'affichage des prévisions sur 15 jours via une interaction utilisateur.
                             </p>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg mb-2 uppercase tracking-wide">05. Style</h4>
+                            <h4 class="font-bold text-lg mb-2 uppercase tracking-wide">04. Optimisation</h4>
                             <p class="text-gray-600">
-                                Je voulais assurer une forte cohérence entre l'identité du jeu et celle du site.
-                                <br>
-                                Après plusieurs tests de mise en page et d'organisation du contenu, j'ai eu l'idée de transformer le site en une véritable borne d'arcade, pour renforcer l'immersion.
-                                <br>
-                                🚧 Le site étant en cours de développement, les couleurs, images et effets visuels ne sont pas définitifs.
+                                Enfin, afin de limiter le nombre de requêtes vers l'API externe (un enjeu important dans ce type de projet), j'ai implémenté un système de mise en cache, permettant d'optimiser les appels externes et de réduire la charge sur l'API ainsi que sur le serveur backend.
                             </p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Galery -->
-                <div class="space-y-8 h-[1800px] overflow-y-auto pr-4 custom-scrollbar">
-                    <div class="relative rounded-3xl overflow-hidden shadow-lg">
-                        <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Inspiration : Purble Place Jeu Windows 7</span>
-                        <img src="<?php echo $root; ?>images/projects/mix-mess-inc/purble-place.jpg" class="w-full" alt="Purble Place Jeu Windows 7">
+                <div class="space-y-8 h-[1600px] overflow-y-auto pr-4 custom-scrollbar">
+                    <div class="relative rounded-3xl overflow-hidden shadow-lg border border-gray-100">
+                        <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Desktop - Page d'accueil</span>
+                        <img src="<?php echo $root; ?>images/projects/clairtemps/desktop-home.png" class="w-full" alt="Page d'accueil sur Desktop">
                     </div>
-                    <div class="relative rounded-3xl overflow-hidden shadow-lg">
-                        <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Menu du jeu à date</span>
-                        <img src="<?php echo $root; ?>images/projects/mix-mess-inc/menu.png" class="w-full" alt="Menu du jeu à date">
+                    <div class="relative rounded-3xl overflow-hidden shadow-lg border border-gray-100">
+                        <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Mobile - Page d'accueil</span>
+                        <img src="<?php echo $root; ?>images/projects/clairtemps/menu.png" class="w-full" alt="Page d'accueil sur mobile">
+                    </div>
+                    <div class="relative rounded-3xl overflow-hidden shadow-lg border border-gray-100">
+                        <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Mobile - </span>
+                        <img src="<?php echo $root; ?>images/projects/clairtemps/blog.png" class="w-full" alt="sur mobile">
+                    </div>
+                    <div class="relative rounded-3xl overflow-hidden shadow-lg border border-gray-100">
+                        <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Mobile - </span>
+                        <img src="<?php echo $root; ?>images/projects/clairtemps/game.png" class="w-full" alt="sur mobile">
+                    </div>
+                    <div class="relative rounded-3xl overflow-hidden shadow-lg border border-gray-100">
+                        <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Mobile - </span>
+                        <img src="<?php echo $root; ?>images/projects/clairtemps/scores.png" class="w-full" alt="sur mobile">
                     </div>
                     <!-- <div class="relative rounded-3xl overflow-hidden shadow-lg aspect-video bg-gray-200">
                         <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Spot final</span>
                         <iframe class="w-full h-full" src="" frameborder="0" allowfullscreen></iframe>
                     </div> -->
-                    <div class="relative rounded-3xl overflow-hidden shadow-lg">
-                        <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Blog</span>
-                        <img src="<?php echo $root; ?>images/projects/mix-mess-inc/website/blog.png" class="w-full" alt="Blog du site">
-                    </div>
-                    <div class="relative rounded-3xl overflow-hidden shadow-lg">
-                        <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Jeu utilisable depuis le site</span>
-                        <img src="<?php echo $root; ?>images/projects/mix-mess-inc/website/game.png" class="w-full" alt="Jeu">
-                    </div>
-                    <div class="relative rounded-3xl overflow-hidden shadow-lg">
-                        <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Meilleurs scores</span>
-                        <img src="<?php echo $root; ?>images/projects/mix-mess-inc/website/scores.png" class="w-full" alt="Meilleurs scores">
-                    </div>
                 </div>
             </div>
 
@@ -152,16 +144,16 @@
                             Symfony
                         </span>
                         <span class="px-4 py-2 rounded-full bg-[#1D24CA]/5 text-[#1D24CA] text-xs font-bold border border-[#1D24CA]/10">
-                            API Platform
+                            Vue.js
                         </span>
                         <span class="px-4 py-2 rounded-full bg-[#1D24CA]/5 text-[#1D24CA] text-xs font-bold border border-[#1D24CA]/10">
-                            Unity
+                            Pinia
                         </span>
                         <span class="px-4 py-2 rounded-full bg-[#1D24CA]/5 text-[#1D24CA] text-xs font-bold border border-[#1D24CA]/10">
-                            C#
+                            API externe
                         </span>
                         <span class="px-4 py-2 rounded-full bg-[#1D24CA]/5 text-[#1D24CA] text-xs font-bold border border-[#1D24CA]/10">
-                            Anatidae
+                            Figma
                         </span>
                     </div>
                 </div>
@@ -170,7 +162,7 @@
                     <h4 class="font text-[10px] font-bold uppercase tracking-[0.2em] text-gray-400 mb-4">Compétences</h4>
                     <div class="flex flex-wrap gap-2">
                         <span class="px-4 py-2 rounded-full bg-[#ED7464]/5 text-[#ED7464] text-xs font-bold border border-[#ED7464]/10">
-                            Communication api sécurisée
+                            Composants réutilisables
                         </span>
                         <span class="px-4 py-2 rounded-full bg-[#ED7464]/5 text-[#ED7464] text-xs font-bold border border-[#ED7464]/10">
                             Cohérence visuelle
@@ -184,7 +176,7 @@
 
             <!-- Links -->
             <div class="mt-16 flex flex-wrap gap-10 justify-center">
-                <a href="https://mmi23a08.mmi-troyes.fr/sae501" target="_blank" 
+                <a href="https://mmi23a08.sae401.ovh" target="_blank" 
                 class="flex items-center gap-3 px-8 py-4 bg-[#1D24CA] text-white rounded-2xl font text-sm font-bold transition-all hover:bg-[#151a96] hover:-translate-y-1 shadow-lg shadow-[#1D24CA]/20 group">
                     <svg class="w-5 h-5 fill-current transition-transform group-hover:scale-110" viewBox="0 0 24 24">
                         <path d="M8 5v14l11-7z"/>
@@ -192,7 +184,7 @@
                     Acccéder au site
                 </a>
             
-                <a href="https://github.com/m4rguerite/mix-mess-inc" target="_blank" 
+                <a href="https://github.com/m4rguerite/sae401" target="_blank" 
                 class="flex items-center gap-3 px-8 py-4 bg-white text-[#1D24CA] border-2 border-[#1D24CA] rounded-2xl font text-sm font-bold transition-all hover:bg-[#1D24CA]/5 hover:-translate-y-1 group">
                     <!-- <svg class="w-5 h-5 transition-transform group-hover:rotate-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
                         <path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
@@ -216,19 +208,18 @@
                     <div class="text-[#ED7464] mb-4">
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
                     </div>
-                    <h3 class="font-bold text-gray-900 mb-2">Architecture & Vision Projet</h3>
+                    <h3 class="font-bold text-gray-900 mb-2">Architecture & Environnement</h3>
                     <p class="text-sm text-gray-500 leading-relaxed">
-                        Projet web et jeu vidéo interconnectés, avec un site Symfony fonctionnel (structure, blog, scores) et une section “cocktails” en cours de finalisation. Ce travail m'a permis de gérer un projet complet, de la conception à l'interaction avec le jeu.
-                    </p>
+                        Développement d'une application météo en Vue.js avec Pinia et backend Symfony, connectée à une API externe. Travail réalisé dans des conditions proches d'un projet réel, favorisant l'autonomie et la rigueur.
                 </div>
 
                 <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 transition-transform hover:-translate-y-1">
                     <div class="text-[#1D24CA] mb-4">
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                     </div>
-                    <h3 class="font-bold text-gray-900 mb-2">Fiabilité & Sécurité API</h3>
+                    <h3 class="font-bold text-gray-900 mb-2">Performance & Expérience Utilisateur</h3>
                     <p class="text-sm text-gray-500 leading-relaxed">
-                        Mise en place d'une communication sécurisée via API Platform, avec un service C# centralisant les appels, un système de fallback JSON et une authentification par token pour garantir la stabilité et la sécurité.
+                        Conception d'une interface minimaliste et modulaire, prise en compte des limites de Bootstrap, et mise en place d'un système de cache pour améliorer les performances et la scalabilité.
                     </p>
                 </div>
 
@@ -236,9 +227,9 @@
                     <div class="text-[#ED7464] mb-4">
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.364-6.364l-.707-.707M6.364 18.364l.707-.707M18.364 18.364l-.707-.707M12 18V9"/></svg>
                     </div>
-                    <h3 class="font-bold text-gray-900 mb-2">Compétences & Évolutions</h3>
+                    <h3 class="font-bold text-gray-900 mb-2">Améliorations & Perspectives</h3>
                     <p class="text-sm text-gray-500 leading-relaxed">
-                        Renforcement de mes compétences en développement web, API et intégration jeu. À venir : conception des sons et bruitages afin d'améliorer l'ambiance, le dynamisme et l'expérience arcade.
+                        Évolutions envisagées : back-office utilisateur, géolocalisation, refactorisation du code, intégration d'alertes météo, gestion du mot de passe oublié et renforcement des tests.
                     </p>
                 </div>
             </div>
@@ -270,10 +261,7 @@
             </div>
         </section>
 
-
-
     </main>
-
 
     <?php include '../footer.php'; ?>
 

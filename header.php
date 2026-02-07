@@ -4,6 +4,36 @@
     } else {
         $root = "/portfolio/";
     }
+
+    // On définit la liste des projets dans l'ordre souhaité
+    $projets = [
+        'mix-mess-inc' => [
+            'titre' => 'Mix Mess Inc.',
+            'url' => $root . 'projects/mix-mess-inc/index.php',
+            'img' => $root . 'images/projects/mix-mess-inc/menu.png'
+        ],
+        'shooter-vr' => [
+            'titre' => 'Shooter VR',
+            'url' => $root . 'projects/shooter-vr/index.php',
+            'img' => $root . 'images/projects/shooter-vr/casque_vr_right.png'
+        ],
+        'kenzo-amara' => [
+            'titre' => 'Kenzo Amara',
+            'url' => $root . 'projects/amara/index.php',
+            'img' => $root . 'images/projects/kenzo-thumb.jpg'
+        ]
+    ];
+
+    // On récupère le nom du dossier actuel pour savoir sur quel projet on est
+    // basename(dirname(...)) récupère "kenzo-amara" si tu es dans /portfolio/kenzo-amara/index.php
+    $projet_actuel = basename(dirname($_SERVER['PHP_SELF']));
+
+    // On cherche l'index du projet suivant
+    $cles = array_keys($projets);
+    $index_actuel = array_search($projet_actuel, $cles);
+    $index_suivant = ($index_actuel + 1) % count($cles); // Le % permet de revenir au premier projet à la fin
+
+    $prochain_projet = $projets[$cles[$index_suivant]];
 ?>
 
 <header class="fixed top-0 w-full z-50 flex justify-between items-center px-6 lg:px-24 py-3 bg-[#98ABEE]/20 backdrop-blur-md ">

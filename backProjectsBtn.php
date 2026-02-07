@@ -1,4 +1,4 @@
-<div class="max-w-6xl mx-auto">
+<div class="max-w-7xl mx-auto">
     <div class="w-max">
         <a href="/portfolio/#projets" class="font font-bold text-lg text-[#1D24CA] uppercase flex gap-2 group">
             <div class="flex">

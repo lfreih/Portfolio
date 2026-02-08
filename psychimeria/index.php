@@ -4,28 +4,27 @@
 <?php $title="Lucie Freihaut | Psychiméria - Bande dessinée interactive numérique"; include '../head.php'; ?>
 
 <body class="">
-    <!-- Header -->
     <?php include '../header.php'; ?>
 
     <main class="mt-20">
         <?php include '../backProjectsBtn.php'; ?>
 
         <!-- Intro -->
-        <section class="relative max-w-7xl mx-auto px-6 mt-20 mb-12">
+        <section class="relative max-w-7xl mx-auto px-6 mt-12 md:mt-20 mb-12">
             <div class="relative z-10">
 
                 <div class="">
                     <span class="font text-[#ED7464] font-bold text-xs uppercase tracking-[0.3em] mb-4 block">Projet Universitaire • Mars 2025</span>
-                    <h1 class="font text-5xl md:text-7xl font-black mb-6 tracking-tighter leading-none">Psychiméria</h1>
+                    <h1 class="font text-4xl md:text-7xl font-black mb-6 tracking-tighter leading-none">Psychiméria</h1>
                 </div>
 
                 <div class="flex flex-col md:flex-row md:text-left items-center gap-10">
-                    <p class="flex-2 text-xl md:text-lg text-gray-700 leading-relaxed mx-auto md:mx-0">
+                    <p class="flex-2 text-md md:text-lg text-gray-700 leading-relaxed mx-auto md:mx-0">
                         Dans le cadre de ce projet universitaire, nous avons conçu une bande dessinée interactive exclusivement destinée aux supports numériques sur le thème “Métamorphose(s)”. Le projet mêle narration, illustration et interactivité afin de proposer une expérience immersive où l'utilisateur occupe une place centrale. Psychiméria explore les frontières entre réalité et imaginaire à travers le regard d'un personnage hypocondriaque, dont les peurs envahissent progressivement l'esprit et le corps.
                     </p>
                     
-                    <div class="flex-1 w-full h-[200px]">
-                        <img src="<?php echo $root; ?>images/projects/psychimeria/monster.png" alt="" class="w-full h-full object-cover object-top">
+                    <div class="flex-1 w-full md:h-[200px]">
+                        <img src="<?php echo $root; ?>images/projects/psychimeria/monster.png" alt="" class="w-full h-[200px] md:h-full object-cover object-top">
                     </div>
                 </div>
 
@@ -36,38 +35,38 @@
         <section class="max-w-4xl mx-auto px-6 pb-12 border-b border-gray-100">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                 <div>
-                    <p class="text-4xl font-black text-[#1D24CA] font">2</p>
+                    <p class="text-3xl md:text-4xl font-black text-[#1D24CA] font">2</p>
                     <p class="text-[10px] uppercase tracking-widest font-bold text-gray-400 mt-2">Points de vue</p>
                 </div>
                 <div>
-                    <p class="text-4xl font-black text-[#1D24CA] font">1</p>
+                    <p class="text-3xl md:text-4xl font-black text-[#1D24CA] font">1</p>
                     <p class="text-[10px] uppercase tracking-widest font-bold text-gray-400 mt-2">Thème</p>
                 </div>
                 <div>
-                    <p class="text-4xl font-black text-[#ED7464] font flex gap-2 justify-center items-center">5
+                    <p class="text-3xl md:text-4xl font-black text-[#ED7464] font flex gap-2 justify-center items-center">5
                         <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg> 
 
                     </p>
                     <p class="text-[10px] uppercase tracking-widest font-bold text-gray-400 mt-2">Équipe</p>
                 </div>
                 <div>
-                    <p class="text-4xl font-black text-[#ED7464] font">25H</p>
+                    <p class="text-3xl md:text-4xl font-black text-[#ED7464] font">25H</p>
                     <p class="text-[10px] uppercase tracking-widest font-bold text-gray-400 mt-2">Illustration</p>
                 </div>
             </div>
         </section>
 
 
-        <section class="max-w-7xl mx-auto px-6 py-24">
+        <section class="max-w-7xl mx-auto px-6 py-16 md:py-24">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
                 
                 <!-- Process -->
                 <div class="lg:sticky lg:top-32">
-                    <h2 class="font text-3xl font-bold mb-8">Démarche & <span class="text-[#ED7464]">Contraintes</span></h2>
+                    <h2 class="font text-2xl md:text-3xl font-bold mb-8">Démarche & <span class="text-[#ED7464]">Contraintes</span></h2>
                     
                     <div class="space-y-12">
                         <div>
-                            <h4 class="font-bold text-lg mb-2 uppercase tracking-wide">01. Consignes & Intention</h4>
+                            <h3 class="font-bold text-lg mb-2 uppercase tracking-wide">01. Consignes & Intention</h3>
                             <p class="text-gray-600">
                                 Plusieurs contraintes ont encadré la conception du projet :
                                 <br>
@@ -81,7 +80,7 @@
                             </p>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg mb-2 uppercase tracking-wide">02. Concept</h4>
+                            <h3 class="font-bold text-lg mb-2 uppercase tracking-wide">02. Concept</h3>
                             <p class="text-gray-600">
                                 Le concept repose sur une narration à <b>double point de vue</b> :
                                 <br>
@@ -96,7 +95,7 @@
                             </p>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg mb-2 uppercase tracking-wide">03. Illustration et choix graphiques</h4>
+                            <h3 class="font-bold text-lg mb-2 uppercase tracking-wide">03. Illustration et choix graphiques</h3>
                             <p class="text-gray-600">
                                 Le choix des couleurs s'est porté sur une palette noir, blanc et rouge, créant un <b>fort contraste</b> visuel. Cette limitation volontaire des couleurs permet également de distinguer immédiatement les deux points de vue du récit, le rouge étant majoritairement associé à l'imaginaire et aux pensées du personnage.
                             </p>
@@ -117,7 +116,7 @@
                 </div>
 
                 <!-- Galery -->
-                <div class="space-y-8 h-[1600px] overflow-y-auto pr-4 custom-scrollbar">
+                <div class="space-y-8 md:h-[1600px] overflow-y-auto custom-scrollbar">
                     <div class="relative rounded-3xl overflow-hidden shadow-lg border border-gray-100">
                         <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Titre</span>
                         <img src="<?php echo $root; ?>images/projects/psychimeria/title.png" class="w-full" alt="Titre">
@@ -144,7 +143,7 @@
             <!-- Tools and skills -->
             <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-8 border-t border-gray-100 pt-10">
                 <div>
-                    <h4 class="font text-[10px] font-bold uppercase tracking-[0.2em] text-gray-400 mb-4">Outils</h4>
+                    <h3 class="font text-[10px] font-bold uppercase tracking-[0.2em] text-gray-400 mb-4">Outils</h3>
                     <div class="flex flex-wrap gap-2">
                         <span class="px-4 py-2 rounded-full bg-[#1D24CA]/5 text-[#1D24CA] text-xs font-bold border border-[#1D24CA]/10">
                             Illustrator
@@ -156,7 +155,7 @@
                 </div>
             
                 <div>
-                    <h4 class="font text-[10px] font-bold uppercase tracking-[0.2em] text-gray-400 mb-4">Compétences</h4>
+                    <h3 class="font text-[10px] font-bold uppercase tracking-[0.2em] text-gray-400 mb-4">Compétences</h3>
                     <div class="flex flex-wrap gap-2">
                         <span class="px-4 py-2 rounded-full bg-[#ED7464]/5 text-[#ED7464] text-xs font-bold border border-[#ED7464]/10">
                             Scénarisation
@@ -172,7 +171,7 @@
             </div>
 
             <!-- Links -->
-            <div class="mt-16 flex flex-wrap gap-10 justify-center">
+            <div class="mt-16 flex flex-col md:flex-row gap-10 justify-center">
                 <a href="http://mmi23d05.mmi-troyes.fr/SAE402/index.html" target="_blank" 
                 class="flex items-center gap-3 px-8 py-4 bg-[#1D24CA] text-white rounded-2xl font text-sm font-bold transition-all hover:bg-[#151a96] hover:-translate-y-1 shadow-lg shadow-[#1D24CA]/20 group">
                     <svg class="w-5 h-5 fill-current transition-transform group-hover:scale-110" viewBox="0 0 24 24">
@@ -186,7 +185,7 @@
         <section class="max-w-5xl mx-auto px-6 lg:px-20 py-16 bg-gray-50 rounded-[3rem]">
             <div class="text-center mb-12">
                 <span class="font text-[#1D24CA] text-xs font-bold uppercase tracking-[0.3em] mb-4 block">Bilan</span>
-                <h2 class="font text-3xl font-bold text-gray-900">Ce que je retiens de ce projet</h2>
+                <h2 class="font text-2xl md:text-3xl font-bold text-gray-900">Ce que je retiens de ce projet</h2>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -222,35 +221,9 @@
             </div>
         </section>
 
-        <section class="max-w-6xl mx-auto px-6 py-24">
-            <div class="border-t border-gray-100 pt-16 flex flex-col items-center">
-                <p class="font text-xs uppercase tracking-[0.4em] text-gray-400 mb-8 text-center">Continuer l'exploration</p>
-                
-                <a href="<?php echo $prochain_projet['url']; ?>" class="group relative block w-full max-w-4xl overflow-hidden rounded-[2.5rem] bg-gray-900 aspect-[21/9] sm:aspect-[3/1]">
-                    <img src="<?php echo $prochain_projet['img']; ?>" 
-                        alt="Vers <?php echo $prochain_projet['titre']; ?>" 
-                        class="absolute inset-0 w-full h-full object-cover opacity-40 grayscale transition-all duration-700 group-hover:scale-110 group-hover:opacity-60 group-hover:grayscale-0">
-                    
-                    <div class="absolute inset-0 flex flex-col items-center justify-center text-white p-8">
-                        <span class="font text-[10px] font-bold uppercase tracking-widest opacity-60 mb-2">Projet Suivant</span>
-                        <h3 class="font text-3xl md:text-5xl font-black uppercase tracking-tighter transition-transform duration-500 group-hover:translate-y-[-5px]">
-                            <?php echo $prochain_projet['titre']; ?>
-                        </h3>
-                        
-                        <div class="mt-6 flex items-center gap-2 opacity-0 translate-y-4 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
-                            <span class="font text-[10px] font-bold uppercase tracking-widest">Découvrir le projet</span>
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-                            </svg>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </section>
-
+        <?php include '../nextProjectBtn.php'; ?>
     </main>
 
     <?php include '../footer.php'; ?>
-
 </body>
 </html>

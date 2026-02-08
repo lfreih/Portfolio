@@ -25,7 +25,7 @@
         'design-bde-2025' => [
             'titre' => 'Design BDE 2025',
             'url' => $root . 'design-bde-2025',
-            'img' => $root . 'images/projects/design-bde-2025/logo.png'
+            'img' => $root . 'images/projects/design-bde-2025/logo.svg'
         ],
         'clairtemps' => [
             'titre' => 'Clairtemps',

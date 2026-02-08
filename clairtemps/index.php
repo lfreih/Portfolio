@@ -213,6 +213,7 @@
                     <h3 class="font-bold text-gray-900 mb-2">Architecture & Environnement</h3>
                     <p class="text-sm text-gray-500 leading-relaxed">
                         Développement d'une application météo en Vue.js avec Pinia et backend Symfony, connectée à une API externe. Travail réalisé dans des conditions proches d'un projet réel, favorisant l'autonomie et la rigueur.
+                    </p>
                 </div>
 
                 <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 transition-transform hover:-translate-y-1">

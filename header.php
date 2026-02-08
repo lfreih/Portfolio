@@ -40,7 +40,7 @@
         'amara-by-kenzo' => [
             'titre' => 'Amara by KENZO',
             'url' => $root . 'amara-by-kenzo',
-            'img' => $root . 'images/projects/amara-by-kenzo/fragrance.png'
+            'img' => $root . 'images/projects/amara-by-kenzo/blender-render.png'
         ],
     ];
 

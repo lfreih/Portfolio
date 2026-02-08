@@ -16,7 +16,7 @@
                 <div class="">
                     <span class="font text-[#ED7464] font-bold text-xs uppercase tracking-[0.3em] mb-4 block">Projet Universitaire • En cours</span>
                     <!-- <span class="font text-[#ED7464] font-bold text-xs uppercase tracking-[0.3em] mb-4 block">Projet Universitaire • Sept 2025 - mars 2026</span> -->
-                    <h1 class="font text-3xl md:text-5xl md:text-7xl font-black mb-6 tracking-tighter leading-none">Mix Mess Inc.</h1>
+                    <h1 class="font text-4xl md:text-7xl font-black mb-6 tracking-tighter leading-none">Mix Mess Inc.</h1>
                 </div>
 
                 <div class="flex flex-col md:flex-row md:text-left items-center gap-10">
@@ -200,7 +200,7 @@
         <section class="max-w-5xl mx-auto px-6 lg:px-20 py-16 bg-gray-50 rounded-[3rem]">
             <div class="text-center mb-12">
                 <span class="font text-[#1D24CA] text-xs font-bold uppercase tracking-[0.3em] mb-4 block">Bilan</span>
-                <h2 class="font text-3xl font-bold text-gray-900">Ce que je retiens de ce projet</h2>
+                <h2 class="font text-2xl md:text-3xl font-bold text-gray-900">Ce que je retiens de ce projet</h2>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">

@@ -9,19 +9,39 @@
     $projets = [
         'mix-mess-inc' => [
             'titre' => 'Mix Mess Inc.',
-            'url' => $root . 'projects/mix-mess-inc/index.php',
+            'url' => $root . 'mix-mess-inc',
             'img' => $root . 'images/projects/mix-mess-inc/menu.png'
         ],
         'shooter-vr' => [
-            'titre' => 'Shooter VR',
-            'url' => $root . 'projects/shooter-vr/index.php',
+            'titre' => 'SheepSheep',
+            'url' => $root . 'shooter-vr',
             'img' => $root . 'images/projects/shooter-vr/casque_vr_right.png'
         ],
-        'kenzo-amara' => [
-            'titre' => 'Kenzo Amara',
-            'url' => $root . 'projects/amara/index.php',
-            'img' => $root . 'images/projects/kenzo-thumb.jpg'
-        ]
+        'synk' => [
+            'titre' => 'SYNK',
+            'url' => $root . 'synk',
+            'img' => $root . 'images/projects/synk/logo.png'
+        ],
+        'design-bde-2025' => [
+            'titre' => 'Design BDE 2025',
+            'url' => $root . 'design-bde-2025',
+            'img' => $root . 'images/projects/design-bde-2025/logo.png'
+        ],
+        'clairtemps' => [
+            'titre' => 'Clairtemps',
+            'url' => $root . 'clairtemps',
+            'img' => $root . 'images/projects/clairtemps/desktop-favorites.png'
+        ],
+        'psychimeria' => [
+            'titre' => 'Psychiméria',
+            'url' => $root . 'psychimeria',
+            'img' => $root . 'images/projects/psychimeria/title.png'
+        ],
+        'amara-by-kenzo' => [
+            'titre' => 'Amara by KENZO',
+            'url' => $root . 'amara-by-kenzo',
+            'img' => $root . 'images/projects/amara-by-kenzo/fragrance.png'
+        ],
     ];
 
     // On récupère le nom du dossier actuel pour savoir sur quel projet on est

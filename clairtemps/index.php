@@ -16,7 +16,6 @@
 
                 <div class="">
                     <span class="font text-[#ED7464] font-bold text-xs uppercase tracking-[0.3em] mb-4 block">Projet Universitaire • Juin 2025</span>
-                    <!-- <span class="font text-[#ED7464] font-bold text-xs uppercase tracking-[0.3em] mb-4 block">Projet Universitaire • Sept 2025 - mars 2026</span> -->
                     <h1 class="font text-5xl md:text-7xl font-black mb-6 tracking-tighter leading-none">Clairtemps</h1>
                 </div>
 
@@ -25,7 +24,7 @@
                         Dans le cadre de ce projet universitaire, nous avons développé une application web de prévisions météorologiques affichant des données en temps réel, par heure et sur 15 jours, à partir de l'API OpenWeatherMap. L'application repose sur une architecture backend en Symfony et un frontend en Vue.js, avec une attention particulière portée à l'UI, à l'UX et à l'optimisation des performances. L'objectif était de concevoir une interface claire, moderne et agréable à utiliser, dans des conditions proches d'un projet professionnel.
                     </p>
                     
-                    <div class="flex-1 w-full h-[70px]">
+                    <div class="flex-1 w-full h-[60px]">
                         <img src="<?php echo $root; ?>images/projects/clairtemps/logo.png" alt="" class="w-full h-full object-contain">
                     </div>
                 </div>
@@ -70,37 +69,37 @@
                         <div>
                             <h4 class="font-bold text-lg mb-2 uppercase tracking-wide">01. Réflexion sur le front</h4>
                             <p class="text-gray-600">
-                                Après plusieurs jours de travail sur le backend, nous avons envisagé d'abandonner Vue.js au profit de Twig, jugé plus simple. Cependant, l'accent du projet étant mis sur l'UI et l'UX, l'utilisation d'un framework réactif s'est imposée comme indispensable. Nous avons donc maintenu Vue.js malgré la complexité supplémentaire.
+                                Après plusieurs jours de travail sur le backend, nous avons envisagé d'abandonner Vue.js au profit de Twig, jugé plus simple. Cependant, l'accent du projet étant mis sur <b>l'UI et l'UX</b>, l'utilisation d'un framework <b>réactif</b> s'est imposée comme indispensable. Nous avons donc maintenu Vue.js malgré la complexité supplémentaire.
                             </p>
                         </div>
                         <div>
                             <h4 class="font-bold text-lg mb-2 uppercase tracking-wide">02. API externe</h4>
                             <p class="text-gray-600">
-                                Pour l'accès aux données météo, j'ai créé un compte étudiant sur OpenWeatherMap, permettant pendant six mois l'accès à davantage de données qu'un compte gratuit. Malgré cela, certaines limitations de l'API (absence d'alertes météo et de détails avancés des prévisions) ont directement influencé nos choix d'interface et de fonctionnalités.
+                                Pour l'accès aux données météo, j'ai créé un compte étudiant sur <b>OpenWeatherMap</b>, permettant pendant six mois l'accès à davantage de données qu'un compte gratuit. Malgré cela, certaines limitations de l'API (absence d'alertes météo et de détails avancés des prévisions) ont directement influencé nos <b>choix d'interface</b> et de fonctionnalités.
                             </p>
                             <br>
                             <p class="text-gray-600">
-                                J'ai pris en charge la mise en place d'un service côté backend Symfony, permettant d'appeler les routes de l'API OpenWeatherMap et d'exposer nos propres routes au frontend. Côté frontend, j'ai intégré les requêtes API afin de récupérer et afficher les données météo.
+                                J'ai pris en charge la mise en place d'un <b>service côté backend Symfony</b>, permettant d'appeler les routes de l'API OpenWeatherMap et d'exposer nos propres routes au frontend. Côté frontend, j'ai intégré les <b>requêtes API</b> afin de récupérer et afficher les données météo.
                             </p>
                         </div>
                         <div>
                             <h4 class="font-bold text-lg mb-2 uppercase tracking-wide">03. Développement Frontend</h4>
                             <p class="text-gray-600">
-                                Grâce à Vue.js, j'ai pu concevoir des composants réutilisables et mettre en place un store Pinia pour centraliser et partager les données météo entre les composants. Cette étape s'est révélée particulièrement exigeante, Pinia étant une technologie que j'utilisais pour la première fois dans un contexte réel, avec une volonté de rendre les méthodes génériques et réutilisables.
+                                Grâce à Vue.js, j'ai pu concevoir des composants réutilisables et mettre en place un <b>store Pinia</b> pour centraliser et partager les données météo entre les composants. Cette étape s'est révélée particulièrement exigeante, Pinia étant une technologie que j'utilisais pour la première fois dans un contexte réel, avec une volonté de rendre les <b>méthodes génériques et réutilisables</b>.
                             </p>
                             <br>
                             <p class="text-gray-600">
-                                Par la suite, je me suis concentrée sur le **frontend**, afin d'éviter les conflits liés au travail simultané sur le backend. J'ai ainsi développé plusieurs composants permettant :
+                                Par la suite, je me suis concentrée sur le frontend, afin d'éviter les conflits liés au travail simultané sur le backend. J'ai ainsi développé plusieurs composants permettant :
                                 <br>
-                                • l'affichage de la météo en direct pour une ville,<br>
-                                • la consultation des prévisions horaires,<br>
-                                • l'affichage des prévisions sur 15 jours via une interaction utilisateur.
+                                • l'affichage de la météo <b>en direct</b> pour une ville,<br>
+                                • la consultation des <b>prévisions horaires</b>,<br>
+                                • l'affichage des <b>prévisions sur 15 jours</b> via une interaction utilisateur.
                             </p>
                         </div>
                         <div>
                             <h4 class="font-bold text-lg mb-2 uppercase tracking-wide">04. Optimisation</h4>
                             <p class="text-gray-600">
-                                Enfin, afin de limiter le nombre de requêtes vers l'API externe (un enjeu important dans ce type de projet), j'ai implémenté un système de mise en cache, permettant d'optimiser les appels externes et de réduire la charge sur l'API ainsi que sur le serveur backend.
+                                Enfin, afin de limiter le nombre de requêtes vers l'API externe (un enjeu important dans ce type de projet), j'ai implémenté un système de <b>mise en cache</b>, permettant d'optimiser les appels externes et de réduire la charge sur l'API ainsi que sur le serveur backend.
                             </p>
                         </div>
                     </div>
@@ -109,29 +108,35 @@
                 <!-- Galery -->
                 <div class="space-y-8 h-[1600px] overflow-y-auto pr-4 custom-scrollbar">
                     <div class="relative rounded-3xl overflow-hidden shadow-lg border border-gray-100">
-                        <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Desktop - Page d'accueil</span>
+                        <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Page d'accueil</span>
                         <img src="<?php echo $root; ?>images/projects/clairtemps/desktop-home.png" class="w-full" alt="Page d'accueil sur Desktop">
                     </div>
-                    <div class="relative rounded-3xl overflow-hidden shadow-lg border border-gray-100">
-                        <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Mobile - Page d'accueil</span>
-                        <img src="<?php echo $root; ?>images/projects/clairtemps/menu.png" class="w-full" alt="Page d'accueil sur mobile">
+                    <div class="columns-2 items-start gap-6">
+                        <div class="relative overflow-hidden rounded-3xl shadow-lg border border-gray-100 mb-6">
+                            <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Page d'inscription</span>
+                            <img src="<?php echo $root; ?>images/projects/clairtemps/mobile-register.png" class="w-full" alt="Page d'inscription sur mobile">
+                        </div>
+                        
+                        
+                        <div class="relative overflow-hidden rounded-3xl shadow-lg border border-gray-100">
+                            <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Page de favoris</span>
+                            <img src="<?php echo $root; ?>images/projects/clairtemps/mobile-favorites.png" class="w-full" alt="Page de favoris sur mobile">
+                        </div>
+                        
+                        <div class="relative overflow-hidden rounded-3xl shadow-lg border border-gray-100 mb-6">
+                            <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Page de prévisions Non connecté</span>
+                            <img src="<?php echo $root; ?>images/projects/clairtemps/mobile-disconnected-forcast.png" class="w-full" alt="Page de prévisions Non connecté sur mobile">
+                        </div>
+                        
+                        <div class="relative overflow-hidden rounded-3xl shadow-lg border border-gray-100">
+                            <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Page de résultat de recherche</span>
+                            <img src="<?php echo $root; ?>images/projects/clairtemps/mobile-result.png" class="w-full" alt="Page de résultat de recherche sur mobile">
+                        </div>
                     </div>
                     <div class="relative rounded-3xl overflow-hidden shadow-lg border border-gray-100">
-                        <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Mobile - </span>
-                        <img src="<?php echo $root; ?>images/projects/clairtemps/blog.png" class="w-full" alt="sur mobile">
+                        <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Desktop - Page de favoris</span>
+                        <img src="<?php echo $root; ?>images/projects/clairtemps/desktop-favorites.png" class="w-full" alt="Page de favoris sur desktop">
                     </div>
-                    <div class="relative rounded-3xl overflow-hidden shadow-lg border border-gray-100">
-                        <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Mobile - </span>
-                        <img src="<?php echo $root; ?>images/projects/clairtemps/game.png" class="w-full" alt="sur mobile">
-                    </div>
-                    <div class="relative rounded-3xl overflow-hidden shadow-lg border border-gray-100">
-                        <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Mobile - </span>
-                        <img src="<?php echo $root; ?>images/projects/clairtemps/scores.png" class="w-full" alt="sur mobile">
-                    </div>
-                    <!-- <div class="relative rounded-3xl overflow-hidden shadow-lg aspect-video bg-gray-200">
-                        <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Spot final</span>
-                        <iframe class="w-full h-full" src="" frameborder="0" allowfullscreen></iframe>
-                    </div> -->
                 </div>
             </div>
 
@@ -152,9 +157,6 @@
                         <span class="px-4 py-2 rounded-full bg-[#1D24CA]/5 text-[#1D24CA] text-xs font-bold border border-[#1D24CA]/10">
                             API externe
                         </span>
-                        <span class="px-4 py-2 rounded-full bg-[#1D24CA]/5 text-[#1D24CA] text-xs font-bold border border-[#1D24CA]/10">
-                            Figma
-                        </span>
                     </div>
                 </div>
             
@@ -162,13 +164,13 @@
                     <h4 class="font text-[10px] font-bold uppercase tracking-[0.2em] text-gray-400 mb-4">Compétences</h4>
                     <div class="flex flex-wrap gap-2">
                         <span class="px-4 py-2 rounded-full bg-[#ED7464]/5 text-[#ED7464] text-xs font-bold border border-[#ED7464]/10">
-                            Composants réutilisables
+                            Architecture modulaire
                         </span>
                         <span class="px-4 py-2 rounded-full bg-[#ED7464]/5 text-[#ED7464] text-xs font-bold border border-[#ED7464]/10">
-                            Cohérence visuelle
+                            Responsive design
                         </span>
                         <span class="px-4 py-2 rounded-full bg-[#ED7464]/5 text-[#ED7464] text-xs font-bold border border-[#ED7464]/10">
-                            ??
+                            Optimisation
                         </span>
                     </div>
                 </div>
@@ -206,7 +208,8 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 transition-transform hover:-translate-y-1">
                     <div class="text-[#ED7464] mb-4">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                        <!-- <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg> -->
+                        <svg class="w-8 h-8" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 10.5 8 13l2 2.5"/><path d="m14 10.5 2 2.5-2 2.5"/><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2z"/></svg>
                     </div>
                     <h3 class="font-bold text-gray-900 mb-2">Architecture & Environnement</h3>
                     <p class="text-sm text-gray-500 leading-relaxed">
@@ -215,7 +218,8 @@
 
                 <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 transition-transform hover:-translate-y-1">
                     <div class="text-[#1D24CA] mb-4">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        <!-- <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg> -->
+                        <svg class="w-8 h-8" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><line x1="12" x2="12" y1="8" y2="16"/><line x1="8" x2="16" y1="12" y2="12"/></svg>
                     </div>
                     <h3 class="font-bold text-gray-900 mb-2">Performance & Expérience Utilisateur</h3>
                     <p class="text-sm text-gray-500 leading-relaxed">
@@ -225,7 +229,7 @@
 
                 <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 transition-transform hover:-translate-y-1">
                     <div class="text-[#ED7464] mb-4">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.364-6.364l-.707-.707M6.364 18.364l.707-.707M18.364 18.364l-.707-.707M12 18V9"/></svg>
+                        <svg class="w-8 h-8" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 0 1 7.38 16.75"/><path d="m16 12-4-4-4 4"/><path d="M12 16V8"/><path d="M2.5 8.875a10 10 0 0 0-.5 3"/><path d="M2.83 16a10 10 0 0 0 2.43 3.4"/><path d="M4.636 5.235a10 10 0 0 1 .891-.857"/><path d="M8.644 21.42a10 10 0 0 0 7.631-.38"/></svg>
                     </div>
                     <h3 class="font-bold text-gray-900 mb-2">Améliorations & Perspectives</h3>
                     <p class="text-sm text-gray-500 leading-relaxed">

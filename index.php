@@ -389,7 +389,7 @@
                         <!-- <img src="images/projets/design_bde_2025/design-pull-2025.svg" alt="Design sweat du BDE" 
                             class="w-full h-full object-none transition-transform duration-300 grayscale-50 group-hover:scale-110 group-hover:grayscale-25"> -->
                         
-                        <img src="images/projects/design_bde_2025/logo.svg" alt="Design sweat du BDE" 
+                        <img src="images/projects/design-bde-2025/logo.svg" alt="Design pour le concours du BDE" 
                             class="w-full h-full object-cover transition-transform duration-300 grayscale-50 group-hover:scale-110 group-hover:grayscale-25">
                         <!-- <span class="absolute top-4 left-4 rounded-full bg-purple-100 px-3 py-1 text-xs font-bold text-purple-700 backdrop-blur-md">
                             Projet personnel
@@ -454,20 +454,6 @@
                 </a>
 
                 <!-- Psychiméria  -->
-                <!-- <a href="psychimeria" 
-                    class="relative group overflow-hidden rounded-3xl bg-[#98ABEE]/20 p-6 border border-[#98ABEE]/30">
-                    <h3 class="text-xl font-bold font text-[#1D24CA]">Psychiméria</h3>
-                    <p class="text-sm text-gray-600 mt-1">Conception et création d'une bande dessinée numérique interactive</p>
-                    
-                    <div class="flex flex-wrap gap-2 mt-4">
-                        <span class="inline-block rounded-full  bg-[#98ABEE]/20 px-3 py-1 text-xs font-bold text-[#1D24CA]">
-                            Illustrator
-                        </span>
-                        <span class="inline-block rounded-full bg-[#98ABEE]/20 px-3 py-1 text-xs font-bold text-[#1D24CA]">
-                            After Effects
-                        </span>
-                    </div>
-                </a> -->
                 <a href="psychimeria" 
                     class="relative group overflow-hidden rounded-3xl bg-gray-100 p-6 flex flex-col justify-between">
 

@@ -244,7 +244,7 @@
                     </div>
                 </a>
 
-                <a href="shooter-vr" 
+                <a href="sheepsheep" 
                     class="md:row-span-2 relative group overflow-hidden rounded-3xl bg-[#1D24CA] p-8 text-white flex flex-col justify-between">
                     <div>
                         <div class="flex justify-between">
@@ -258,7 +258,7 @@
                     </div>
 
                     <div>
-                        <img src="images/projects/shooter-vr/casque_vr_right.png" alt="Casque Oculus"
+                        <img src="images/projects/sheepsheep/casque_vr_right.png" alt="Casque Oculus"
                             class="group-hover:scale-105 transition-all duration-300">
                         <!-- <img src="images/projets/shooter_vr/casque_vr_face2.png" alt="Casque Oculus"> -->
                     </div>
@@ -386,9 +386,7 @@
                 <a href="design-bde-2025" 
                     class="md:col-span-2 relative group overflow-hidden rounded-3xl flex flex-col md:flex-row bg-white border border-gray-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
                     <div class="relative w-full md:w-72 h-48 md:h-full overflow-hidden bg-black">
-                        <!-- <img src="images/projets/design_bde_2025/design-pull-2025.svg" alt="Design sweat du BDE" 
-                            class="w-full h-full object-none transition-transform duration-300 grayscale-50 group-hover:scale-110 group-hover:grayscale-25"> -->
-                        
+
                         <img src="images/projects/design-bde-2025/logo.svg" alt="Design pour le concours du BDE" 
                             class="w-full h-full object-cover transition-transform duration-300 grayscale-50 group-hover:scale-110 group-hover:grayscale-25">
                         <!-- <span class="absolute top-4 left-4 rounded-full bg-purple-100 px-3 py-1 text-xs font-bold text-purple-700 backdrop-blur-md">

@@ -12,10 +12,10 @@
             'url' => $root . 'mix-mess-inc',
             'img' => $root . 'images/projects/mix-mess-inc/menu.png'
         ],
-        'shooter-vr' => [
+        'sheepsheep' => [
             'titre' => 'SheepSheep',
-            'url' => $root . 'shooter-vr',
-            'img' => $root . 'images/projects/shooter-vr/casque_vr_right.png'
+            'url' => $root . 'sheepsheep',
+            'img' => $root . 'images/projects/sheepsheep/casque_vr_right.png'
         ],
         'synk' => [
             'titre' => 'SYNK',

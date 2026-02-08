@@ -46,7 +46,7 @@
 
         <!-- About me -->
         <section id="propos" class="max-w-6xl mx-auto px-6 md:px-18 py-18 md:py-24 border-t border-gray-100">
-            <h2 class="font text-2xl md:text-3xl font-bold mb-12 flex items-center gap-4">
+            <h2 class="font text-2xl md:text-3xl font-bold mb-8 md:mb-12 flex items-center gap-4">
                 <span class="text-[#1D24CA]">01.</span> Mon profil
             </h2>
 
@@ -165,7 +165,7 @@
 
         <!-- Projects -->
         <section id="projets" class="max-w-6xl mx-auto px-6 md:px-18 py-18 md:py-24 border-t border-gray-100">
-            <h2 class="font text-2xl md:text-3xl font-bold mb-12 flex items-center gap-4 text-right justify-end">
+            <h2 class="font text-2xl md:text-3xl font-bold mb-8 md:mb-12 flex items-center gap-4 text-right justify-end">
                 Mes projets <span class="text-[#ED7464]">.02</span>
             </h2>
 

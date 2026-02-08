@@ -4,56 +4,6 @@
     } else {
         $root = "/portfolio/";
     }
-
-    // On définit la liste des projets dans l'ordre souhaité
-    $projets = [
-        'mix-mess-inc' => [
-            'titre' => 'Mix Mess Inc.',
-            'url' => $root . 'mix-mess-inc',
-            'img' => $root . 'images/projects/mix-mess-inc/menu.png'
-        ],
-        'sheepsheep' => [
-            'titre' => 'SheepSheep',
-            'url' => $root . 'sheepsheep',
-            'img' => $root . 'images/projects/sheepsheep/casque_vr_right.png'
-        ],
-        'synk' => [
-            'titre' => 'SYNK',
-            'url' => $root . 'synk',
-            'img' => $root . 'images/projects/synk/logo.png'
-        ],
-        'design-bde-2025' => [
-            'titre' => 'Design BDE 2025',
-            'url' => $root . 'design-bde-2025',
-            'img' => $root . 'images/projects/design-bde-2025/logo.svg'
-        ],
-        'clairtemps' => [
-            'titre' => 'Clairtemps',
-            'url' => $root . 'clairtemps',
-            'img' => $root . 'images/projects/clairtemps/desktop-favorites.png'
-        ],
-        'psychimeria' => [
-            'titre' => 'Psychiméria',
-            'url' => $root . 'psychimeria',
-            'img' => $root . 'images/projects/psychimeria/title.png'
-        ],
-        'amara-by-kenzo' => [
-            'titre' => 'Amara by KENZO',
-            'url' => $root . 'amara-by-kenzo',
-            'img' => $root . 'images/projects/amara-by-kenzo/blender-render.png'
-        ],
-    ];
-
-    // On récupère le nom du dossier actuel pour savoir sur quel projet on est
-    // basename(dirname(...)) récupère "kenzo-amara" si tu es dans /portfolio/kenzo-amara/index.php
-    $projet_actuel = basename(dirname($_SERVER['PHP_SELF']));
-
-    // On cherche l'index du projet suivant
-    $cles = array_keys($projets);
-    $index_actuel = array_search($projet_actuel, $cles);
-    $index_suivant = ($index_actuel + 1) % count($cles); // Le % permet de revenir au premier projet à la fin
-
-    $prochain_projet = $projets[$cles[$index_suivant]];
 ?>
 
 <header class="fixed top-0 w-full z-50 flex justify-between items-center px-6 lg:px-24 py-3 bg-[#98ABEE]/20 backdrop-blur-md ">

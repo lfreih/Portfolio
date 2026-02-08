@@ -57,10 +57,10 @@
             </div>
         </section>
 
-        <!-- Process -->
         <section class="max-w-7xl mx-auto px-6 py-24">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
                 
+                <!-- Process -->
                 <div class="lg:sticky lg:top-32">
                     <h2 class="font text-3xl font-bold mb-8">Coulisses & <span class="text-[#ED7464]">Contraintes</span></h2>
                     
@@ -223,7 +223,7 @@
 
                 <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 transition-transform hover:-translate-y-1">
                     <div class="text-[#ED7464] mb-4">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.364-6.364l-.707-.707M6.364 18.364l.707-.707M18.364 18.364l-.707-.707M12 18V9"/></svg>
+                        <svg class="w-8 h-8" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m20.9 18.55-8-15.98a1 1 0 0 0-1.8 0l-8 15.98"/><ellipse cx="12" cy="19" rx="9" ry="3"/></svg>
                     </div>
                     <h3 class="font-bold text-gray-900 mb-2">Technique</h3>
                     <p class="text-sm text-gray-500 leading-relaxed">Expertise renforcée en modélisation Blender, mise en scène et gestion complexe de la lumière naturelle.</p>

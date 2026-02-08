@@ -508,7 +508,7 @@
                             <svg class="w-6 h-6 opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
                         </div>
     
-                        <p class="text-gray-600 mt-1">Réalisation d'un <span class="font-medium text-black underline underline-offset-4 decoration-[#ED7464]/80 decoration-2">spot publicitaire</span> en liant avec une stratégie de communication</p>
+                        <p class="text-gray-600 mt-1">Réalisation d'un <span class="font-medium text-black">spot publicitaire</span> en liant avec une stratégie de communication</p>
                     </div>
 
                     <div class="flex flex-wrap gap-2 mt-4 uppercase">

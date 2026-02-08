@@ -171,7 +171,7 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[250px]">
                 <a href="mix-mess-inc" 
-                    class="md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-3xl bg-gray-100">
+                    class="md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-3xl bg-gray-100 shadow-sm hover:shadow-xl transition-all duration-300">
                     
                     <!-- <span class="absolute top-4 left-4 z-20 
                         opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out inline-flex items-center rounded-full bg-[#ED7464] px-3 py-1 text-xs font-medium text-white shadow-lg tracking-wider">
@@ -208,7 +208,7 @@
                 </a>
 
                 <a href="sheepsheep" 
-                    class="md:row-span-2 relative group overflow-hidden rounded-3xl bg-[#1D24CA] p-8 text-white flex flex-col justify-between">
+                    class="md:row-span-2 relative group overflow-hidden rounded-3xl bg-[#1D24CA] p-8 text-white flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-300">
                     <div>
                         <div class="flex justify-between">
                             <span class="text-xs uppercase tracking-widest opacity-60 font">En cours</span>
@@ -230,8 +230,7 @@
                 </a>
 
                 <a href="synk" 
-                    class="relative group overflow-hidden rounded-3xl bg-gray-100 p-6 flex flex-col justify-between">
-
+                    class="relative group overflow-hidden rounded-3xl p-6 flex flex-col justify-between bg-white border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300">
                     <div>
                         <div class="flex justify-between mb-2">
                             <h3 class="text-2xl font-bold font text-[#1D24CA]">SYNK</span></h3>
@@ -257,7 +256,7 @@
                 </a>
 
                 <!-- Portfolio 2026 -->
-                <div class="relative group overflow-hidden rounded-3xl bg-[#1D24CA] p-6">
+                <div class="relative group overflow-hidden rounded-3xl bg-[#1D24CA] p-6 shadow-sm hover:shadow-xl transition-all duration-300">
                     <div class="flex flex-col justify-center items-center h-full gap-4 text-center">
                         
                         <h3 class="text-2xl md:text-3xl font-bold font text-white">Portfolio 2026</h3>
@@ -272,7 +271,7 @@
                 </div>
                 
                 <a href="clairtemps" 
-                    class="relative group overflow-hidden rounded-3xl bg-gray-100 p-6 flex flex-col justify-between">
+                    class="relative group overflow-hidden rounded-3xl p-6 flex flex-col justify-between bg-white border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300">
                     <div>
                         <div class="flex justify-between mb-2">
                             <h3 class="text-2xl font-bold font text-[#1D24CA]">Clairtemps</span></h3>
@@ -301,7 +300,7 @@
                 </a>
 
                 <a href="psychimeria" 
-                    class="relative group overflow-hidden rounded-3xl bg-gray-100 p-6 flex flex-col justify-between">
+                    class="relative group overflow-hidden rounded-3xl p-6 flex flex-col justify-between bg-white border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300">
 
                     <div>
                         <div class="flex justify-between mb-2">
@@ -365,7 +364,7 @@
                 </a>
                 
                 <a href="amara-by-kenzo" 
-                    class="relative group overflow-hidden rounded-3xl bg-gray-100 p-6 flex flex-col justify-between">
+                    class="relative group overflow-hidden rounded-3xl p-6 flex flex-col justify-between bg-white border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300">
 
                     <div>
                         <div class="flex justify-between mb-2">
@@ -393,7 +392,7 @@
                 </a>
 
                 <a href="https://github.com/lfreih" target="_blank" title="Mon compte GitHub" 
-                    class="relative group overflow-hidden rounded-3xl bg-gray-900 p-6 flex items-center justify-center">
+                    class="relative group overflow-hidden rounded-3xl bg-gray-900 p-6 flex items-center justify-center shadow-sm hover:shadow-xl transition-all duration-300">
                     <div class="text-white text-center group">
                         <p class="text-sm opacity-70 uppercase tracking-tighter">Projets sur</p>
 

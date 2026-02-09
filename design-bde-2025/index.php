@@ -94,7 +94,7 @@
                 </div>
 
                 <!-- Galery -->
-                <div class="space-y-8 md:h-[1600px] overflow-y-auto custom-scrollbar">
+                <div class="space-y-8 md:h-[1200px] overflow-y-auto custom-scrollbar">
                     <!-- <div class="relative rounded-3xl overflow-hidden shadow-lg border border-gray-100">
                         <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Croquis</span>
                         <img src="<?php echo $root; ?>images/projects/design-bde-2025/logo.svg" class="w-full" alt="Croquis du projet">

@@ -7,13 +7,13 @@
 
     <main>
         <!-- Hero -->
-        <section class="relative min-h-screen flex items-center justify-center overflow-hidden px-6">
+        <section class="relative min-h-screen flex items-center justify-center overflow-hidden px-6 mt-6">
             <div class="absolute top-1/4 -left-20 w-48 h-48 md:w-72 md:h-72 bg-[#1D24CA]/10 rounded-full blur-[60px] md:blur-[100px] animate-pulse"></div>
             <div class="absolute bottom-1/4 -right-20 w-64 h-64 md:w-96 md:h-96 bg-[#ED7464]/5 rounded-full blur-[80px] md:blur-[120px] animate-pulse" style="animation-delay: 2s;"></div>
 
             <div class="relative z-10 max-w-5xl w-full flex flex-col items-center">
                 
-                <span class="font flex justify-center text-[10px] md:text-xs uppercase tracking-[0.4em] text-gray-400 mb-10">
+                <span class="font flex justify-center text-[10px] md:text-xs uppercase tracking-[0.4em] text-gray-400 mb-8">
                     Front <span class="mx-2 text-[#1D24CA]">•</span> Back <span class="mx-2 text-[#1D24CA]">•</span> Design
                 </span>
                 
@@ -26,7 +26,7 @@
                     </h2>
                 </div>
 
-                <p class="text-base md:text-xl text-gray-800 max-w-2xl mx-auto mb-12 text-center leading-relaxed">
+                <p class="text-base md:text-xl text-gray-800 max-w-2xl mx-auto mb-8 text-center leading-relaxed">
                     <span class="relative text-black font-bold">L'expérience utilisateur</span>, au centre des réflexions que je mène pour 
                     <span class="font-medium text-black underline underline-offset-4 decoration-[#ED7464]/80 decoration-2">concevoir</span> 
                     et <span class="font-medium text-black underline underline-offset-4 decoration-[#ED7464]/80 decoration-2">créer</span> 
@@ -34,7 +34,7 @@
                 </p>
 
                 <div class="font flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-6 w-full sm:w-auto">
-                    <a href="#projets" class="group w-full sm:w-auto px-10 py-5 bg-[#1D24CA] text-white rounded-full font-medium text-center transition-all hover:scale-105">
+                    <a href="#projets" class="group w-full sm:w-auto px-10 py-5 bg-[#1D24CA] text-white rounded-full font-medium text-center transition-all hover:scale-102">
                         <span class="group-hover:text-[#ED7464] transition-all">02.</span> Découvrir mes projets
                     </a>
                     <a href="pdf/CV_Lucie_Freihaut.pdf" class="w-full sm:w-auto px-10 py-5 border-2 md:border-3 border-[#1D24CA] text-[#1D24CA] rounded-full font-medium text-center transition-all hover:bg-[#1D24CA]/5">
@@ -45,7 +45,7 @@
         </section>
 
         <!-- About me -->
-        <section id="propos" class="max-w-6xl mx-auto px-6 md:px-18 py-18 md:py-24 border-t border-gray-100">
+        <section id="propos" class="max-w-6xl mx-auto px-6 md:px-16 py-18 md:py-24 border-t border-gray-100">
             <h2 class="font text-2xl md:text-3xl font-bold mb-8 md:mb-12 flex items-center gap-4">
                 <span class="text-[#1D24CA]">01.</span> Mon profil
             </h2>
@@ -164,7 +164,7 @@
         </section>
 
         <!-- Projects -->
-        <section id="projets" class="max-w-6xl mx-auto px-6 md:px-18 py-18 md:py-24 border-t border-gray-100">
+        <section id="projets" class="max-w-6xl mx-auto px-6 md:px-16 py-18 md:py-24 border-t border-gray-100">
             <h2 class="font text-2xl md:text-3xl font-bold mb-8 md:mb-12 flex items-center gap-4 text-right justify-end">
                 Mes projets <span class="text-[#ED7464]">.02</span>
             </h2>

@@ -1,41 +1,31 @@
-<header>
-    <div id="container-header">
-        <div id="entete">
-            <a href="index.php">
-                <img id="img-logo" src="" alt="logo">
-                <p>Lucie Freihaut</p>
-            </a>
-        </div>
-        <!-- langue -->
-    </div>
+<?php
+    if ($_SERVER['HTTP_HOST'] == 'mmi23a08.mmi-troyes.fr') {
+        $root = "/portfolio/";
+    } else {
+        $root = "/portfolio/";
+    }
+?>
 
-    <!-- navigation -->
-    <nav role="navigation" class="menu">
-        <ul>
-            <li id="menu-deroulant">
-                <figure>
-                    <img class="icon-menu" src="img/pictogram/menu.svg" alt="">
-                    <figcaption>Menu</figcaption>
-                </figure>
-                <ul>
-                    <li><a href="#about">A propos</a></li>
-                    <li><a href="#projects">Mes projets</a></li>
-                    <li><a href="#passions">Mes passions</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul></li>
-            <li><a href="index.php">
-                <figure>
-                    <img class="icon-menu" src="img/pictogram/home.svg" alt="">
-                    <figcaption>Accueil</figcaption>
-                </figure>
-                </a></li>
-            <li><a href="#contact">
-                <figure>
-                    <img class="icon-menu" src="img/pictogram/contact.svg" alt="">
-                    <figcaption>Contact</figcaption>
-                </figure>
-            </a></li> 
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-6 lg:px-24 py-3 bg-[#98ABEE]/20 backdrop-blur-md ">
+    <a href="<?php echo $root; ?>" class="flex items-center gap-3">
+        <img src="<?php echo $root; ?>images/code-xml.svg" alt="logo" class="w-8">
+        <span class="font font-semibold tracking-tight">Lucie Freihaut</span>
+    </a>
+
+    <nav class="font">
+        <ul class="hidden md:flex gap-8 text-[14px] uppercase tracking-wider font-medium">
+            <li><a href="pdf/CV_Lucie_Freihaut.pdf" class="relative group py-1">
+                CV
+                <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-[#1D24CA] transition-all duration-300 group-hover:w-full"></span>
+            </a></li>
+            <li><a href="https://linkedin.com/in/lucie-freihaut" class="relative group py-1">
+                LINKEDIN
+                <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-[#1D24CA] transition-all duration-300 group-hover:w-full"></span>
+            </a></li>
+            <li><a href="https://github.com/lfreih" class="relative group py-1">
+                GitHub
+                <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-[#1D24CA] transition-all duration-300 group-hover:w-full"></span>
+            </a></li>
         </ul>
     </nav>
-
 </header>

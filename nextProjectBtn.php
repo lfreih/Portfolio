@@ -3,38 +3,38 @@
     $projets = [
         'mix-mess-inc' => [
             'titre' => 'Mix Mess Inc.',
-            'url' => $root . 'mix-mess-inc',
-            'img' => $root . 'images/projects/mix-mess-inc/menu.png'
+            'url' => '/mix-mess-inc',
+            'img' => '/images/projects/mix-mess-inc/menu.png'
         ],
         'sheepsheep' => [
             'titre' => 'SheepSheep',
-            'url' => $root . 'sheepsheep',
-            'img' => $root . 'images/projects/sheepsheep/casque_vr_right.png'
+            'url' => '/sheepsheep',
+            'img' => '/images/projects/sheepsheep/casque_vr_right.png'
         ],
         'synk' => [
             'titre' => 'SYNK',
-            'url' => $root . 'synk',
-            'img' => $root . 'images/projects/synk/logo.png'
+            'url' => '/synk',
+            'img' => '/images/projects/synk/logo.png'
         ],
         'design-bde-2025' => [
             'titre' => 'Design BDE 2025',
-            'url' => $root . 'design-bde-2025',
-            'img' => $root . 'images/projects/design-bde-2025/logo.svg'
+            'url' => '/design-bde-2025',
+            'img' => '/images/projects/design-bde-2025/logo.svg'
         ],
         'clairtemps' => [
             'titre' => 'Clairtemps',
-            'url' => $root . 'clairtemps',
-            'img' => $root . 'images/projects/clairtemps/desktop-favorites.png'
+            'url' => '/clairtemps',
+            'img' => '/images/projects/clairtemps/desktop-favorites.png'
         ],
         'psychimeria' => [
             'titre' => 'Psychiméria',
-            'url' => $root . 'psychimeria',
-            'img' => $root . 'images/projects/psychimeria/title.png'
+            'url' => '/psychimeria',
+            'img' => '/images/projects/psychimeria/title.png'
         ],
         'amara-by-kenzo' => [
             'titre' => 'Amara by KENZO',
-            'url' => $root . 'amara-by-kenzo',
-            'img' => $root . 'images/projects/amara-by-kenzo/blender-render.png'
+            'url' => '/amara-by-kenzo',
+            'img' => '/images/projects/amara-by-kenzo/blender-render.png'
         ],
     ];
 

@@ -24,7 +24,7 @@
                     </p>
                     
                     <div class="flex-1 w-full md:h-[200px]">
-                        <img src="<?php echo $root; ?>images/projects/design-bde-2025/logo.svg" alt="Logo créé pour le concours" class="w-full h-[220px] md:h-full object-contain">
+                        <img src="../images/projects/design-bde-2025/logo.svg" alt="Logo créé pour le concours" class="w-full h-[220px] md:h-full object-contain">
                     </div>
                 </div>
 
@@ -97,15 +97,15 @@
                 <div class="space-y-8 md:h-[1200px] overflow-y-auto custom-scrollbar">
                     <!-- <div class="relative rounded-3xl overflow-hidden shadow-lg border border-gray-100">
                         <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Croquis</span>
-                        <img src="<?php echo $root; ?>images/projects/design-bde-2025/logo.svg" class="w-full" alt="Croquis du projet">
+                        <img src="../images/projects/design-bde-2025/logo.svg" class="w-full" alt="Croquis du projet">
                     </div> -->
                     <div class="relative rounded-3xl overflow-hidden shadow-lg border border-gray-100">
                         <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Illustration avant</span>
-                        <img src="<?php echo $root; ?>images/projects/design-bde-2025/logo.svg" class="w-full" alt="Illustration avant">
+                        <img src="../images/projects/design-bde-2025/logo.svg" class="w-full" alt="Illustration avant">
                     </div>
                     <div class="relative rounded-3xl overflow-hidden shadow-lg border border-gray-100">
                         <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Illustration arrière</span>
-                        <img src="<?php echo $root; ?>images/projects/design-bde-2025/design-pull.svg" class="w-full" alt="Illustration arrière">
+                        <img src="../images/projects/design-bde-2025/design-pull.svg" class="w-full" alt="Illustration arrière">
                     </div>
                 </div>
             </div>

@@ -24,7 +24,7 @@
                     </p>
                     
                     <div class="flex-1 w-full md:h-[220px] p-4">
-                        <img src="<?php echo $root; ?>images/projects/amara-by-kenzo/fragrance.png" alt="" class="w-full h-[200px] md:h-full object-contain">
+                        <img src="../images/projects/amara-by-kenzo/fragrance.png" alt="" class="w-full h-[200px] md:h-full object-contain">
                     </div>
                 </div>
 
@@ -99,7 +99,7 @@
                     </div>
                     <div class="relative rounded-3xl overflow-hidden shadow-lg">
                         <span class="absolute top-4 left-4 bg-black/50 text-white/90 px-3 py-1 rounded-full text-xs">Modélisation Blender</span>
-                        <img src="<?php echo $root; ?>images/projects/amara-by-kenzo/blender-render.png" class="w-full" alt="Modélisation Blender">
+                        <img src="../images/projects/amara-by-kenzo/blender-render.png" class="w-full" alt="Modélisation Blender">
                     </div>
                     <div class="relative rounded-3xl overflow-hidden shadow-lg aspect-video bg-gray-200">
                         <span class="absolute top-4 left-4 bg-black/50 text-white/90 px-3 py-1 rounded-full text-xs">Spot final</span>
@@ -107,15 +107,15 @@
                     </div>
                     <div class="relative rounded-3xl overflow-hidden shadow-lg md:h-[560px]">
                         <span class="absolute top-4 left-4 bg-black/50 text-white/90 px-3 py-1 rounded-full text-xs">Coulisses</span>
-                        <img src="<?php echo $root; ?>images/projects/amara-by-kenzo/backstage1.jpg" class="w-full" alt="Coulisses tournage">
+                        <img src="../images/projects/amara-by-kenzo/backstage1.jpg" class="w-full" alt="Coulisses tournage">
                     </div>
                     <div class="relative rounded-3xl overflow-hidden shadow-lg">
                         <span class="absolute top-4 left-4 bg-black/50 text-white/90 px-3 py-1 rounded-full text-xs">Coulisses</span>
-                        <img src="<?php echo $root; ?>images/projects/amara-by-kenzo/backstage3.jpg" class="w-full" alt="Coulisses tournage">
+                        <img src="../images/projects/amara-by-kenzo/backstage3.jpg" class="w-full" alt="Coulisses tournage">
                     </div>
                     <div class="relative rounded-3xl overflow-hidden shadow-lg md:h-[360px]">
                         <span class="absolute top-4 left-4 bg-black/50 text-white/90 px-3 py-1 rounded-full text-xs">Coulisses</span>
-                        <img src="<?php echo $root; ?>images/projects/amara-by-kenzo/backstage2.jpg" class="w-full" alt="Coulisses tournage">
+                        <img src="../images/projects/amara-by-kenzo/backstage2.jpg" class="w-full" alt="Coulisses tournage">
                     </div>
                 </div>
             </div>

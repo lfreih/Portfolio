@@ -24,7 +24,7 @@
                     </p>
                     
                     <div class="flex-1 w-full md:h-[200px]">
-                        <img src="<?php echo $root; ?>images/projects/psychimeria/monster.png" alt="" class="w-full h-[200px] md:h-full object-cover object-top">
+                        <img src="../images/projects/psychimeria/monster.png" alt="" class="w-full h-[200px] md:h-full object-cover object-top">
                     </div>
                 </div>
 
@@ -119,23 +119,23 @@
                 <div class="space-y-8 md:h-[1600px] overflow-y-auto custom-scrollbar">
                     <div class="relative rounded-3xl overflow-hidden shadow-lg border border-gray-100">
                         <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Titre</span>
-                        <img src="<?php echo $root; ?>images/projects/psychimeria/title.png" class="w-full" alt="Titre">
+                        <img src="../images/projects/psychimeria/title.png" class="w-full" alt="Titre">
                     </div>
                     <div class="relative rounded-3xl overflow-hidden shadow-lg border border-gray-100">
                         <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Titre 2e point de vue</span>
-                        <img src="<?php echo $root; ?>images/projects/psychimeria/title-dark.png" class="w-full" alt="Titre 2e point de vue">
+                        <img src="../images/projects/psychimeria/title-dark.png" class="w-full" alt="Titre 2e point de vue">
                     </div>
                     <div class="relative rounded-3xl overflow-hidden shadow-lg border border-gray-100">
                         <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Salle d'attente</span>
-                        <img src="<?php echo $root; ?>images/projects/psychimeria/waiting-room-dark.png" class="w-full" alt="Salle d'attente">
+                        <img src="../images/projects/psychimeria/waiting-room-dark.png" class="w-full" alt="Salle d'attente">
                     </div>
                     <div class="relative rounded-3xl overflow-hidden shadow-lg border border-gray-100">
                         <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Scène finale animée</span>
-                        <img src="<?php echo $root; ?>images/projects/psychimeria/waiting-room.gif" class="w-full" alt="Salle d'attente - Scène finale animée">
+                        <img src="../images/projects/psychimeria/waiting-room.gif" class="w-full" alt="Salle d'attente - Scène finale animée">
                     </div>
                     <div class="relative rounded-3xl overflow-hidden shadow-lg border border-gray-100">
                         <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Monstre</span>
-                        <img src="<?php echo $root; ?>images/projects/psychimeria/monster.png" class="w-full" alt="Monstre">
+                        <img src="../images/projects/psychimeria/monster.png" class="w-full" alt="Monstre">
                     </div>
                 </div>
             </div>

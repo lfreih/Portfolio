@@ -25,7 +25,7 @@
                     </p>
                     
                     <div class="flex-1 w-full md:h-[220px]">
-                        <img src="<?php echo $root; ?>images/projects/mix-mess-inc/player.png" alt="" class="w-full h-[220px] md:h-full object-contain">
+                        <img src="../images/projects/mix-mess-inc/player.png" alt="" class="w-full h-[220px] md:h-full object-contain">
                     </div>
                 </div>
 
@@ -113,11 +113,11 @@
                 <div class="space-y-8 md:h-[1800px] overflow-y-auto custom-scrollbar">
                     <div class="relative rounded-3xl overflow-hidden shadow-lg">
                         <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Inspiration : Purble Place Jeu Windows 7</span>
-                        <img src="<?php echo $root; ?>images/projects/mix-mess-inc/purble-place.jpg" class="w-full" alt="Purble Place Jeu Windows 7">
+                        <img src="../images/projects/mix-mess-inc/purble-place.jpg" class="w-full" alt="Purble Place Jeu Windows 7">
                     </div>
                     <div class="relative rounded-3xl overflow-hidden shadow-lg">
                         <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Menu du jeu à date</span>
-                        <img src="<?php echo $root; ?>images/projects/mix-mess-inc/menu.png" class="w-full" alt="Menu du jeu à date">
+                        <img src="../images/projects/mix-mess-inc/menu.png" class="w-full" alt="Menu du jeu à date">
                     </div>
                     <!-- <div class="relative rounded-3xl overflow-hidden shadow-lg aspect-video bg-gray-200">
                         <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Spot final</span>
@@ -125,15 +125,15 @@
                     </div> -->
                     <div class="relative rounded-3xl overflow-hidden shadow-lg">
                         <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Blog</span>
-                        <img src="<?php echo $root; ?>images/projects/mix-mess-inc/website/blog.png" class="w-full" alt="Blog du site">
+                        <img src="../images/projects/mix-mess-inc/website/blog.png" class="w-full" alt="Blog du site">
                     </div>
                     <div class="relative rounded-3xl overflow-hidden shadow-lg">
                         <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Jeu utilisable depuis le site</span>
-                        <img src="<?php echo $root; ?>images/projects/mix-mess-inc/website/game.png" class="w-full" alt="Jeu">
+                        <img src="../images/projects/mix-mess-inc/website/game.png" class="w-full" alt="Jeu">
                     </div>
                     <div class="relative rounded-3xl overflow-hidden shadow-lg">
                         <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Meilleurs scores</span>
-                        <img src="<?php echo $root; ?>images/projects/mix-mess-inc/website/scores.png" class="w-full" alt="Meilleurs scores">
+                        <img src="../images/projects/mix-mess-inc/website/scores.png" class="w-full" alt="Meilleurs scores">
                     </div>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 <footer class="max-w-6xl mx-auto px-6 py-6 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-6">
     <p class="text-xs text-slate-500 font order-2 md:order-1">
-        &copy; 2026 | Tous droits réservés
+        &copy; 2023 - 2026 | Tous droits réservés
     </p>
 
     <div class="flex items-center gap-6 text-slate-400 order-1 md:order-2">

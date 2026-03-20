@@ -3,7 +3,7 @@
 <?php $title="Lucie Freihaut | Développeuse web"; include 'head.php'; ?>
 
 <body class="">
-    <?php $base_path = ""; include 'header.php'; ?>
+    <?php include 'header.php'; ?>
 
     <main>
         <!-- Hero -->
@@ -57,7 +57,7 @@
                         <div class="absolute -top-3 -left-4 md:-top-5 md:-left-6 w-full h-full bg-[#ED7464]/60 rounded-2xl z-10"></div>
                         <div class="absolute -top-4 -right-4 md:-top-9 md:-right-9 w-full h-full border-2 border-[#98ABEE] rounded-2xl -z-10"></div>
 
-                        <img src="images/photo_lucie.jpg" alt="Lucie Freihaut" 
+                        <img src="images/photo_lucie.JPG" alt="Lucie Freihaut" 
                             class="relative w-64 h-64 md:w-80 md:h-80 object-cover object-[50%_20%] rounded-2xl shadow-xl z-20">
                     </div>
 

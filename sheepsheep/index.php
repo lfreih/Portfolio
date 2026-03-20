@@ -29,7 +29,7 @@
                         </p>
                     </div>
                     <!-- <div class="flex-1 w-full md:h-[200px]">
-                        <img src="<?php echo $root; ?>images/projects/sheepsheep/bow.png" alt="" class="w-full h-[220px] md:h-full object-contain">
+                        <img src="../images/projects/sheepsheep/bow.png" alt="" class="w-full h-[220px] md:h-full object-contain">
                     </div> -->
                 </div>
 
@@ -104,16 +104,16 @@
                 <div class="space-y-8 md:h-[1200px] overflow-y-auto custom-scrollbar">
                     <div class="relative rounded-3xl overflow-hidden shadow-lg border border-gray-100">
                         <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Inspiration : Jeu Nintendo WII Sport Motion</span>
-                        <img src="<?php echo $root; ?>images/projects/sheepsheep/wii-play-motion.jpg" class="w-full" alt="Partie en cours Jeu Nintendo WII Sport Motion">
+                        <img src="../images/projects/sheepsheep/wii-play-motion.jpg" class="w-full" alt="Partie en cours Jeu Nintendo WII Sport Motion">
                     </div>
                     <div class="relative overflow-hidden rounded-3xl shadow-lg border border-gray-100 mb-6 bg-gray-100 h-[360px] flex items-center justify-center border-2 border-dashed border-gray-200">
                         <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Asset de l'arc</span>
-                        <!-- <img src="<?php echo $root; ?>images/projects/clairtemps/mobile-register.png" class="w-full" alt="Asset de l'arc"> -->
+                        <!-- <img src="../images/projects/clairtemps/mobile-register.png" class="w-full" alt="Asset de l'arc"> -->
                         <span class="uppercase text-gray-500">A venir</span>
                     </div>
                     <div class="relative overflow-hidden rounded-3xl shadow-lg border border-gray-100 mb-6 bg-gray-100 h-[360px] flex items-center justify-center border-2 border-dashed border-gray-200">
                         <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Vidéo d'une partie</span>
-                        <!-- <img src="<?php echo $root; ?>images/projects/clairtemps/mobile-register.png" class="w-full" alt="Vidéo d'une partie sur mobile"> -->
+                        <!-- <img src="../images/projects/clairtemps/mobile-register.png" class="w-full" alt="Vidéo d'une partie sur mobile"> -->
                         <span class="uppercase text-gray-500">A venir</span>
                     </div>
                 </div>

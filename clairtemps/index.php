@@ -24,7 +24,7 @@
                     </p>
                     
                     <div class="flex-1 w-full md:h-[60px]">
-                        <img src="<?php echo $root; ?>images/projects/clairtemps/logo.png" alt="" class="w-full h-[50px] md:h-full object-contain">
+                        <img src="../images/projects/clairtemps/logo.png" alt="" class="w-full h-[50px] md:h-full object-contain">
                     </div>
                 </div>
 
@@ -108,32 +108,32 @@
                 <div class="space-y-8 md:h-[1600px] overflow-y-auto  custom-scrollbar">
                     <div class="relative rounded-3xl overflow-hidden shadow-lg border border-gray-100">
                         <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Page d'accueil</span>
-                        <img src="<?php echo $root; ?>images/projects/clairtemps/desktop-home.png" class="w-full" alt="Page d'accueil sur Desktop">
+                        <img src="../images/projects/clairtemps/desktop-home.png" class="w-full" alt="Page d'accueil sur Desktop">
                     </div>
                     <div class="md:columns-2 items-start gap-6">
                         <div class="relative overflow-hidden rounded-3xl shadow-lg border border-gray-100 mb-6">
                             <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Page d'inscription</span>
-                            <img src="<?php echo $root; ?>images/projects/clairtemps/mobile-register.png" class="w-full" alt="Page d'inscription sur mobile">
+                            <img src="../images/projects/clairtemps/mobile-register.png" class="w-full" alt="Page d'inscription sur mobile">
                         </div>
                         
                         <div class="relative overflow-hidden rounded-3xl shadow-lg border border-gray-100 mb-6">
                             <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Page de favoris</span>
-                            <img src="<?php echo $root; ?>images/projects/clairtemps/mobile-favorites.png" class="w-full" alt="Page de favoris sur mobile">
+                            <img src="../images/projects/clairtemps/mobile-favorites.png" class="w-full" alt="Page de favoris sur mobile">
                         </div>
                         
                         <div class="relative overflow-hidden rounded-3xl shadow-lg border border-gray-100 mb-6">
                             <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Page de prévisions Non connecté</span>
-                            <img src="<?php echo $root; ?>images/projects/clairtemps/mobile-disconnected-forcast.png" class="w-full" alt="Page de prévisions Non connecté sur mobile">
+                            <img src="../images/projects/clairtemps/mobile-disconnected-forcast.png" class="w-full" alt="Page de prévisions Non connecté sur mobile">
                         </div>
                         
                         <div class="relative overflow-hidden rounded-3xl shadow-lg border border-gray-100 mb-6">
                             <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Page de résultat de recherche</span>
-                            <img src="<?php echo $root; ?>images/projects/clairtemps/mobile-result.png" class="w-full" alt="Page de résultat de recherche sur mobile">
+                            <img src="../images/projects/clairtemps/mobile-result.png" class="w-full" alt="Page de résultat de recherche sur mobile">
                         </div>
                     </div>
                     <div class="relative rounded-3xl overflow-hidden shadow-lg border border-gray-100">
                         <span class="absolute top-4 left-4 bg-black/80 text-white/90 px-3 py-1 rounded-full text-xs">Desktop - Page de favoris</span>
-                        <img src="<?php echo $root; ?>images/projects/clairtemps/desktop-favorites.png" class="w-full" alt="Page de favoris sur desktop">
+                        <img src="../images/projects/clairtemps/desktop-favorites.png" class="w-full" alt="Page de favoris sur desktop">
                     </div>
                 </div>
             </div>

@@ -1,13 +1,124 @@
 ---
 import Base from '../layouts/Base.astro';
+import HighlightCard from '../components/HighlightCard.astro';
+
+const timelineSteps = [
+  {
+    date: '2022',
+    title: 'BUT MMI — Dev web & dispositifs interactifs',
+    desc: 'Premiers projets web, UX, interactivité.',
+    dotColor: 'bg-blue-600',
+  },
+  {
+    date: '2024 — 2026',
+    title: 'Alternance · 2 ans',
+    desc: 'PHP, Vue.js, Laravel — projets en équipe, contexte pro.',
+    dotColor: 'bg-accent',
+  },
+  {
+    date: '2026 →',
+    title: 'Cursus ingénieur · EFREI Bordeaux',
+    desc: 'Diversification vers le logiciel, 3 ans en alternance.',
+    dotColor: 'bg-noir',
+    isLast: true,
+  },
+];
 ---
 
-<Base title="A propos |">
-    <h1>A <span>propos</span></h1>
-</Base>
+<Base title="À propos |">
+    <!-- Bannière image avec fondu dégradé -->
+    <div class="relative h-64 bg-neutral-300 overflow-hidden">
+        <!-- Remplacer le placeholder par une vraie photo avec <img ... class="w-full h-full object-cover" /> -->
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-between p-5">
+            <!-- Badge statut -->
+            <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/90 backdrop-blur-xs text-[11px] text-neutral-700 w-max shadow-xs">
+                <span class="w-1.5 h-1.5 rounded-full bg-green-600 shrink-0"></span>
+                <span>Ouverte à l'alternance · 3 ans</span>
+            </div>
 
-<style>
-	span {
-        color: #ff7944; 
-    }
-</style>
+            <!-- Titre sur l'image -->
+            <h1 class="font-serif text-3xl text-white font-medium tracking-wide">
+                Lucie <em class="text-accent italic font-normal">Freihaut</em>
+            </h1>
+        </div>
+    </div>
+
+    <!-- Contenu principal -->
+    <div class="px-6 py-5 flex flex-col gap-6">
+        
+        <!-- En-tête statut & liens externes -->
+        <div class="space-y-3 pb-5 border-b border-neutral-100">
+            <div class="text-xs text-neutral-500 leading-tight space-y-1">
+                <p class="font-medium text-neutral-800">Dev Fullstack → Ingé logicielle</p>
+                <p class="flex items-center gap-1 text-neutral-400">
+                    <span class="text-accent">📍</span> Bordeaux — EFREI
+                </p>
+            </div>
+
+            <!-- Liens GitHub & LinkedIn -->
+            <div class="flex gap-2 pt-1">
+                <a 
+                    href="https://github.com/lfreih" 
+                    target="_blank" 
+                    rel="noreferrer"
+                    class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-neutral-200 text-xs text-neutral-600 hover:bg-neutral-50 transition"
+                >
+                    <span class="text-neutral-400 text-[10px]">🐙</span> GitHub
+                </a>
+                <a 
+                    href="https://linkedin.com/in/lucie-freihaut" 
+                    target="_blank" 
+                    rel="noreferrer"
+                    class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-neutral-200 text-xs text-neutral-600 hover:bg-neutral-50 transition"
+                >
+                    <span class="text-neutral-400 text-[10px]">in</span> LinkedIn
+                </a>
+            </div>
+        </div>
+
+        <!-- Section : Le choix -->
+        <section class="space-y-2.5">
+        <h2 class="text-[10px] uppercase tracking-wider font-semibold text-neutral-400">
+            Le choix
+        </h2>
+        <p class="text-xs text-neutral-600 leading-relaxed">
+            Après un BUT MMI axé dev web et dispositifs interactifs, j'ai choisi de continuer — <strong class="text-noir font-semibold">pas par obligation</strong>, mais parce que je voulais aller plus loin.
+        </p>
+        <p class="text-xs text-neutral-600 leading-relaxed">
+            À l'EFREI Bordeaux, je me diversifie vers le <span class="text-accent italic">développement logiciel</span>. Une façon d'élargir ce que je sais faire, pas de tout recommencer.
+        </p>
+        </section>
+
+        <!-- Encart statistique (HighlightCard) -->
+        <HighlightCard 
+            stat="2×"
+            title="Déjà 2 ans en alternance"
+            body="Je sais ce que ça demande — et pourquoi ça marche mieux pour moi : des projets réels, un rythme concret, apprendre en faisant."
+        />
+
+        <!-- Section : Ce que je cherche -->
+        <section class="space-y-2">
+            <h2 class="text-[10px] uppercase tracking-wider font-semibold text-neutral-400">
+                Ce que je cherche
+            </h2>
+            <p class="text-xs text-neutral-600 leading-relaxed">
+                Une alternance en <strong class="text-noir font-semibold">dev web ou logiciel</strong>, sur 3 ans, où contribuer à des projets concrets dès le premier jour.
+            </p>
+            <p class="text-xs text-accent italic pt-1">
+                C'est ce que je cherche à nouveau.
+            </p>
+        </section>
+
+        <!-- Boutons d'action -->
+        <div class="flex flex-col gap-2.5 pt-2">
+            <a 
+                href="/projects" 
+                class="w-full py-3.5 px-5 rounded-2xl bg-noir text-white text-xs font-semibold flex items-center justify-between hover:opacity-90 transition"
+            >
+                <span>Voir mes projets</span>
+                <span>→</span>
+            </a>
+        </div>
+
+    </div>
+</Base>

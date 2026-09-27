@@ -1,0 +1,45 @@
+---
+interface Props {
+    title: string;
+    subtitle: string;
+    slug: string;
+    tags: string[];
+    bgColor?: string; // Ex: 'bg-blue-200' ou 'bg-purple-200'
+}
+
+const {
+    title,
+    subtitle,
+    slug,
+    tags,
+    bgColor = "bg-[#9db2c9]"
+} = Astro.props;
+---
+
+<a 
+    href={`/projets/${slug}`} 
+    class="group block w-full rounded-2xl bg-white border border-[#eae5dd] overflow-hidden shadow-xs hover:border-neutral-400 transition"
+>
+    <!-- Vignette colorée -->
+    <div class={`h-36 ${bgColor} p-3 relative flex flex-wrap gap-1.5 content-start`}>
+        {tags.map((tag) => (
+        <span class="text-[11px] font-medium px-2 py-0.5 rounded-full bg-neutral-900/80 text-white">
+            {tag}
+        </span>
+        ))}
+
+        <span class="absolute bottom-3 right-3 w-8 h-8 rounded-full bg-white text-neutral-800 flex items-center justify-center text-sm shadow-sm transition group-hover:translate-x-0.5">
+        →
+        </span>
+    </div>
+
+    <!-- Textes -->
+    <div class="p-3.5 bg-white">
+        <h3 class="text-base font-serif font-bold text-neutral-900 leading-snug">
+            {title}
+        </h3>
+        <p class="text-xs text-neutral-500 mt-1 line-clamp-1">
+            {subtitle}
+        </p>
+    </div>
+</a>

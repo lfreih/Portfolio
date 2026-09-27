@@ -1,0 +1,14 @@
+:root {
+  --teal: #1A7A7A;
+  --coral: #E05C35;
+  --teal-pale: #E6F4F4;
+  --noir: #111111;
+  --serif: 'DM Serif Display', Georgia, serif;
+  --sans: 'DM Sans', system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--sans);
+  color: var(--noir);
+  background: #fff;
+}

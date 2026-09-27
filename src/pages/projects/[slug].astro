@@ -1,0 +1,54 @@
+---
+import Project from '../../layouts/Project.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+    const projets = await getCollection('projects')
+    return projets.map(p => ({
+        params: { slug: p.id },
+        props: { project: p }
+    }))
+}
+
+const { project } = Astro.props;
+const { Content } = await render(project)
+
+console.log(project)
+---
+
+<Project title={project.data.titre}>
+	<!-- Lien retour -->
+    <div class="flex justify-end mb-4">
+        <a href="/projets" class="text-xs text-neutral-400 hover:text-neutral-700 transition">
+            ← Projets
+        </a>
+    </div>
+
+    <!-- En-tête projet généré avec ton schéma -->
+    <header class="space-y-2 mb-6">
+        <span class="text-[10px] font-semibold text-[#E05A32] uppercase tracking-wider block">
+            {project.data.date}
+        </span>
+
+        <div class="flex flex-wrap gap-1.5">
+            {project.data.stack.map((item) => (
+                <span class="text-[11px] px-2.5 py-0.5 rounded-full bg-white border border-[#eae5dd] text-neutral-600 font-medium">
+                {item}
+                </span>
+            ))}
+        </div>
+
+        <h1 class="text-3xl font-serif font-bold text-neutral-900 pt-1">
+            {project.data.titre}
+        </h1>
+    </header>
+
+    <!-- Contenu du fichier Markdown injecté ici -->
+    <article class="prose prose-neutral max-w-none text-xs leading-relaxed text-neutral-700">
+        <Content />
+    </article>
+</Project>
+
+<style>
+
+</style>

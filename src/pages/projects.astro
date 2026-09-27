@@ -1,0 +1,29 @@
+---
+import { getCollection } from 'astro:content'
+
+import ProjectCard from '../components/ProjectCard.astro';
+import Base from '../layouts/Base.astro';
+
+const projects = await getCollection('projects')
+---
+
+<Base title="Mes réalisations |">
+    <h1>Mes <span>réalisations</span></h1>
+
+    <div class="flex flex-col gap-4">
+        {projects.map((p) => (
+            <ProjectCard
+                title={p.data.titre}
+                subtitle={p.data.date}
+                slug={p.id}
+                tags={p.data.stack}
+            />
+        ))}
+    </div>
+</Base>
+
+<style>
+	span {
+        color: #ff7944; 
+    }
+</style>

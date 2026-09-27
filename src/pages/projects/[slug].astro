@@ -1,53 +1,141 @@
 ---
-import Project from '../../layouts/Project.astro';
 import { getCollection, render } from 'astro:content';
+import Project from '../../layouts/Project.astro';import ProjectMetrics from '../../components/ProjectMetrics.astro';
+import ProjectSteps from '../../components/ProjectSteps.astro';
+import ProjectTakeaway from '../../components/ProjectTakeaway.astro';
 
 export async function getStaticPaths() {
-    const projects = await getCollection('projects')
-    return projects.map(p => ({
+    const projects = await getCollection('projects');
+    return projects.map((p, index) => ({
         params: { slug: p.id },
-        props: { project: p }
-    }))
+        props: { 
+            project: p,
+            // nextProject: projects[(index + 1) % projects.length] // Boucle vers le projet suivant
+        }
+    }));
 }
 
 const { project } = Astro.props;
 const { Content } = await render(project)
-
-console.log(project)
+const p = project.data;
 ---
 
-<Project title={project.data.titre}>
-	<!-- Lien retour -->
-    <div class="flex justify-end mb-4">
-        <a href="/projects" class="text-xs text-neutral-400 hover:text-neutral-700 transition">
-            <!-- currentPath.startsWith('/projects') ? 'text-primary' : 'text-noir hover:text-primary' -->
-            ← Projets
-        </a>
-    </div>
-
-    <!-- En-tête projet généré avec ton schéma -->
-    <header class="space-y-2 mb-6">
-        <span class="text-[10px] font-semibold text-[#E05A32] uppercase tracking-wider block">
-            {project.data.date}
-        </span>
-
-        <div class="flex flex-wrap gap-1.5">
-            {project.data.stack.map((item) => (
-                <span class="text-[11px] px-2.5 py-0.5 rounded-full bg-white border border-[#eae5dd] text-neutral-600 font-medium">
-                {item}
-                </span>
-            ))}
+<Project title={`${project.data.titre} |`}>
+	<!-- En-tête beige supérieur -->
+    <div class="bg-[#FCECE6] px-6 pt-3 pb-6 flex flex-col gap-4">
+        <div class="flex justify-end">
+            <a href="/projects" class="text-xs text-neutral-400 hover:text-neutral-700 transition">
+                ← Projets
+            </a>
         </div>
 
-        <h1 class="text-3xl font-serif font-bold text-neutral-900 pt-1">
-            {project.data.titre}
-        </h1>
-    </header>
+        <div class="space-y-2.5">
+            <div class="flex items-center gap-2 text-[10px] font-semibold text-accent uppercase tracking-wider">
+                <span>{project.data.type ?? 'Projet universitaire'}</span>
+                <span>·</span>
+                <span>{project.data.date}</span>
+            </div>
 
-    <!-- injected markdown content -->
-    <article class="prose prose-neutral max-w-none text-xs leading-relaxed text-neutral-700">
-        <Content />
-    </article>
+            <!-- Tags stack -->
+            <div class="flex flex-wrap gap-1.5">
+                {project.data.stack.map((item, idx) => (
+                <span class={`text-[10px] font-medium px-2.5 py-0.5 rounded-md ${idx === project.data.stack.length - 1 ? 'bg-accent text-white' : 'bg-white text-neutral-600 border border-neutral-200/50'}`}>
+                    {item}
+                </span>
+                ))}
+            </div>
+
+            <!-- Titre projet -->
+            <h1 class="font-serif text-3xl font-bold text-noir pt-1">
+                {project.data.titre.slice(0, 5)}<em class="text-accent italic font-normal">{project.data.titre.slice(5)}</em>
+            </h1>
+
+            {p.desc && (
+                <p class="text-xs text-neutral-500 leading-relaxed">
+                    {p.desc}
+                </p>
+            )}
+        </div>
+    </div>
+
+    <!-- Corps de page -->
+    <div class="px-6 py-5 flex flex-col gap-6">
+        
+        <!-- Grille des métriques -->
+        {project.data.metriques && (
+        <ProjectMetrics metrics={project.data.metriques} />
+        )}
+
+        <!-- Galerie visuels -->
+        <section class="space-y-3">
+        <div class="flex items-center justify-between text-[10px] uppercase tracking-wider font-semibold text-neutral-400">
+            <span>Visuels</span>
+            <span>1 / 3</span>
+        </div>
+
+        <div class="flex gap-3 overflow-x-auto pb-2 snap-x -mx-6 px-6">
+            <div class="w-56 h-36 shrink-0 rounded-2xl bg-[#9eb3d2] p-3 flex items-end text-white text-[11px] font-medium">
+            Page d'accueil · desktop
+            </div>
+            <div class="w-36 h-36 shrink-0 rounded-2xl bg-[#9eb3d2] p-3 flex items-end text-white text-[11px] font-medium">
+            Vue mobile
+            </div>
+        </div>
+
+        <div class="flex gap-1 pt-1">
+            <span class="w-3.5 h-1 rounded-full bg-accent"></span>
+            <span class="w-1 h-1 rounded-full bg-accent/30"></span>
+            <span class="w-1 h-1 rounded-full bg-accent/30"></span>
+        </div>
+        </section>
+
+        <!-- Démarche / Étapes -->
+        {p.demarche && <ProjectSteps steps={p.demarche} />}
+
+        <!-- Ce que j'en retiens -->
+        {p.retenue && <ProjectTakeaway text={p.retenue} />}
+
+        <!-- Markdown libre supplémentaire -->
+         <!-- Le reste du texte (ex: ## Contexte) s'affiche ici proprement -->
+        <article class="prose prose-xs text-neutral-600 max-w-none">
+            <Content />
+        </article>
+
+        <!-- Boutons d'action -->
+        <div class="flex flex-col gap-2 pt-2">
+            <a 
+                href={project.data.lienSite ?? "#"} 
+                class="w-full py-3.5 px-5 rounded-2xl bg-noir text-white text-xs font-semibold flex items-center justify-between hover:opacity-90 transition"
+            >
+                <span>Voir le site</span>
+                <span>→</span>
+            </a>
+            <a 
+                href={project.data.lienGithub ?? "#"} 
+                target="_blank" 
+                rel="noreferrer"
+                class="w-full py-3.5 px-5 rounded-2xl bg-white border border-neutral-200 text-noir text-xs font-semibold text-center hover:bg-neutral-50 transition"
+            >
+                GitHub
+            </a>
+        </div>
+
+        <!-- Projet suivant -->
+        <!-- {nextProject && (
+        <div class="pt-4 border-t border-neutral-100 flex items-center justify-between">
+            <div>
+            <span class="text-[10px] text-neutral-400 block">Projet suivant</span>
+            <a href={`/projects/${nextProject.id}`} class="text-xs font-bold text-noir hover:text-accent transition">
+                {nextProject.data.titre}
+            </a>
+            </div>
+            <a href={`/projects/${nextProject.id}`} class="text-accent text-sm">
+            →
+            </a>
+        </div>
+        )} -->
+
+    </div>
 </Project>
 
 <style>

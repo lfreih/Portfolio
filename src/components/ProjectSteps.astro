@@ -1,0 +1,45 @@
+---
+interface Step {
+    num: string;
+    title: string;
+    body: string;
+}
+
+interface Props {
+    steps: Step[];
+}
+
+const { steps } = Astro.props;
+---
+
+<section class="space-y-4">
+    <h2 class="text-[10px] uppercase tracking-wider font-semibold text-neutral-400">
+        Démarche
+    </h2>
+
+    <div class="flex flex-col">
+        {steps.map((step, idx) => (
+            <div class="flex gap-3.5 relative">
+                <!-- Pastille numérotée + ligne verticale -->
+                <div class="flex flex-col items-center shrink-0">
+                    <span class="w-5 h-5 rounded-full bg-accent text-white text-[11px] font-bold flex items-center justify-center shrink-0 mt-0.5">
+                        {step.num}
+                    </span>
+                    {idx !== steps.length - 1 && (
+                        <span class="w-px flex-1 bg-neutral-200 my-1"></span>
+                    )}
+                </div>
+
+                <!-- Textes -->
+                <div class="pb-5">
+                    <h3 class="text-xs font-bold text-noir">
+                        {step.title}
+                    </h3>
+                    <p class="text-[11px] text-neutral-500 leading-relaxed mt-0.5">
+                        {step.body}
+                    </p>
+                </div>
+            </div>
+        ))}
+    </div>
+</section>

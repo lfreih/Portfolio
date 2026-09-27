@@ -14,12 +14,21 @@ const projects = defineCollection({
         lienSite: z.string().optional(),
         lienGithub: z.string().optional(),
         image: z.string().optional(),
+        desc: z.string().optional(),
         metriques: z.array(
         z.object({
             valeur: z.string(),
             label: z.string(),
         })
         ).optional(),
+        demarche: z.array(
+        z.object({
+            num: z.string(),
+            title: z.string(),
+            body: z.string(),
+        })
+        ).optional(),
+        retenue: z.string().optional(),
     }),
 });
 

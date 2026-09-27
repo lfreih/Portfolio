@@ -1,29 +1,107 @@
 ---
 import { getCollection } from 'astro:content'
 
-import ProjectCard from '../components/ProjectCard.astro';
 import Base from '../layouts/Base.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import ProjectListCard from '../components/ProjectListCard.astro';
 
-const projects = await getCollection('projects')
+const allProjects = await getCollection('projects');
+
+// Les pastilles de filtre visibles sur la maquette
+const filters = ['Tous', 'PHP', 'Vue.js', 'Laravel', 'UX / UI', 'Logiciel'];
+
+// Palette de teintes pastel pour reproduire l'effet visuel des cartes
+const pastelColors = [
+    'bg-[#9db2c9]', // Bleu clair (Clairtemps)
+    'bg-[#b1a4bc]', // Violet lavande (Psychiméria)
+    'bg-[#9bb8a6]', // Vert sauge (Synk)
+    'bg-[#bec29e]'  // Ocre / olive clair (Projet D)
+];
 ---
 
 <Base title="Mes réalisations |">
-    <h1>Mes <span>réalisations</span></h1>
+        <div class="px-6 py-6 space-y-6">
+        
+            <!-- Titre de la page -->
+            <header class="space-y-1">
+                <h1 class="font-serif text-3xl font-bold text-noir leading-tight">
+                    Mes <span class="text-accent italic font-normal">réalisations</span>
+                </h1>
+            </header>
 
-    <div class="flex flex-col gap-4">
-        {projects.map((p) => (
-            <ProjectCard
-                title={p.data.titre}
-                subtitle={p.data.date}
-                slug={p.id}
-                tags={p.data.stack}
-            />
-        ))}
+            <!-- Barre de filtres cliquables -->
+            <div class="flex flex-wrap gap-2" id="filter-container">
+                {filters.map((filter, index) => (
+                    <button 
+                        type="button"
+                        data-filter={filter.toLowerCase()}
+                        class={`filter-btn px-3 py-1.5 rounded-full text-xs font-medium border transition cursor-pointer ${
+                            index === 0 
+                            ? 'active-filter bg-noir text-white border-noir' 
+                            : 'bg-white text-neutral-500 border-neutral-200 hover:border-neutral-400'
+                        }`}
+                    >
+                        {filter}
+                    </button>
+                ))}
+            </div>
+
+        <!-- Liste des cartes projets -->
+        <div class="flex flex-col gap-3.5" id="projects-list">
+            {allProjects.map((p, index) => {
+                // Concatène stack et tags optionnels pour le filtrage
+                const searchableTags = [
+                    ...p.data.stack,
+                    ...(p.data.tag ?? [])
+                ];
+
+                return (
+                    <ProjectListCard
+                        titre={p.data.titre}
+                        desc={p.data.desc ?? 'Description courte du projet et de son contexte.'}
+                        slug={p.id}
+                        tags={p.data.stack}
+                        bgColor={pastelColors[index % pastelColors.length]}
+                    />
+                );
+            })}
+        </div>
+
     </div>
 </Base>
 
-<style>
-	span {
-        color: #ff7944; 
-    }
-</style>
+<!-- Script client pour rendre les boutons de filtre immédiatement fonctionnels -->
+<script>
+    const buttons = document.querySelectorAll<HTMLButtonElement>('.filter-btn');
+    const cards = document.querySelectorAll<HTMLElement>('.project-card');
+
+    buttons.forEach((btn) => {
+        btn.addEventListener('click', () => {
+            const selected = btn.dataset.filter ?? 'tous';
+
+            // Mise à jour de l'état actif visuel
+            buttons.forEach((b) => {
+                b.classList.remove('bg-noir', 'text-white', 'border-noir');
+                b.classList.add('bg-white', 'text-neutral-500', 'border-neutral-200');
+            });
+
+            btn.classList.remove('bg-white', 'text-neutral-500', 'border-neutral-200');
+            btn.classList.add('bg-noir', 'text-white', 'border-noir');
+
+            // Filtrage des éléments de la liste
+            cards.forEach((card) => {
+                const cardTags = card.dataset.tags ?? '';
+
+                if (selected === 'tous') {
+                    card.classList.remove('hidden');
+                } else if (selected === 'ux / ui') {
+                    // Gère le cas combiné UX / UI
+                    const match = cardTags.includes('ux') || cardTags.includes('ui');
+                    card.classList.toggle('hidden', !match);
+                } else {
+                    card.classList.toggle('hidden', !cardTags.includes(selected));
+                }
+            });
+        });
+    });
+</script>

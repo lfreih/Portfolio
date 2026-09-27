@@ -1,11 +1,51 @@
 ---
+import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
+
+import HeroProfile from '../components/HeroProfile.astro';
+import FeaturedCard from '../components/FeaturedCard.astro';
+
+const allProjects = await getCollection('projects');
+const featuredProjects = allProjects.filter((p) => p.data.une);
+
+const skills = ['PHP', 'Laravel', 'Vue.js', 'UX'];
 ---
 
 <Base title="Accueil |">
-	<p>Home page !</p>
+	<!-- Haut de page -->
+  	<HeroProfile skills={skills} />
+
+	<!-- Section À la une -->
+	<section class="bg-[#FCECE6] px-6 py-6 flex flex-col gap-4">
+		<div class="flex items-center justify-between">
+			<h2 class="font-serif text-xl font-bold text-noir">
+				À la une
+			</h2>
+			<a href="/projects" class="text-xs text-accent font-medium hover:underline">
+				Tout voir →
+			</a>
+		</div>
+
+		<!-- Carrousel horizontal -->
+		<div class="flex gap-3 overflow-x-auto pb-2 snap-x -mx-6 px-6">
+			{featuredProjects.map((p, index) => (
+				<FeaturedCard
+					titre={p.data.titre}
+					// subtitle={`${p.data.type ?? 'Projet'} · ${p.data.stack.slice(0, 2).join(' + ')}`}
+					subtitle="Blabla1"
+					stack={p.data.stack}
+					slug={p.id}
+					bgColor={index % 2 === 0 ? "bg-[#9eb3d2]" : "bg-[#b4a6c9]"}
+				/>
+			))}
+		</div>
+
+		<!-- Indicateurs de carrousel -->
+		<div class="flex justify-center items-center gap-1.5 pt-1">
+			<span class="w-4 h-1.5 rounded-full bg-accent"></span>
+			<span class="w-1.5 h-1.5 rounded-full bg-accent/30"></span>
+			<span class="w-1.5 h-1.5 rounded-full bg-accent/30"></span>
+		</div>
+	</section>
+
 </Base>
-
-<style>
-
-</style>

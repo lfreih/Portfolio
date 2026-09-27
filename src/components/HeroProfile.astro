@@ -1,0 +1,63 @@
+---
+import TagSkills from './TagSkills.astro';
+
+interface Props {
+    skills: string[];
+}
+
+const { skills } = Astro.props;
+---
+
+<section class="px-6 pt-5 pb-6 flex flex-col gap-5">
+    <!-- Statut alternance -->
+    <div class="flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-green-600 shrink-0"></span>
+        <span class="text-xs text-neutral-400">Ouverte à l'alternance · 2026</span>
+    </div>
+
+    <!-- Carte identité -->
+    <div class="flex items-center gap-4 bg-[#F5F5F4] p-4 rounded-2xl">
+        <div class="w-14 h-14 rounded-full bg-neutral-300 shrink-0"></div>
+        <div class="flex flex-col">
+            <h1 class="font-serif text-lg leading-tight text-noir">
+                Lucie <em class="text-accent italic">Freihaut</em>
+            </h1>
+            <p class="text-xs text-neutral-400 mt-0.5">
+                Dev Fullstack → Ingé logicielle
+            </p>
+            <p class="text-xs text-neutral-400">
+                EFREI Bordeaux
+            </p>
+        </div>
+    </div>
+
+    <!-- Accroche -->
+    <p class="text-[15px] text-neutral-500 leading-relaxed">
+        J'aime <strong class="text-noir font-semibold">comprendre avant de coder</strong> — construire des produits qui ont du sens, avec soin pour l'expérience.
+    </p>
+
+    <!-- Badges compétences -->
+    <div class="flex flex-wrap gap-2">
+        {skills.map((skill) => (
+            <TagSkills label={skill} />
+        ))}
+    </div>
+
+    <!-- Boutons CTA -->
+    <div class="flex flex-col gap-2.5 pt-1">
+        <a 
+            href="/projects" 
+            class="w-full py-3.5 px-5 rounded-2xl bg-noir text-white text-sm font-medium flex items-center justify-between hover:opacity-90 transition"
+        >
+            <span>Voir mes réalisations</span>
+            <span>→</span>
+        </a>
+
+        <a 
+            href="/about" 
+            class="w-full py-3.5 px-5 rounded-2xl bg-white border border-neutral-200 text-noir text-sm font-medium flex items-center justify-start hover:bg-neutral-50 transition"
+        >
+            <span>En savoir plus</span>
+        </a>
+    </div>
+</section>

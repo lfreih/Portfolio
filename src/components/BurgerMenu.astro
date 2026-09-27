@@ -9,11 +9,11 @@ const currentPath = Astro.url.pathname;
 <button
     id="burger-btn"
     aria-label="Ouvrir le menu"
-    class="flex flex-col gap-[4px] p-1 cursor-pointer"
+    class="flex flex-col gap-1 p-1 cursor-pointer"
 >
-    <span class="block h-[1.5px] w-[20px] bg-primary"></span>
-    <span class="block h-[1.5px] w-[13px] bg-primary"></span>
-    <span class="block h-[1.5px] w-[16px] bg-primary"></span>
+    <span class="block h-[1.5px] w-5 bg-primary"></span>
+    <span class="block h-[1.5px] w-3.25 bg-primary"></span>
+    <span class="block h-[1.5px] w-5 bg-primary"></span>
 </button>
 
 <!-- background overlay -->
@@ -40,7 +40,7 @@ const currentPath = Astro.url.pathname;
     <!-- Identity -->
     <div class="px-6 py-5 border-b border-[#f0f0f0] flex flex-col gap-1.5">
         <div class="flex items-center gap-2">
-            <span class="w-2 h-2 rounded-full bg-green-600 flex-shrink-0"></span>
+            <span class="w-2 h-2 rounded-full bg-green-600 shrink-0"></span>
             <span class="text-xs text-neutral-400">Recherche alternance · 3 ans</span>
         </div>
         <p class="font-serif text-lg text-primary">

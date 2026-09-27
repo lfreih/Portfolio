@@ -1,0 +1,43 @@
+---
+interface Props {
+    title: string;
+    subtitle: string;
+    slug: string;
+    tags: string[];
+    bgColor?: string;
+}
+
+const { 
+    title, 
+    subtitle, 
+    slug, 
+    tags, 
+    bgColor = "bg-[#9eb3d2]" 
+} = Astro.props;
+---
+
+<a 
+    href={`/projects/${slug}`} 
+    class="flex rounded-2xl bg-[#F8F7F5] border border-neutral-200/70 overflow-hidden hover:border-neutral-400 transition"
+>
+    <!-- Carré de couleur à gauche -->
+    <div class={`w-20 shrink-0 ${bgColor}`}></div>
+
+    <!-- Infos à droite -->
+    <div class="p-3.5 flex flex-col justify-between gap-2 flex-1">
+        <div>
+            <h3 class="text-sm font-bold text-noir">{title}</h3>
+            <p class="text-[11px] text-neutral-500 leading-snug mt-0.5 line-clamp-2">
+                {subtitle}
+            </p>
+        </div>
+
+        <div class="flex flex-wrap gap-1.5">
+            {tags.map((tag) => (
+                <span class="text-[10px] px-2 py-0.5 rounded bg-white text-neutral-500 border border-neutral-200/60">
+                    {tag}
+                </span>
+            ))}
+        </div>
+    </div>
+</a>

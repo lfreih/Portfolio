@@ -1,0 +1,46 @@
+---
+interface Props {
+    titre: string;
+    type?: string;
+    stack: string[];
+    slug: string;
+    bgColor?: string;
+}
+
+const {
+    titre,
+    type,
+    stack,
+    slug,
+    bgColor = "bg-[#9db2c9]"
+} = Astro.props;
+---
+
+<a 
+    href={`/projects/${slug}`} 
+    class="group w-60 shrink-0 rounded-2xl bg-white overflow-hidden shadow-xs flex flex-col snap-start border border-black/5"
+>
+    <!-- Zone couleur supérieure -->
+    <div class={`h-36 ${bgColor} p-3 relative flex flex-wrap gap-1.5 content-start`}>
+        {stack.slice(0, 2).map((tag, idx) => (
+            <span class={`text-[10px] font-medium px-2 py-0.5 rounded-md text-white ${idx === 0 ? 'bg-noir' : 'bg-accent'}`}>
+                {tag}
+            </span>
+        ))}
+
+        <span class="absolute bottom-3 right-3 w-8 h-8 rounded-full bg-white text-accent flex items-center justify-center text-xs shadow-sm group-hover:translate-x-0.5 transition">
+            →
+        </span>
+    </div>
+
+    <!-- Zone texte inférieure -->
+    <div class="p-3.5 bg-white flex flex-col gap-0.5">
+        <h3 class="text-sm font-semibold text-noir">
+            {titre}
+        </h3>
+        <p class="text-xs text-neutral-400 truncate">
+            <!-- {subtitle} -->
+             Blabla
+        </p>
+    </div>
+</a>

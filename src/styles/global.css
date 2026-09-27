@@ -1,3 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --color-teal: #1A7A7A;
+  --color-coral: #E05C35;
+  --color-teal-pale: #E6F4F4;
+  --color-noir: #111111;
+}
+
 :root {
   --teal: #1A7A7A;
   --coral: #E05C35;

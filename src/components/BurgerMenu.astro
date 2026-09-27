@@ -1,16 +1,92 @@
 ---
+import NavLink from "./NavLink.astro";
+import CVButton from "./CVButton.astro";
 
+const currentPath = Astro.url.pathname;
 ---
 
-<div>Menu</div>
-<nav>
-    <a href="#">Home</a> | 
-    <a href="#">Posts</a> | 
-    <a href="#">Contact</a>
-</nav>
+<!-- burger button -->
+<button
+    id="burger-btn"
+    aria-label="Ouvrir le menu"
+    class="flex flex-col gap-[4px] p-1 cursor-pointer"
+>
+    <span class="block h-[1.5px] w-[20px] bg-primary"></span>
+    <span class="block h-[1.5px] w-[13px] bg-primary"></span>
+    <span class="block h-[1.5px] w-[16px] bg-primary"></span>
+</button>
 
-<style>
-    div {
-        text-decoration: underline;
+<!-- background overlay -->
+<div
+    id="menu-backdrop"
+    class="fixed inset-0 bg-black/30 z-40 hidden"
+></div>
+
+<!-- menu panel -->
+<div
+    id="menu-panel"
+    class="fixed top-0 right-0 h-full w-[85%] max-w-sm bg-white z-50 flex flex-col translate-x-full transition-transform duration-300"
+>
+    <!-- Top : logo + close -->
+    <div class="flex items-center justify-between px-6 py-3 border-b border-[#f0f0f0]">
+        <a href="/" class="font-serif text-xl text-primary">
+            lfreih<span class="text-accent">.</span>
+        </a>
+        <button id="close-btn" aria-label="Fermer le menu" class="text-2xl text-neutral-400 leading-none cursor-pointer">
+            ✕
+        </button>
+    </div>
+
+    <!-- Identity -->
+    <div class="px-6 py-5 border-b border-[#f0f0f0] flex flex-col gap-1.5">
+        <div class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-green-600 flex-shrink-0"></span>
+            <span class="text-xs text-neutral-400">Recherche alternance · 3 ans</span>
+        </div>
+        <p class="font-serif text-lg text-primary">
+            Lucie <em class="text-accent">Freihaut</em>
+        </p>
+        <p class="text-xs text-neutral-400 leading-relaxed">
+            Dev web / logiciel · Bordeaux
+        </p>
+    </div>
+
+    <!-- nav links -->
+    <nav class="flex flex-col py-2">
+        <NavLink href="/" label="Accueil" />
+        <NavLink href="/projects" label="Mes réalisations" />
+        <NavLink href="/about" label="À propos" />
+    </nav>
+
+  <!-- menu footer -->
+    <div class="mt-3 px-6 py-5 flex flex-col gap-3">
+        <CVButton />
+        <div class="flex gap-4">
+            <a href="https://github.com/lfreih" target="_blank" class="text-sm text-neutral-400 hover:text-primary transition">GitHub</a>
+            <a href="https://linkedin.com/in/lucie-freihaut" target="_blank" class="text-sm text-neutral-400 hover:text-primary transition">LinkedIn</a>
+        </div>
+    </div>
+</div>
+
+<script>
+    const burgerBtn = document.getElementById('burger-btn');
+    const closeBtn = document.getElementById('close-btn');
+    const backdrop = document.getElementById('menu-backdrop');
+    const panel = document.getElementById('menu-panel');
+
+    function openMenu() {
+        panel?.classList.remove('translate-x-full');
+        backdrop?.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
     }
-</style>
+
+    function closeMenu() {
+        panel?.classList.add('translate-x-full');
+        backdrop?.classList.add('hidden');
+        document.body.style.overflow = '';
+    }
+
+    burgerBtn?.addEventListener('click', openMenu);
+    closeBtn?.addEventListener('click', closeMenu);
+    backdrop?.addEventListener('click', closeMenu);
+</script>

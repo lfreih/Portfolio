@@ -1,23 +1,23 @@
 ---
+import CVButton from "./CVButton.astro";
 
 ---
 
-<footer>
-    <p>
-        lfreih<span>.</span>
+<footer class="bg-primary-dark px-6 py-5 mt-auto">
+    <p class="font-serif text-2xl text-white mb-3">
+        lfreih<span class="text-accent">.</span>
     </p>
 
+    <CVButton />
 
-    Télécharger le CV ↓
-
-Tous droits réservés
-Dernières retouches : 2026
-
-GH | LI
+    <div class="flex items-end justify-between">
+        <div class="text-[11px] text-primary leading-relaxed">
+            <p>Tous droits réservés</p>
+            <p>Dernières retouches : 2026</p>
+        </div>
+        <div class="flex gap-3 text-sm text-primary">
+            <a href="https://github.com/lfreih" target="_blank" class="hover:text-white transition">GitHub</a>
+            <a href="https://linkedin.com/in/lucie-freihaut" target="_blank" class="hover:text-white transition">LinkedIn</a>
+        </div>
+    </div>
 </footer>
-
-<style>
-    footer { background: #1A7A7A; }
-    p { color: #f6f6f6; }
-    span { color: #ff7944; }
-</style>

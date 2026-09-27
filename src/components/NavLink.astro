@@ -1,0 +1,17 @@
+---
+interface Props {
+    href: string;
+    label: string;
+}
+const { href, label } = Astro.props;
+const isActive = Astro.url.pathname.startsWith(href) && href !== '/' 
+    || Astro.url.pathname === href;
+---
+<a 
+    href={href}
+    class={`font-serif text-2xl px-6 py-4 border-b border-[#f0f0f0] transition ${
+        isActive ? 'text-primary' : 'text-noir hover:text-primary'
+    }`}
+>
+    {label}
+</a>

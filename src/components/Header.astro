@@ -1,15 +1,15 @@
 ---
-import BurgerMenu from '../components/BurgerMenu.astro';
+import BurgerMenu from './BurgerMenu.astro';
 ---
 
-<header>
-    <nav>
-        <a href="/">lfreih<span>.</span></a>
-    </nav>
-
-    <BurgerMenu />
+<header class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-[#f0f0f0]">
+    <div class="flex items-center justify-between px-6 py-4 max-w-2xl mx-auto">
+        <a href="/" class="font-serif text-xl text-primary leading-none">
+            lfreih<span class="text-accent">.</span>
+        </a>
+        <BurgerMenu />
+    </div>
 </header>
 
-<style>
-    span { color: #1A7A7A; }
-</style>
+<!-- space to compensate fixed header -->
+<div class="h-[61px]"></div>

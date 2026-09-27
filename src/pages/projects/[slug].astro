@@ -3,19 +3,30 @@ import { getCollection, render } from 'astro:content';
 import Project from '../../layouts/Project.astro';import ProjectMetrics from '../../components/ProjectMetrics.astro';
 import ProjectSteps from '../../components/ProjectSteps.astro';
 import ProjectTakeaway from '../../components/ProjectTakeaway.astro';
+import NextProject from '../../components/NextProject.astro';
 
 export async function getStaticPaths() {
     const projects = await getCollection('projects');
-    return projects.map((p, index) => ({
-        params: { slug: p.id },
-        props: { 
-            project: p,
-            // nextProject: projects[(index + 1) % projects.length] // Boucle vers le projet suivant
-        }
-    }));
+
+    return projects.map((project, index) => {
+        // Calcule le projet qui suit dans la liste (ou revient au premier)
+        const nextIndex = (index + 1) % projects.length;
+        const nextProject = projects[nextIndex];
+
+        return {
+            params: { slug: project.id },
+            props: { 
+                project,
+                nextProject: {
+                    titre: nextProject.data.titre,
+                    slug: nextProject.id
+                }
+            }
+        };
+    });
 }
 
-const { project } = Astro.props;
+const { project, nextProject } = Astro.props;
 const { Content } = await render(project)
 const p = project.data;
 ---
@@ -120,24 +131,13 @@ const p = project.data;
             </a>
         </div>
 
-        <!-- Projet suivant -->
-        <!-- {nextProject && (
-        <div class="pt-4 border-t border-neutral-100 flex items-center justify-between">
-            <div>
-            <span class="text-[10px] text-neutral-400 block">Projet suivant</span>
-            <a href={`/projects/${nextProject.id}`} class="text-xs font-bold text-noir hover:text-accent transition">
-                {nextProject.data.titre}
-            </a>
-            </div>
-            <a href={`/projects/${nextProject.id}`} class="text-accent text-sm">
-            →
-            </a>
-        </div>
-        )} -->
+        <!-- Zone Projet Suivant -->
+        {nextProject && (
+            <NextProject 
+                titre={nextProject.titre} 
+                slug={nextProject.slug} 
+            />
+        )}
 
     </div>
 </Project>
-
-<style>
-
-</style>

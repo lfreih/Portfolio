@@ -6,6 +6,7 @@
   --color-teal-pale: #E6F4F4;
   --color-teal-dark: #0F5A5A;
   --color-coral: #E05C35;
+  --color-coral-pale: #FCECE6;
   --color-noir: #111111;
 
   /* usage variables */
@@ -13,6 +14,7 @@
   --color-primary-dark: var(--color-teal-dark);
   --color-primary-pale: var(--color-teal-pale);
   --color-accent: var(--color-coral);
+  --color-accent-pale: var(--color-coral-pale);
   --color-text: var(--color-noir);
 }
 

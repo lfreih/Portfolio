@@ -16,7 +16,7 @@ const skills = ['PHP', 'Laravel', 'Vue.js', 'UX'];
   	<HeroProfile skills={skills} />
 
 	<!-- Section À la une -->
-	<section class="bg-[#FCECE6] px-6 py-6 flex flex-col gap-4">
+	<section class="bg-accent-pale px-6 py-6 flex flex-col gap-4">
 		<div class="flex items-center justify-between">
 			<h2 class="font-serif text-xl font-bold text-noir">
 				À la une
@@ -31,8 +31,6 @@ const skills = ['PHP', 'Laravel', 'Vue.js', 'UX'];
 			{featuredProjects.map((p, index) => (
 				<FeaturedCard
 					titre={p.data.titre}
-					// subtitle={`${p.data.type ?? 'Projet'} · ${p.data.stack.slice(0, 2).join(' + ')}`}
-					subtitle="Blabla1"
 					stack={p.data.stack}
 					slug={p.id}
 					bgColor={index % 2 === 0 ? "bg-[#9eb3d2]" : "bg-[#b4a6c9]"}

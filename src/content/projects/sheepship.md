@@ -1,28 +1,29 @@
 ---
-titre: Sheepship
+title: Sheepship
+italicTitle: ship
 slug: sheepship
 date: Février 2026
 type: Projet universitaire
 stack: [Unity, C#, Oculus Meta Quest]
 tag: [Jeu vidéo, VR, Autre]
 une: true
-# lienSite: https://sheepship.lucyfeneyrol.com/
-lienGithub: https://github.com/lufnrl/wr507d_shooter
+# websiteLink: https://sheepship.lucyfeneyrol.com/
+githubLink: https://github.com/lufnrl/wr507d_shooter
 image: /images/sheepship/cover.jpg
-metriques:
-  - valeur: "1"
+desc: Jeu shooter en VR
+metrics:
+  - value: "1"
     label: Arc
-  - valeur: "10+"
+  - value: "10+"
     label: Moutons à protéger
-  - valeur: "40h"
+  - value: "40h"
     label: De développement
+approach:
+  - num: "1"
+    title: J'ai bien failli changé d'arme
+    body: J'ai bien failli changé d'arme
+  - num: "2"
+    title: réflexion2
+    body: Deux
+learned: "Choisir un bon modèle d'asset + bien se séparer les taches OK"
 ---
-
-## Contexte
-Jeu shooter en VR...
-
-## Démarche
-J'ai bien failli changé d'arme...
-
-## Ce que j'en retiens
-Choisir un bon modèle d'asset + bien se séparer les taches OK...

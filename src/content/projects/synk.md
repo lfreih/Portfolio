@@ -1,25 +1,26 @@
 ---
-titre: SYNK
+title: SYNK
+italicTitle: K
 slug: synk
 date: Mars 2026
 type: Projet universitaire
 stack: [Nuxt.js, Tailwind CSS, API Platform, Postman]
 tag: [Web, API, UX, UI]
 une: true
-lienGithub: https://github.com/lfreih/wr505-reseau-social
+githubLink: https://github.com/lfreih/wr505-reseau-social
 image: /images/synk/cover.jpg
-metriques:
-  - valeur: "De A à Z"
+desc: Interface pour un réseau social, BDD fournie par le prof
+metrics:
+  - value: "De A à Z"
     label: Interface
-  - valeur: "40h+"
+  - value: "40h+"
     label: De développement
+approach:
+  - num: "1"
+    title: Gros brainstorming
+    body: Gros brainstorming au début sur l'organisation des pages, expérieur utilisateur
+  - num: "2"
+    title: réflexion2
+    body: Deux
+learned: "Anticiper les besoins + tester les routes API et les implémenter une à une"
 ---
-
-## Contexte
-Interface pour un réseau social, BDD fournie par le prof...
-
-## Démarche
-Gros brainstorming au début sur l'organisation des pages, expérieur utilisateur...
-
-## Ce que j'en retiens
-Anticiper les besoins + tester les routes API et les implémenter une à une...

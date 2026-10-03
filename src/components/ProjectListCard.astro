@@ -1,41 +1,44 @@
 ---
 interface Props {
-    titre: string;
+    title: string;
     desc: string;
     slug: string;
     tags: string[];
+    searchableTags?: string[];
     bgColor?: string;
 }
 
 const { 
-    titre, 
+    title, 
     desc, 
     slug, 
     tags, 
+    searchableTags, 
     bgColor = "bg-[#9db2c9]" 
 } = Astro.props;
 ---
 
 <a 
     href={`/projects/${slug}`}
+    data-tags={(searchableTags ?? tags).join(',').toLowerCase()}
     data-tags={tags.join(',').toLowerCase()}
     class="project-card group flex rounded-2xl bg-neutral-50 border border-neutral-200 overflow-hidden hover:border-neutral-300 transition"
 >
-    <!-- Bloc de couleur pastel à gauche -->
+    <!-- left color bloc -->
     <div class={`w-24 shrink-0 ${bgColor} rounded-l-2xl`}></div>
 
     <!-- Contenu textuel à droite -->
     <div class="p-3.5 flex flex-col justify-between flex-1 gap-2 relative">
         <div class="pr-4">
             <h2 class="text-sm font-bold text-noir leading-tight">
-                {titre}
+                {title}
             </h2>
             <p class="text-[11px] text-neutral-400 leading-snug mt-1 line-clamp-2">
                 {desc}
             </p>
         </div>
 
-        <!-- Tags stack du projet -->
+        <!-- stack tags -->
         <div class="flex flex-wrap gap-1.5">
             {tags.map((tag) => (
                 <span class="text-[10px] px-2 py-0.5 rounded-md bg-white text-neutral-500 border border-neutral-200/60 font-medium">
@@ -44,9 +47,10 @@ const {
             ))}
         </div>
 
-        <!-- Petite flèche / chevron discret à droite -->
-        <span class="absolute top-1/2 -translate-y-1/2 right-3 text-neutral-300 text-xs group-hover:translate-x-0.5 group-hover:text-neutral-500 transition">
-            ›
+        <span class="absolute top-1/2 -translate-y-1/2 right-3 text-neutral-300 group-hover:translate-x-0.5 group-hover:text-neutral-500 transition">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m9 18 6-6-6-6"/>
+            </svg>
         </span>
     </div>
 </a>

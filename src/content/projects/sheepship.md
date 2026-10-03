@@ -1,7 +1,6 @@
 ---
 title: Sheepship
 italicTitle: ship
-slug: sheepship
 date: Février 2026
 type: Projet universitaire
 stack: [Unity, C#, Oculus Meta Quest]
@@ -9,7 +8,14 @@ tag: [Jeu vidéo, VR, Autre]
 une: true
 # websiteLink: https://sheepship.lucyfeneyrol.com/
 githubLink: https://github.com/lufnrl/wr507d_shooter
-image: /images/sheepship/cover.jpg
+images:
+  - src: /images/sheepship/accueil-desktop.jpg
+    alt: Page d'accueil · desktop
+  - src: /images/sheepship/vue-mobile.jpg
+    alt: Vue mobile
+  - src: /images/sheepship/favoris.jpg
+    alt: Page favoris
+cover: /images/sheepship/cover.jpg
 desc: Jeu shooter en VR
 metrics:
   - value: "1"

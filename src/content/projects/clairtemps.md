@@ -8,7 +8,14 @@ tag: [Web, API, UI]
 une: true
 # websiteLink: https://clairtemps.lucie-freihaut.fr
 githubLink: https://github.com/m4rguerite/sae401
-image: /images/clairtemps/cover.jpg
+cover: /images/clairtemps/cover.jpg
+images:
+  - src: /images/clairtemps/accueil-desktop.jpg
+    alt: Page d'accueil · desktop
+  - src: /images/clairtemps/vue-mobile.jpg
+    alt: Vue mobile
+  - src: /images/clairtemps/favoris.jpg
+    alt: Page favoris
 desc: App météo temps réel - prévisions horaires et 15 jours via API externe
 metrics:
   - value: "15j"

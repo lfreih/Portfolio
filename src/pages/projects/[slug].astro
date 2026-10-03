@@ -1,5 +1,5 @@
 ---
-import { getCollection, render } from 'astro:content';
+import { getCollection } from 'astro:content';
 import Project from '../../layouts/Project.astro';
 import ProjectMetrics from '../../components/ProjectMetrics.astro';
 import ProjectSteps from '../../components/ProjectSteps.astro';
@@ -10,7 +10,7 @@ export async function getStaticPaths() {
     const projects = await getCollection('projects');
 
     return projects.map((project, index) => {
-        // Calcule le projet qui suit dans la liste (ou revient au premier)
+        // Calculate next project in the list or go back to first
         const nextIndex = (index + 1) % projects.length;
         const nextProject = projects[nextIndex];
 
@@ -19,7 +19,7 @@ export async function getStaticPaths() {
             props: { 
                 project,
                 nextProject: {
-                    titre: nextProject.data.titre,
+                    title: nextProject.data.title,
                     slug: nextProject.id
                 }
             }
@@ -28,12 +28,11 @@ export async function getStaticPaths() {
 }
 
 const { project, nextProject } = Astro.props;
-const { Content } = await render(project)
 const p = project.data;
 ---
 
-<Project title={`${project.data.titre} |`}>
-	<!-- En-tête beige supérieur -->
+<Project title={`${project.data.title} |`}>
+	<!-- header -->
     <div class="bg-accent-pale px-6 pt-3 pb-6 flex flex-col gap-4">
         <div class="flex justify-end">
             <a href="/projects" class="text-xs text-neutral-400 hover:text-neutral-700 transition">
@@ -48,7 +47,7 @@ const p = project.data;
                 <span>{project.data.date}</span>
             </div>
 
-            <!-- Tags stack -->
+            <!-- stack tags -->
             <div class="flex flex-wrap gap-1.5">
                 {project.data.stack.map((item, idx) => (
                 <span class={`text-[10px] font-medium px-2.5 py-0.5 rounded-md ${idx === project.data.stack.length - 1 ? 'bg-accent text-white' : 'bg-white text-neutral-600 border border-neutral-200/50'}`}>
@@ -57,9 +56,8 @@ const p = project.data;
                 ))}
             </div>
 
-            <!-- Titre projet -->
             <h1 class="font-serif text-3xl font-bold text-noir pt-1">
-                {project.data.titre.slice(0, 5)}<em class="text-accent italic font-normal">{project.data.titre.slice(5)}</em>
+                {project.data.title.slice(0, 5)}<em class="text-accent italic font-normal">{project.data.title.slice(5)}</em>
             </h1>
 
             {p.desc && (
@@ -70,54 +68,63 @@ const p = project.data;
         </div>
     </div>
 
-    <!-- Corps de page -->
+    <!-- body -->
     <div class="px-6 py-5 flex flex-col gap-6">
         
-        <!-- Grille des métriques -->
-        {project.data.metriques && (
-        <ProjectMetrics metrics={project.data.metriques} />
+        <!-- metrics -->
+        {project.data.metrics && (
+            <ProjectMetrics metrics={project.data.metrics} />
         )}
 
-        <!-- Galerie visuels -->
-        <section class="space-y-3">
-        <div class="flex items-center justify-between text-[10px] uppercase tracking-wider font-semibold text-neutral-400">
-            <span>Visuels</span>
-            <span>1 / 3</span>
-        </div>
+        <!-- visual galery -->
+        {p.images && p.images.length > 0 && (
+            <section class="space-y-3">
+                <div class="flex items-center justify-between text-[10px] uppercase tracking-wider font-semibold text-neutral-400">
+                    <span>Visuels</span>
+                    <span id="gallery-counter">1 / {p.images.length}</span>
+                </div>
 
-        <div class="flex gap-3 overflow-x-auto pb-2 snap-x -mx-6 px-6">
-            <div class="w-56 h-36 shrink-0 rounded-2xl bg-[#9eb3d2] p-3 flex items-end text-white text-[11px] font-medium">
-            Page d'accueil · desktop
-            </div>
-            <div class="w-36 h-36 shrink-0 rounded-2xl bg-[#9eb3d2] p-3 flex items-end text-white text-[11px] font-medium">
-            Vue mobile
-            </div>
-        </div>
+                <div id="gallery-carousel" 
+                    class="flex gap-3 overflow-x-auto scrollbar-hide pb-2 snap-x snap-mandatory -mx-6 px-6 scroll-smooth">
+                    {p.images.map((img) => (
+                        <img
+                            src={img.src}
+                            alt={img.alt}
+                            class="w-56 h-36 shrink-0 rounded-2xl object-cover snap-start"
+                        />
+                    ))}
+                </div>
 
-        <div class="flex gap-1 pt-1">
-            <span class="w-3.5 h-1 rounded-full bg-accent"></span>
-            <span class="w-1 h-1 rounded-full bg-accent/30"></span>
-            <span class="w-1 h-1 rounded-full bg-accent/30"></span>
-        </div>
-        </section>
+                <div class="flex justify-center items-center gap-1">
+                    {p.images.map((_, i) => (
+                        <span
+                            class={`gallery-dot rounded-full bg-accent transition-all duration-300 ${
+                                i === 0 ? 'w-3.5 h-1' : 'w-1 h-1 bg-accent/30'
+                            }`}
+                            data-index={i}
+                        ></span>
+                    ))}
+                </div>
+            </section>
+        )}
 
-        <!-- Démarche / Étapes -->
-        {p.demarche && <ProjectSteps steps={p.demarche} />}
+        <!-- approach / steps -->
+        {p.approach && <ProjectSteps steps={p.approach} />}
 
-        <!-- Ce que j'en retiens -->
-        {p.retenue && <ProjectTakeaway text={p.retenue} />}
+        <!-- what I learned -->
+        {p.learned && <ProjectTakeaway text={p.learned} />}
 
-        <!-- Boutons d'action -->
+        <!-- action buttons -->
         <div class="flex flex-col gap-2 pt-2">
             <a 
-                href={project.data.lienSite ?? "#"} 
+                href={project.data.websiteLink ?? "#"} 
                 class="w-full py-3.5 px-5 rounded-2xl bg-noir text-white text-xs font-semibold flex items-center justify-between hover:opacity-90 transition"
             >
                 <span>Voir le site</span>
                 <span>→</span>
             </a>
             <a 
-                href={project.data.lienGithub ?? "#"} 
+                href={project.data.githubLink ?? "#"} 
                 target="_blank" 
                 rel="noreferrer"
                 class="w-full py-3.5 px-5 rounded-2xl bg-white border border-neutral-200 text-noir text-xs font-semibold text-center hover:bg-neutral-50 transition"
@@ -126,13 +133,39 @@ const p = project.data;
             </a>
         </div>
 
-        <!-- Zone Projet Suivant -->
         {nextProject && (
             <NextProject 
-                titre={nextProject.titre} 
+                title={nextProject.title} 
                 slug={nextProject.slug} 
             />
         )}
 
     </div>
 </Project>
+
+<script>
+    const carousel = document.getElementById('gallery-carousel');
+    const dots = document.querySelectorAll('.gallery-dot');
+    const counter = document.getElementById('gallery-counter');
+
+    const total = carousel?.children.length ?? 0;
+
+    carousel?.addEventListener('scroll', () => {
+        const scrollLeft = carousel.scrollLeft;
+        const cardWidth = carousel.firstElementChild?.clientWidth ?? 0;
+        const current = Math.round(scrollLeft / (cardWidth + 12)); // 12 = gap-3
+
+        dots.forEach((dot, i) => {
+            const el = dot as HTMLElement;
+            if (i === current) {
+                el.classList.remove('w-1', 'bg-accent/30');
+                el.classList.add('w-3.5', 'bg-accent');
+            } else {
+                el.classList.remove('w-3.5', 'bg-accent');
+                el.classList.add('w-1', 'bg-accent/30');
+            }
+        });
+
+        if (counter) counter.textContent = `${current + 1} / ${total}`;
+    });
+</script>

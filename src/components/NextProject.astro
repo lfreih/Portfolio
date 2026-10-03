@@ -1,10 +1,10 @@
 ---
 interface Props {
-    titre: string;
+    title: string;
     slug: string;
 }
 
-const { titre, slug } = Astro.props;
+const { title, slug } = Astro.props;
 ---
 
 <div class="pt-6 mt-6 border-t border-neutral-100 flex items-center justify-between">
@@ -16,13 +16,13 @@ const { titre, slug } = Astro.props;
             href={`/projects/${slug}`} 
             class="font-serif text-base font-bold text-noir hover:text-accent transition-colors"
         >
-            {titre}
+            {title}
         </a>
     </div>
 
     <a 
         href={`/projects/${slug}`} 
-        aria-label={`Aller au projet suivant : ${titre}`}
+        aria-label={`Aller au projet suivant : ${title}`}
         class="text-accent text-lg font-medium hover:translate-x-1 transition-transform"
     >
         →

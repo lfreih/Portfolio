@@ -1,14 +1,18 @@
 ---
 title: SYNK
 italicTitle: K
-slug: synk
 date: Mars 2026
 type: Projet universitaire
 stack: [Nuxt.js, Tailwind CSS, API Platform, Postman]
 tag: [Web, API, UX, UI]
 une: true
 githubLink: https://github.com/lfreih/wr505-reseau-social
-image: /images/synk/cover.jpg
+cover: /images/synk/cover.jpg
+images:
+  - src: /images/synk/accueil-desktop.jpg
+    alt: Page d'accueil · desktop
+  - src: /images/synk/vue-mobile.jpg
+    alt: Vue mobile
 desc: Interface pour un réseau social, BDD fournie par le prof
 metrics:
   - value: "De A à Z"

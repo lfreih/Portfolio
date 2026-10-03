@@ -14,7 +14,13 @@ const projects = defineCollection({
         une: z.boolean().optional(),
         websiteLink: z.string().optional(),
         githubLink: z.string().optional(),
-        image: z.string().optional(),
+        cover: z.string().optional(),
+        images: z.array(
+            z.object({
+                src: z.string(),
+                alt: z.string(),
+            })
+        ).optional(),
         desc: z.string(),
         metrics: z.array(
             z.object({

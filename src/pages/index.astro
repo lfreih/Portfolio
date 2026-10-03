@@ -27,7 +27,9 @@ const skills = ['Laravel', 'BDD', 'Vue.js', 'UI/UX'];
 		</div>
 
 		<!-- Carrousel horizontal -->
-		<div class="flex gap-3 overflow-x-auto pb-2 snap-x -mx-6 px-6">
+		<div id="carousel-une" 
+		  	class="flex gap-4 overflow-x-auto snap-x snap-mandatory -mx-6 px-6 scroll-smooth scrollbar-hide"
+		>
 			{featuredProjects.map((p, index) => (
 				<FeaturedCard
 					title={p.data.title}
@@ -40,11 +42,38 @@ const skills = ['Laravel', 'BDD', 'Vue.js', 'UI/UX'];
 		</div>
 
 		<!-- Indicateurs de carrousel -->
-		<div class="flex justify-center items-center gap-1.5 pt-1">
-			<span class="w-4 h-1.5 rounded-full bg-accent"></span>
-			<span class="w-1.5 h-1.5 rounded-full bg-accent/30"></span>
-			<span class="w-1.5 h-1.5 rounded-full bg-accent/30"></span>
+		<div id="dots-une" class="flex justify-center items-center gap-1.5 pt-1">
+			{featuredProjects.map((_, i) => (
+				<span 
+					class={`carousel-une-dot rounded-full bg-accent transition-all duration-300 ${
+						i === 0 ? 'w-4 h-1.5' : 'w-1.5 h-1.5 opacity-30'
+					}`}
+					data-index={i}
+				></span>
+			))}
 		</div>
 	</section>
 
 </Base>
+
+<script>
+	const carousel = document.getElementById('carousel-une');
+	const dots = document.querySelectorAll('.carousel-une-dot');
+
+	carousel?.addEventListener('scroll', () => {
+		const scrollLeft = carousel.scrollLeft;
+		const cardWidth = carousel.firstElementChild?.clientWidth ?? 0;
+		const current = Math.round(scrollLeft / (cardWidth + 16));
+
+		dots.forEach((dot, i) => {
+		const el = dot as HTMLElement;
+		if (i === current) {
+			el.classList.remove('w-1.5', 'opacity-30');
+			el.classList.add('w-4');
+		} else {
+			el.classList.remove('w-4');
+			el.classList.add('w-1.5', 'opacity-30');
+		}
+		});
+	});
+</script>

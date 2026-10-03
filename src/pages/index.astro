@@ -8,7 +8,7 @@ import FeaturedCard from '../components/FeaturedCard.astro';
 const allProjects = await getCollection('projects');
 const featuredProjects = allProjects.filter((p) => p.data.une);
 
-const skills = ['PHP', 'Laravel', 'Vue.js', 'UX'];
+const skills = ['Laravel', 'BDD', 'Vue.js', 'UI/UX'];
 ---
 
 <Base title="Accueil |">
@@ -30,9 +30,10 @@ const skills = ['PHP', 'Laravel', 'Vue.js', 'UX'];
 		<div class="flex gap-3 overflow-x-auto pb-2 snap-x -mx-6 px-6">
 			{featuredProjects.map((p, index) => (
 				<FeaturedCard
-					titre={p.data.titre}
+					title={p.data.title}
 					stack={p.data.stack}
 					slug={p.id}
+					desc={p.data.desc}
 					bgColor={index % 2 === 0 ? "bg-[#9eb3d2]" : "bg-[#b4a6c9]"}
 				/>
 			))}

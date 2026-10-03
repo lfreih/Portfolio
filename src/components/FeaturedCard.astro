@@ -1,17 +1,18 @@
 ---
 interface Props {
-    titre: string;
+    title: string;
     type?: string;
     stack: string[];
     slug: string;
+    desc: string;
     bgColor?: string;
 }
 
 const {
-    titre,
-    type,
+    title,
     stack,
     slug,
+    desc,
     bgColor = "bg-[#9db2c9]"
 } = Astro.props;
 ---
@@ -27,20 +28,15 @@ const {
                 {tag}
             </span>
         ))}
-
-        <span class="absolute bottom-3 right-3 w-8 h-8 rounded-full bg-white text-accent flex items-center justify-center text-xs shadow-sm group-hover:translate-x-0.5 transition">
-            →
-        </span>
     </div>
 
     <!-- Zone texte inférieure -->
     <div class="p-3.5 bg-white flex flex-col gap-0.5">
         <h3 class="text-sm font-semibold text-noir">
-            {titre}
+            {title}
         </h3>
         <p class="text-xs text-neutral-400 truncate">
-            <!-- {subtitle} -->
-             Blabla
+            {desc}
         </p>
     </div>
 </a>
